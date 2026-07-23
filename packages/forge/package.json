@@ -1,0 +1,45 @@
+{
+  "name": "forge",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Forge CLI — a next-generation AI-native developer platform",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "forge": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@forge/core": "workspace:*",
+    "@forge/cli": "workspace:*",
+    "@forge/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  },
+  "files": ["dist"],
+  "keywords": [
+    "cli",
+    "developer-tools",
+    "scaffolding",
+    "code-generation",
+    "forge",
+    "ai-native"
+  ],
+  "license": "MIT"
+}
