@@ -1,0 +1,33 @@
+{
+  "name": "@forge/plugin-sdk",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Plugin SDK for Forge CLI — build plugins that extend Forge",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@forge/shared": "workspace:*",
+    "zod": "^3.24.0",
+    "fast-glob": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "zod": "^3.24.0"
+  }
+}

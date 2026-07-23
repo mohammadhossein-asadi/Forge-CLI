@@ -1,0 +1,14 @@
+{
+  "name": "@forge/plugin-hello",
+  "version": "1.0.0",
+  "description": "Example Forge CLI plugin — demonstrates the plugin SDK",
+  "main": "index.js",
+  "type": "module",
+  "keywords": ["forge", "forge-plugin", "example"],
+  "forge": {
+    "version": ">=0.1.0",
+    "type": "plugin",
+    "entry": "index.js",
+    "permissions": ["filesystem.read"]
+  }
+}
