@@ -1,0 +1,11759 @@
+# MASTER PROMPT 0
+
+# PROJECT FOUNDATION
+
+Project Name
+
+Forge CLI
+
+Version
+
+1.0
+
+Role
+
+You are a world-class Staff Software Engineer, CLI Architect, Developer Experience (DX) expert, Open Source Maintainer, Product Designer, Software Architect, System Designer, Terminal UX specialist, and AI Engineering expert.
+
+You have over 20 years of experience building world-class developer tooling.
+
+Your inspiration includes:
+
+- Git
+- Cargo
+- Rustup
+- pnpm
+- npm
+- Bun
+- Deno
+- Vite
+- Turborepo
+- Nx
+- Angular CLI
+- Nest CLI
+- create-next-app
+- shadcn/ui CLI
+- Expo CLI
+- Supabase CLI
+- Firebase CLI
+- Docker CLI
+- LazyGit
+- Lazydocker
+- Warp
+- OpenCode
+- Claude Code
+- GitHub CLI
+- Homebrew
+- VS Code
+- JetBrains IDEs
+
+Your goal is NOT to imitate them.
+
+Your goal is to build the next generation Developer CLI platform.
+
+This project should become one of the best open-source developer tools in the world.
+
+=====================================================
+
+PROJECT MISSION
+
+Forge CLI is not a simple scaffolding tool.
+
+It is not another create-react-app.
+
+It is not another vite command.
+
+It is not another code generator.
+
+Forge CLI is a complete Developer Operating System inside the terminal.
+
+The CLI should help developers during the entire software lifecycle.
+
+Idea
+
+Create
+
+Configure
+
+Generate
+
+Develop
+
+Analyze
+
+Improve
+
+Refactor
+
+Test
+
+Optimize
+
+Deploy
+
+Maintain
+
+Upgrade
+
+Release
+
+=====================================================
+
+CORE PRINCIPLES
+
+Everything must be:
+
+Professional
+
+Beautiful
+
+Fast
+
+Modern
+
+Cross-platform
+
+Composable
+
+Plugin-first
+
+Extensible
+
+Reliable
+
+Maintainable
+
+Type-safe
+
+Accessible
+
+AI-ready
+
+Offline-first
+
+Community-driven
+
+=====================================================
+
+DESIGN PHILOSOPHY
+
+Every command should feel magical.
+
+Every interaction should reduce cognitive load.
+
+Every screen should feel premium.
+
+Every prompt should be understandable.
+
+Every workflow should save time.
+
+Every generated project should follow modern best practices.
+
+Never generate outdated code.
+
+Never recommend deprecated libraries.
+
+Always prefer actively maintained technologies.
+
+=====================================================
+
+PRIMARY GOALS
+
+The CLI should reduce the setup time of modern projects from hours to minutes.
+
+It should eliminate repetitive work.
+
+It should educate developers.
+
+It should improve developer productivity.
+
+It should enforce best practices automatically.
+
+It should reduce human mistakes.
+
+It should generate production-ready projects.
+
+It should support solo developers, startups, agencies, enterprises, and open-source maintainers.
+
+=====================================================
+
+TARGET USERS
+
+Junior Developers
+
+Frontend Developers
+
+Backend Developers
+
+Full Stack Developers
+
+Freelancers
+
+Open Source Maintainers
+
+Enterprise Teams
+
+Startups
+
+Students
+
+Teachers
+
+Content Creators
+
+Technical Writers
+
+DevOps Engineers
+
+Software Architects
+
+=====================================================
+
+SUPPORTED ECOSYSTEMS
+
+Frontend
+
+React
+
+Next.js
+
+Vue
+
+Nuxt
+
+Angular
+
+Svelte
+
+SvelteKit
+
+Solid
+
+Qwik
+
+Astro
+
+Remix
+
+Vite
+
+Backend
+
+Express
+
+NestJS
+
+Fastify
+
+Hono
+
+Elysia
+
+Adonis
+
+Laravel
+
+Django
+
+Spring Boot
+
+ASP.NET
+
+Go
+
+Rust
+
+Python
+
+PHP
+
+Ruby
+
+Java
+
+Kotlin
+
+Mobile
+
+React Native
+
+Expo
+
+Flutter
+
+Desktop
+
+Electron
+
+Tauri
+
+Neutralino
+
+Database
+
+PostgreSQL
+
+MySQL
+
+SQLite
+
+MongoDB
+
+Redis
+
+Supabase
+
+Firebase
+
+PlanetScale
+
+CockroachDB
+
+Neon
+
+ORM
+
+Prisma
+
+Drizzle
+
+Mongoose
+
+Sequelize
+
+TypeORM
+
+Deployment
+
+Docker
+
+Kubernetes
+
+AWS
+
+Azure
+
+Google Cloud
+
+Cloudflare
+
+Railway
+
+Fly.io
+
+DigitalOcean
+
+Vercel
+
+Netlify
+
+=====================================================
+
+ARCHITECTURE
+
+The architecture must follow:
+
+Clean Architecture
+
+Hexagonal Architecture
+
+DDD principles where appropriate
+
+SOLID
+
+Dependency Injection
+
+Event-driven design
+
+Plugin architecture
+
+Feature modules
+
+Configuration layers
+
+Separation of concerns
+
+Everything must be modular.
+
+No feature should tightly depend on another.
+
+Every module must be replaceable.
+
+=====================================================
+
+PROJECT VALUES
+
+Developer Experience is the highest priority.
+
+Performance is the second priority.
+
+Maintainability is the third priority.
+
+Features are added only if they improve the product.
+
+Avoid feature bloat.
+
+Focus on quality over quantity.
+
+=====================================================
+
+EVERY GENERATED PROJECT MUST INCLUDE
+
+Modern folder structure
+
+Type safety
+
+Linting
+
+Formatting
+
+Git
+
+Documentation
+
+EditorConfig
+
+Environment validation
+
+Testing support
+
+Accessibility defaults
+
+SEO defaults (when applicable)
+
+Performance optimizations
+
+Security defaults
+
+Error boundaries
+
+Logging
+
+Scalability
+
+Production readiness
+
+=====================================================
+
+QUALITY BAR
+
+Every generated file should look as if it was written by a senior engineer.
+
+No placeholder code.
+
+No TODO comments.
+
+No fake implementations.
+
+No unnecessary abstractions.
+
+No duplicated logic.
+
+Readable code over clever code.
+
+Consistency everywhere.
+
+=====================================================
+
+GOLDEN RULE
+
+Whenever multiple solutions exist:
+
+Choose the one that provides the best long-term developer experience.
+
+====================================================
+PRODUCT VISION
+====================================================
+
+Forge CLI is not a project generator.
+
+Forge CLI is not a framework-specific CLI.
+
+Forge CLI is not just another terminal utility.
+
+Forge CLI is a complete Developer Platform that lives inside the terminal.
+
+The user should feel that Forge CLI is a modern IDE condensed into a powerful, keyboard-first command-line experience.
+
+The terminal should become a productive workspace where developers can:
+
+• Create projects
+• Configure projects
+• Inspect projects
+• Generate code
+• Analyze architecture
+• Manage dependencies
+• Upgrade frameworks
+• Refactor code
+• Run quality checks
+• Generate documentation
+• Execute development workflows
+• Deploy applications
+• Maintain repositories
+• Manage workspaces
+• Interact with AI
+
+Everything should be accessible through one consistent interface.
+
+====================================================
+PRODUCT PHILOSOPHY
+====================================================
+
+The product should embrace five fundamental principles.
+
+1. Simplicity
+
+Complex engineering should never expose complexity to the user.
+
+Users should solve problems instead of configuring tools.
+
+Every command should have sensible defaults.
+
+Advanced configuration should always be optional.
+
+Never overwhelm beginners.
+
+Never restrict experts.
+
+----------------------------------------------------
+
+2. Discoverability
+
+Users should always discover new features naturally.
+
+Commands should suggest related commands.
+
+Errors should recommend fixes.
+
+Unknown commands should show alternatives.
+
+Autocomplete should feel intelligent.
+
+Help pages should be beautiful.
+
+Examples should exist for every command.
+
+----------------------------------------------------
+
+3. Consistency
+
+Every command must follow the same design language.
+
+Naming conventions must be identical.
+
+Flags must behave consistently.
+
+Output formatting must remain predictable.
+
+Progress indicators must look identical.
+
+Success messages must follow one style.
+
+Warning messages must follow one style.
+
+Error messages must follow one style.
+
+----------------------------------------------------
+
+4. Performance
+
+Startup should feel instant.
+
+Interactive screens should remain responsive.
+
+Large repositories should remain usable.
+
+Background work should never freeze the interface.
+
+Every optimization matters.
+
+Avoid unnecessary filesystem operations.
+
+Avoid unnecessary dependency resolution.
+
+Avoid unnecessary API requests.
+
+----------------------------------------------------
+
+5. Delight
+
+The CLI should feel enjoyable.
+
+Small animations.
+
+Beautiful typography.
+
+Readable spacing.
+
+Clear colors.
+
+Smooth transitions.
+
+Helpful messages.
+
+Smart defaults.
+
+Thoughtful interactions.
+
+Every interaction should leave a positive impression.
+
+====================================================
+WHAT FORGE CLI IS NOT
+====================================================
+
+Do not become another package manager.
+
+Do not become another build tool.
+
+Do not become another framework.
+
+Do not replace Git.
+
+Do not replace Docker.
+
+Do not replace npm.
+
+Instead,
+
+Integrate.
+
+Automate.
+
+Orchestrate.
+
+Enhance.
+
+====================================================
+PRIMARY OBJECTIVES
+====================================================
+
+Reduce setup time.
+
+Reduce maintenance time.
+
+Reduce repetitive work.
+
+Increase code quality.
+
+Increase project consistency.
+
+Increase developer happiness.
+
+Promote best practices.
+
+Provide educational value.
+
+Support long-term maintainability.
+
+====================================================
+TERMINAL EXPERIENCE
+====================================================
+
+The terminal should feel alive.
+
+Not noisy.
+
+Not childish.
+
+Not overloaded.
+
+Animations should be subtle.
+
+Progress indicators should be meaningful.
+
+Spacing should improve readability.
+
+Icons should communicate status.
+
+Keyboard navigation should be first-class.
+
+Mouse support should exist but remain optional.
+
+The interface should feel inspired by:
+
+LazyGit
+
+Warp
+
+GitHub CLI
+
+OpenCode
+
+Claude Code
+
+Cursor Terminal
+
+Modern TUI applications.
+
+====================================================
+USER EXPERIENCE PRINCIPLES
+====================================================
+
+Never ask unnecessary questions.
+
+Remember previous selections.
+
+Allow users to go back.
+
+Allow users to cancel.
+
+Allow users to preview changes.
+
+Always explain destructive actions.
+
+Support both interactive and scripted workflows.
+
+Everything interactive must also work non-interactively.
+
+Every wizard must support:
+
+Back
+
+Skip
+
+Cancel
+
+Review
+
+Confirm
+
+====================================================
+PROJECT GENERATION PHILOSOPHY
+====================================================
+
+Generated projects should never feel generated.
+
+Projects should resemble repositories maintained by experienced engineers.
+
+Folder structures must be clean.
+
+Naming must be consistent.
+
+Configuration files should be minimal.
+
+Dependencies should remain intentional.
+
+Comments should only exist when they add value.
+
+Generated code must prioritize readability.
+
+====================================================
+CONFIGURATION PHILOSOPHY
+====================================================
+
+Configuration should happen in layers.
+
+Global configuration.
+
+User configuration.
+
+Workspace configuration.
+
+Project configuration.
+
+Local overrides.
+
+Environment overrides.
+
+Each layer should override the previous one predictably.
+
+Configuration files should remain human-readable.
+
+Prefer YAML or TOML where readability matters.
+
+Prefer JSON where ecosystem compatibility is required.
+
+====================================================
+MODULAR ARCHITECTURE
+====================================================
+
+Everything should be modular.
+
+Everything should be replaceable.
+
+Everything should be independently testable.
+
+Everything should expose interfaces instead of implementations.
+
+Modules should communicate through events or contracts.
+
+Avoid tight coupling.
+
+Avoid hidden dependencies.
+
+Avoid global mutable state.
+
+====================================================
+FEATURE DESIGN RULES
+====================================================
+
+Every feature must answer these questions before implementation.
+
+Why does this feature exist?
+
+Who benefits from it?
+
+What problem does it solve?
+
+Can another feature already solve this?
+
+Can it remain optional?
+
+Can it become a plugin?
+
+Can it be extended later?
+
+Can it be removed safely?
+
+If the answer is unclear,
+
+Do not implement the feature.
+
+====================================================
+BACKWARD COMPATIBILITY
+====================================================
+
+Breaking changes should be extremely rare.
+
+Configuration migrations should be automatic.
+
+Templates should support versioning.
+
+Plugins should declare compatibility.
+
+Deprecations should include migration guidance.
+
+====================================================
+OPEN SOURCE PHILOSOPHY
+====================================================
+
+Forge CLI should become one of the best-maintained open-source projects.
+
+Contribution guidelines should be clear.
+
+Documentation should be complete.
+
+Architecture decisions should be documented.
+
+Issues should be reproducible.
+
+Templates should remain versioned.
+
+Releases should follow semantic versioning.
+
+Community contributions should be encouraged without sacrificing quality.
+
+====================================================
+SUCCESS METRICS
+====================================================
+
+The success of Forge CLI is not measured by:
+
+Number of commands.
+
+Number of templates.
+
+Number of integrations.
+
+Instead it is measured by:
+
+Developer satisfaction.
+
+Project quality.
+
+Time saved.
+
+Reliability.
+
+Community adoption.
+
+Maintainability.
+
+Documentation quality.
+
+Performance.
+
+Accessibility.
+
+Extensibility.
+
+====================================================
+GOLDEN PRINCIPLE
+====================================================
+
+Whenever a design decision is uncertain,
+
+Always choose the solution that creates the best long-term developer experience, the highest maintainability, the cleanest architecture, and the most intuitive user workflow.
+
+====================================================
+SYSTEM ARCHITECTURE
+====================================================
+
+Forge CLI must be designed as a long-term software platform rather than a collection of commands.
+
+Every architectural decision should prioritize maintainability, extensibility, performance, testability, and developer experience.
+
+The system must support years of growth without requiring major rewrites.
+
+====================================================
+ARCHITECTURAL PRINCIPLES
+====================================================
+
+The architecture must follow these principles:
+
+• Modular by default
+• Plugin-first
+• Event-driven where appropriate
+• Dependency Injection
+• Composition over inheritance
+• Interface-first design
+• Separation of Concerns
+• Clean Architecture
+• SOLID principles
+• Convention over Configuration
+• Explicit over implicit behavior
+• Immutable data where practical
+• Fail fast
+• Recover gracefully
+
+Avoid:
+
+• God classes
+• Circular dependencies
+• Hidden side effects
+• Global mutable state
+• Tight coupling
+• Deep inheritance chains
+• Monolithic modules
+• Framework lock-in
+
+====================================================
+HIGH-LEVEL MODULES
+====================================================
+
+The system should be divided into independent domains.
+
+Core Engine
+
+Responsible for:
+
+- Application lifecycle
+- Bootstrapping
+- Dependency Injection
+- Configuration loading
+- Plugin loading
+- Environment initialization
+
+--------------------------------------------
+
+CLI Engine
+
+Responsible for:
+
+- Command parsing
+- Interactive mode
+- Help system
+- Terminal rendering
+- Keyboard input
+- Mouse input
+- Shell completion
+
+--------------------------------------------
+
+Configuration Engine
+
+Responsible for:
+
+- Global config
+- User config
+- Workspace config
+- Project config
+- Environment config
+- Validation
+- Migrations
+- Defaults
+
+--------------------------------------------
+
+Template Engine
+
+Responsible for:
+
+- Templates
+- Variables
+- Conditional rendering
+- File generation
+- Hooks
+- Remote templates
+- Official templates
+- Community templates
+
+--------------------------------------------
+
+Generator Engine
+
+Responsible for:
+
+- Components
+- Hooks
+- Pages
+- Layouts
+- APIs
+- Database schemas
+- CRUD
+- Tests
+- Documentation
+
+--------------------------------------------
+
+Workspace Engine
+
+Responsible for:
+
+- Monorepos
+- Multi-project workspaces
+- Shared packages
+- Dependency graph
+- Task execution
+
+--------------------------------------------
+
+Plugin Engine
+
+Responsible for:
+
+- Plugin discovery
+- Installation
+- Validation
+- Loading
+- Sandboxing
+- Version compatibility
+- Lifecycle hooks
+
+--------------------------------------------
+
+AI Engine
+
+Responsible for:
+
+- AI Providers
+- Prompt execution
+- Code analysis
+- Refactoring
+- Documentation
+- Explanations
+- Error diagnosis
+
+--------------------------------------------
+
+Deployment Engine
+
+Responsible for:
+
+- Docker
+- CI/CD
+- Cloud deployment
+- Static deployment
+- Infrastructure templates
+
+--------------------------------------------
+
+Update Engine
+
+Responsible for:
+
+- Self updates
+- Template updates
+- Plugin updates
+- Migration assistant
+
+====================================================
+MODULE INDEPENDENCE
+====================================================
+
+Every module should be independently replaceable.
+
+No module should directly depend on another module's internal implementation.
+
+Communication should occur through:
+
+Interfaces
+
+Events
+
+Contracts
+
+Public APIs
+
+Never access another module's private implementation.
+
+====================================================
+COMMAND REGISTRY
+====================================================
+
+Commands should never be hardcoded.
+
+Instead,
+
+Every command should register itself.
+
+Each command should expose metadata:
+
+Name
+
+Description
+
+Aliases
+
+Arguments
+
+Flags
+
+Permissions
+
+Examples
+
+Categories
+
+Experimental status
+
+Required plugins
+
+Required runtime
+
+Output format
+
+====================================================
+COMMAND LIFECYCLE
+====================================================
+
+Every command execution follows:
+
+Validation
+
+↓
+
+Configuration loading
+
+↓
+
+Plugin hooks
+
+↓
+
+Execution
+
+↓
+
+Progress updates
+
+↓
+
+Result rendering
+
+↓
+
+Cleanup
+
+↓
+
+Analytics (optional)
+
+↓
+
+Exit
+
+Each stage must be extensible.
+
+====================================================
+DEPENDENCY INJECTION
+====================================================
+
+Every service should receive dependencies through injection.
+
+Never instantiate dependencies manually inside business logic.
+
+Avoid service locators.
+
+Prefer constructor injection.
+
+Support scoped services.
+
+Support singleton services.
+
+Support transient services.
+
+====================================================
+EVENT SYSTEM
+====================================================
+
+The CLI should expose a lightweight event bus.
+
+Example events:
+
+ProjectCreated
+
+ProjectDeleted
+
+TemplateInstalled
+
+PluginInstalled
+
+ConfigurationChanged
+
+CommandStarted
+
+CommandFinished
+
+GeneratorExecuted
+
+DeploymentStarted
+
+DeploymentFinished
+
+Events should be observable.
+
+Events should never tightly couple modules.
+
+====================================================
+PLUGIN LIFECYCLE
+====================================================
+
+Plugins should support lifecycle hooks.
+
+Before CLI starts
+
+After CLI starts
+
+Before command
+
+After command
+
+Before project generation
+
+After project generation
+
+Before deployment
+
+After deployment
+
+Before shutdown
+
+After shutdown
+
+Plugins should never modify internal state directly.
+
+====================================================
+WORKSPACE MODEL
+====================================================
+
+Workspace
+
+↓
+
+Projects
+
+↓
+
+Packages
+
+↓
+
+Modules
+
+↓
+
+Components
+
+↓
+
+Files
+
+Every level should expose metadata.
+
+Every level should support plugins.
+
+====================================================
+STATE MANAGEMENT
+====================================================
+
+The CLI should minimize mutable state.
+
+Prefer immutable data.
+
+Prefer stateless services.
+
+Only stateful services when necessary.
+
+Avoid global variables.
+
+====================================================
+FILESYSTEM RULES
+====================================================
+
+All filesystem operations should be abstracted.
+
+Support:
+
+Dry run
+
+Preview
+
+Rollback
+
+Transactions when possible
+
+Conflict detection
+
+Smart merging
+
+Atomic writes
+
+Safe deletion
+
+====================================================
+ERROR HANDLING
+====================================================
+
+Errors should never crash the CLI unexpectedly.
+
+Every error should contain:
+
+Human-readable explanation
+
+Technical details
+
+Possible causes
+
+Suggested solutions
+
+Documentation links
+
+Verbose output
+
+Stack trace (optional)
+
+Error IDs
+
+====================================================
+LOGGING
+====================================================
+
+Logging should support:
+
+Silent
+
+Normal
+
+Verbose
+
+Debug
+
+Trace
+
+Structured logging.
+
+Colorized output.
+
+JSON output for automation.
+
+====================================================
+CONFIGURATION VALIDATION
+====================================================
+
+Every configuration must be validated before use.
+
+Schema validation.
+
+Version validation.
+
+Compatibility validation.
+
+Plugin validation.
+
+Migration validation.
+
+Never continue with corrupted configuration.
+
+====================================================
+SECURITY PRINCIPLES
+====================================================
+
+Never execute arbitrary code without explicit trust.
+
+Never download templates silently.
+
+Always verify integrity.
+
+Validate plugins.
+
+Validate template sources.
+
+Never expose secrets in logs.
+
+Never store plaintext credentials.
+
+Prefer OS credential managers.
+
+====================================================
+PERFORMANCE BUDGET
+====================================================
+
+CLI startup should feel instantaneous.
+
+Interactive rendering should remain smooth.
+
+Lazy load heavy modules.
+
+Cache expensive computations.
+
+Reuse parsed configurations.
+
+Avoid duplicate dependency resolution.
+
+Minimize filesystem traversal.
+
+Avoid unnecessary network requests.
+
+Background tasks should never block user interaction.
+
+====================================================
+EXTENSIBILITY
+====================================================
+
+Every major subsystem should expose extension points.
+
+Configuration providers.
+
+Template providers.
+
+Package manager providers.
+
+AI providers.
+
+Deployment providers.
+
+Authentication providers.
+
+Theme providers.
+
+Terminal widgets.
+
+Generators.
+
+Validators.
+
+Analyzers.
+
+====================================================
+FINAL ENGINEERING PRINCIPLE
+====================================================
+
+Forge CLI is a platform, not an application.
+
+Every architectural decision must optimize for longevity, extensibility, clarity, and an exceptional developer experience.
+
+====================================================
+TERMINAL EXPERIENCE
+====================================================
+
+Forge CLI must redefine what a modern terminal application feels like.
+
+The terminal is not merely a place to execute commands.
+
+It is the primary user interface.
+
+Every interaction should feel intentional.
+
+Every screen should communicate clearly.
+
+Every animation should have a purpose.
+
+Every command should reduce friction.
+
+The experience should feel closer to a modern desktop application than to a traditional command-line utility.
+
+====================================================
+DESIGN LANGUAGE
+====================================================
+
+Forge CLI should establish a consistent visual language.
+
+Every screen should follow the same design rules.
+
+Spacing should be generous.
+
+Typography should improve readability.
+
+Hierarchy should be obvious.
+
+Visual noise should be minimized.
+
+Use whitespace intentionally.
+
+Group related information.
+
+Avoid dense output.
+
+Avoid walls of text.
+
+Use icons only when they improve understanding.
+
+Never decorate the interface unnecessarily.
+
+====================================================
+VISUAL HIERARCHY
+====================================================
+
+Every screen should contain four levels of hierarchy.
+
+Level 1
+
+Primary Title
+
+Large
+
+Bold
+
+High contrast
+
+----------------------------------------------------
+
+Level 2
+
+Section Titles
+
+Clearly separated
+
+Consistent spacing
+
+----------------------------------------------------
+
+Level 3
+
+Interactive Elements
+
+Menus
+
+Lists
+
+Options
+
+Tables
+
+Forms
+
+----------------------------------------------------
+
+Level 4
+
+Supporting Information
+
+Descriptions
+
+Hints
+
+Examples
+
+Help text
+
+====================================================
+INTERACTION PRINCIPLES
+====================================================
+
+The user should always know:
+
+Where they are.
+
+What is happening.
+
+What can be done next.
+
+How to cancel.
+
+How to go back.
+
+How to get help.
+
+How long an operation may take.
+
+====================================================
+INTERACTIVE WIZARDS
+====================================================
+
+Interactive mode should feel conversational.
+
+Do not ask twenty questions at once.
+
+Guide users step by step.
+
+Each screen should ask one meaningful question.
+
+Every question should include:
+
+Context
+
+Examples
+
+Recommended option
+
+Documentation hint
+
+Default value
+
+Validation
+
+Preview when appropriate
+
+====================================================
+QUESTION DESIGN
+====================================================
+
+Questions should avoid technical jargon whenever possible.
+
+Instead of
+
+"Select package manager"
+
+Explain briefly why this matters.
+
+Instead of
+
+"Choose linting configuration"
+
+Explain what linting improves.
+
+Help users make informed decisions.
+
+====================================================
+SMART DEFAULTS
+====================================================
+
+Every prompt should provide an intelligent default.
+
+Defaults should depend on:
+
+Operating System
+
+Existing project
+
+Framework
+
+Package manager
+
+User history
+
+Workspace configuration
+
+Installed tools
+
+Previous answers
+
+====================================================
+KEYBOARD-FIRST DESIGN
+====================================================
+
+Every feature must be usable without touching the mouse.
+
+Support:
+
+Arrow Keys
+
+Tab
+
+Shift+Tab
+
+Enter
+
+Escape
+
+Space
+
+Ctrl shortcuts
+
+Search shortcuts
+
+Quick actions
+
+Keyboard navigation should feel instant.
+
+====================================================
+MOUSE SUPPORT
+====================================================
+
+Mouse interaction should be available but optional.
+
+Users should never be forced to use a mouse.
+
+====================================================
+SEARCH EXPERIENCE
+====================================================
+
+Every long list should support fuzzy search.
+
+Examples:
+
+Framework selection
+
+Templates
+
+Plugins
+
+Commands
+
+Generators
+
+Workspace selection
+
+Repositories
+
+Configuration presets
+
+Search results should update instantly.
+
+====================================================
+COMMAND PALETTE
+====================================================
+
+Forge CLI should provide a global command palette.
+
+Inspired by:
+
+VS Code
+
+Cursor
+
+JetBrains
+
+Warp
+
+Claude Code
+
+The palette should support:
+
+Command search
+
+Recent commands
+
+Pinned commands
+
+AI commands
+
+Workspace commands
+
+Project commands
+
+Plugin commands
+
+====================================================
+COMMAND HISTORY
+====================================================
+
+History should include:
+
+Recently executed commands
+
+Pinned commands
+
+Favorite commands
+
+Frequently used commands
+
+Suggested commands
+
+History should be searchable.
+
+====================================================
+PROGRESS INDICATORS
+====================================================
+
+Every long-running operation should expose progress.
+
+Examples:
+
+Installing packages
+
+Creating project
+
+Generating files
+
+Running tests
+
+Deploying
+
+Updating dependencies
+
+Progress indicators should include:
+
+Current task
+
+Completed tasks
+
+Remaining tasks
+
+Estimated duration
+
+Status icon
+
+====================================================
+LOADING STATES
+====================================================
+
+Loading should never feel frozen.
+
+Skeletons
+
+Spinners
+
+Progress bars
+
+Streaming logs
+
+Task lists
+
+Animated indicators
+
+should communicate activity.
+
+====================================================
+SUCCESS STATES
+====================================================
+
+Successful operations should feel rewarding.
+
+Display:
+
+Summary
+
+Important outputs
+
+Generated files
+
+Next recommended actions
+
+Documentation links
+
+Useful commands
+
+====================================================
+ERROR STATES
+====================================================
+
+Errors should never create panic.
+
+Explain:
+
+What happened
+
+Why it happened
+
+How to fix it
+
+What command to run next
+
+Provide actionable suggestions.
+
+====================================================
+EMPTY STATES
+====================================================
+
+Every empty screen should educate the user.
+
+Examples:
+
+No projects
+
+No templates
+
+No plugins
+
+No history
+
+No workspace
+
+Suggest the next useful action.
+
+====================================================
+TABLE DESIGN
+====================================================
+
+Tables should prioritize readability.
+
+Columns should auto-size.
+
+Support sorting.
+
+Support filtering.
+
+Support searching.
+
+Support exporting.
+
+Avoid unnecessary columns.
+
+====================================================
+LIST DESIGN
+====================================================
+
+Lists should include:
+
+Name
+
+Description
+
+Status
+
+Version
+
+Metadata
+
+Context actions
+
+Lists should remain readable even with hundreds of items.
+
+====================================================
+THEME SYSTEM
+====================================================
+
+Support multiple themes.
+
+Light
+
+Dark
+
+High Contrast
+
+Minimal
+
+Nord
+
+Tokyo Night
+
+Catppuccin
+
+Gruvbox
+
+Solarized
+
+Dracula
+
+Users should create custom themes.
+
+====================================================
+COLOR PHILOSOPHY
+====================================================
+
+Color communicates meaning.
+
+Never use color for decoration only.
+
+Green
+
+Success
+
+Blue
+
+Information
+
+Yellow
+
+Warning
+
+Red
+
+Error
+
+Gray
+
+Secondary information
+
+Respect color blindness.
+
+====================================================
+ACCESSIBILITY
+====================================================
+
+Support:
+
+Screen readers where possible
+
+High contrast
+
+Reduced motion
+
+Keyboard-only workflows
+
+Configurable animations
+
+Readable spacing
+
+Large terminals
+
+Small terminals
+
+====================================================
+RESPONSIVE TERMINAL
+====================================================
+
+The UI should adapt to:
+
+Small terminals
+
+Medium terminals
+
+Ultra-wide terminals
+
+Collapsed sidebars
+
+Dynamic resizing
+
+====================================================
+MICROINTERACTIONS
+====================================================
+
+Microinteractions create delight.
+
+Examples:
+
+Smooth transitions
+
+Animated selections
+
+Expandable sections
+
+Context previews
+
+Live validation
+
+Incremental search
+
+Hover hints where supported
+
+Keep animations subtle.
+
+Never distract users.
+
+====================================================
+HELP SYSTEM
+====================================================
+
+Help should never feel like documentation dumped into the terminal.
+
+Instead:
+
+Beautiful formatting
+
+Examples
+
+Common workflows
+
+Tips
+
+Related commands
+
+Links to documentation
+
+Troubleshooting
+
+====================================================
+ULTIMATE UX PRINCIPLE
+====================================================
+
+Every interaction should leave the user thinking:
+
+"This is exactly what I expected—and even a little better."
+
+====================================================
+PROJECT CREATION PHILOSOPHY
+====================================================
+
+Creating a new project should never feel like filling out a long form.
+
+It should feel like having a conversation with an experienced software architect.
+
+Forge CLI should guide the user toward the best architecture instead of merely asking questions.
+
+The system must balance automation with flexibility.
+
+Beginners should receive safe defaults.
+
+Experienced developers should have complete control.
+
+====================================================
+PROJECT CREATION MODES
+====================================================
+
+Support multiple creation workflows.
+
+Mode 1
+
+Quick Create
+
+One command.
+
+Minimal questions.
+
+Best-practice defaults.
+
+Ideal for rapid prototyping.
+
+----------------------------------------------------
+
+Mode 2
+
+Interactive Wizard
+
+Step-by-step experience.
+
+Rich explanations.
+
+Live previews.
+
+Smart recommendations.
+
+Architecture guidance.
+
+----------------------------------------------------
+
+Mode 3
+
+Advanced Wizard
+
+Expose every configurable option.
+
+Framework-specific settings.
+
+Workspace options.
+
+Deployment settings.
+
+Testing strategy.
+
+Performance options.
+
+AI configuration.
+
+----------------------------------------------------
+
+Mode 4
+
+Configuration File
+
+Generate projects entirely from a configuration file.
+
+Support reproducible environments.
+
+Support CI automation.
+
+Support enterprise workflows.
+
+----------------------------------------------------
+
+Mode 5
+
+Command Flags
+
+Allow full project creation using CLI arguments.
+
+No interactive prompts required.
+
+Perfect for scripting.
+
+====================================================
+PROJECT TYPES
+====================================================
+
+Support creation of:
+
+Frontend
+
+Backend
+
+Full Stack
+
+Monorepo
+
+Library
+
+CLI
+
+Desktop App
+
+Mobile App
+
+API
+
+Microservice
+
+Package
+
+Starter Template
+
+Boilerplate
+
+Documentation Site
+
+Component Library
+
+Design System
+
+Browser Extension
+
+Chrome Extension
+
+Electron App
+
+Tauri App
+
+====================================================
+FRAMEWORK DETECTION
+====================================================
+
+Before asking questions:
+
+Inspect current directory.
+
+Detect:
+
+package.json
+
+pnpm-workspace.yaml
+
+turbo.json
+
+nx.json
+
+Dockerfile
+
+.git
+
+Existing framework
+
+Existing package manager
+
+Existing TypeScript configuration
+
+Existing ESLint configuration
+
+Reuse compatible settings whenever possible.
+
+====================================================
+USER PROFILE
+====================================================
+
+Forge CLI should remember preferences.
+
+Examples:
+
+Preferred package manager.
+
+Preferred framework.
+
+Preferred styling solution.
+
+Preferred testing framework.
+
+Preferred formatter.
+
+Preferred linter.
+
+Preferred database.
+
+Preferred deployment provider.
+
+Preferred AI provider.
+
+Preferred license.
+
+Preferred Git provider.
+
+These preferences should be editable.
+
+====================================================
+CONFIGURATION LAYERS
+====================================================
+
+Configuration should be resolved in this order:
+
+System defaults
+
+↓
+
+Global configuration
+
+↓
+
+User profile
+
+↓
+
+Workspace configuration
+
+↓
+
+Project configuration
+
+↓
+
+Template configuration
+
+↓
+
+Environment variables
+
+↓
+
+Command-line flags
+
+The final configuration should be deterministic.
+
+====================================================
+SMART RECOMMENDATIONS
+====================================================
+
+Instead of simply asking questions,
+
+Recommend answers.
+
+Example:
+
+If React is selected,
+
+Recommend:
+
+TypeScript
+
+ESLint
+
+Prettier or Biome
+
+Vitest
+
+React Testing Library
+
+Tailwind CSS
+
+shadcn/ui (optional)
+
+Recommended routing solution
+
+Recommended state management
+
+Recommended folder structure
+
+Explain why each recommendation exists.
+
+====================================================
+LIVE PREVIEW
+====================================================
+
+While configuring a project,
+
+Continuously display a live summary.
+
+Example:
+
+Framework
+
+React 20
+
+Language
+
+TypeScript
+
+Styling
+
+Tailwind CSS
+
+Testing
+
+Vitest
+
+Deployment
+
+Vercel
+
+Package Manager
+
+pnpm
+
+Linting
+
+Biome
+
+Architecture
+
+Feature-first
+
+Folder Structure
+
+src/
+
+Generated files
+
+Estimated installation time
+
+Estimated bundle size
+
+====================================================
+VALIDATION
+====================================================
+
+Validate every answer immediately.
+
+Prevent impossible combinations.
+
+Prevent incompatible packages.
+
+Prevent unsupported environments.
+
+Suggest compatible alternatives.
+
+====================================================
+PRESETS
+====================================================
+
+Support reusable presets.
+
+Examples:
+
+Frontend Starter
+
+Enterprise React
+
+Minimal React
+
+Next SaaS
+
+Startup Stack
+
+Design System
+
+Component Library
+
+Backend API
+
+Microservice
+
+Personal Portfolio
+
+Users can create:
+
+Personal presets
+
+Workspace presets
+
+Organization presets
+
+Community presets
+
+====================================================
+CONFIGURATION EXPORT
+====================================================
+
+Every completed wizard should generate:
+
+forge.config.json
+
+or
+
+forge.config.yaml
+
+The configuration must be reusable.
+
+The same project should be reproducible anywhere.
+
+====================================================
+UNDO AND REVIEW
+====================================================
+
+Before generation,
+
+Allow the user to:
+
+Review all selections.
+
+Go back.
+
+Edit any section.
+
+Save as preset.
+
+Export configuration.
+
+Share configuration.
+
+====================================================
+PROJECT SUMMARY
+====================================================
+
+Before generating files,
+
+Display a final summary.
+
+Include:
+
+Project name
+
+Framework
+
+Language
+
+Architecture
+
+Package manager
+
+Styling
+
+Testing
+
+Database
+
+Deployment
+
+Estimated dependencies
+
+Generated folders
+
+Generated configuration files
+
+Generated documentation
+
+Potential warnings
+
+====================================================
+GENERATION STRATEGY
+====================================================
+
+Generation should happen in stages.
+
+Stage 1
+
+Validate configuration.
+
+Stage 2
+
+Resolve templates.
+
+Stage 3
+
+Resolve variables.
+
+Stage 4
+
+Resolve plugins.
+
+Stage 5
+
+Generate folders.
+
+Stage 6
+
+Generate files.
+
+Stage 7
+
+Install dependencies.
+
+Stage 8
+
+Run post-install hooks.
+
+Stage 9
+
+Run health checks.
+
+Stage 10
+
+Display completion summary.
+
+Each stage must be recoverable.
+
+====================================================
+ROLLBACK
+====================================================
+
+If generation fails,
+
+Forge CLI should support rollback.
+
+Rollback should remove partially generated files when appropriate.
+
+Offer:
+
+Retry
+
+Skip failed step
+
+Continue manually
+
+Export logs
+
+====================================================
+POST-GENERATION EXPERIENCE
+====================================================
+
+After successful generation,
+
+Do not simply print "Done."
+
+Instead show:
+
+Project overview
+
+Next recommended commands
+
+Documentation links
+
+Available generators
+
+Suggested plugins
+
+Deployment recommendations
+
+Testing commands
+
+Git initialization status
+
+Estimated first-run time
+
+AI suggestions
+
+====================================================
+FIRST RUN EXPERIENCE
+====================================================
+
+The first launch of a generated project should feel polished.
+
+Verify dependencies.
+
+Check environment.
+
+Run diagnostics.
+
+Offer optional improvements.
+
+Explain project structure.
+
+Highlight important folders.
+
+Recommend next learning resources.
+
+====================================================
+PROJECT CREATION GOLDEN RULE
+====================================================
+
+Project creation is not about generating files.
+
+It is about helping developers start with confidence, avoid common mistakes, and establish a maintainable foundation from the very first command.
+
+====================================================
+PLUGIN-FIRST PHILOSOPHY
+====================================================
+
+Forge CLI must be built as a platform rather than a closed application.
+
+Every major capability should be extensible.
+
+If a feature can reasonably be implemented as a plugin instead of core functionality, prefer the plugin approach.
+
+The core should remain lightweight, stable, predictable, and maintainable.
+
+The ecosystem should enable innovation without requiring modifications to the Forge CLI source code.
+
+====================================================
+CORE VS PLUGIN RESPONSIBILITIES
+====================================================
+
+The Core is responsible for:
+
+• CLI lifecycle
+• Command execution
+• Configuration engine
+• Plugin runtime
+• Template engine
+• Terminal rendering
+• Security
+• Logging
+• Event system
+• Dependency injection
+• Update mechanism
+
+Plugins are responsible for:
+
+• New commands
+• New generators
+• Framework support
+• Language support
+• Deployment providers
+• AI providers
+• Templates
+• Code transformations
+• Documentation generators
+• Linters
+• Formatters
+• Integrations
+• Third-party services
+• Internal company workflows
+
+The Core should never know implementation details of plugins.
+
+====================================================
+PLUGIN TYPES
+====================================================
+
+Support multiple plugin categories.
+
+Command Plugins
+
+Provide entirely new CLI commands.
+
+Examples:
+
+forge prisma ...
+
+forge graphql ...
+
+forge docker ...
+
+----------------------------------------------------
+
+Generator Plugins
+
+Generate files, folders, components, pages, APIs, tests, documentation, schemas, etc.
+
+----------------------------------------------------
+
+Template Plugins
+
+Provide reusable project templates.
+
+Official.
+
+Community.
+
+Private.
+
+Enterprise.
+
+----------------------------------------------------
+
+Framework Plugins
+
+Add support for entirely new frameworks.
+
+Examples:
+
+Astro
+
+Solid
+
+Angular
+
+SvelteKit
+
+Qwik
+
+Custom Internal Frameworks
+
+----------------------------------------------------
+
+Language Plugins
+
+Support additional programming languages.
+
+Go
+
+Rust
+
+Python
+
+Java
+
+PHP
+
+Ruby
+
+Kotlin
+
+Swift
+
+C#
+
+----------------------------------------------------
+
+Deployment Plugins
+
+Support deployment providers.
+
+AWS
+
+Azure
+
+Cloudflare
+
+Railway
+
+Fly.io
+
+DigitalOcean
+
+Netlify
+
+Vercel
+
+Kubernetes
+
+----------------------------------------------------
+
+AI Provider Plugins
+
+Allow switching AI backends.
+
+OpenAI
+
+Anthropic
+
+Google
+
+OpenRouter
+
+Local LLMs
+
+Ollama
+
+LM Studio
+
+Private Enterprise Models
+
+----------------------------------------------------
+
+Theme Plugins
+
+Provide:
+
+Color themes
+
+Icons
+
+Terminal layouts
+
+Animations
+
+Accessibility themes
+
+----------------------------------------------------
+
+Analyzer Plugins
+
+Code analysis.
+
+Architecture analysis.
+
+Dependency analysis.
+
+Performance reports.
+
+Security scanning.
+
+====================================================
+PLUGIN STRUCTURE
+====================================================
+
+Every plugin should follow a standard layout.
+
+metadata
+
+manifest
+
+commands
+
+generators
+
+hooks
+
+templates
+
+assets
+
+configuration
+
+tests
+
+documentation
+
+examples
+
+migrations
+
+Plugin structure should be consistent across the ecosystem.
+
+====================================================
+PLUGIN MANIFEST
+====================================================
+
+Every plugin must expose metadata.
+
+Plugin ID
+
+Name
+
+Description
+
+Version
+
+Author
+
+Repository
+
+License
+
+Keywords
+
+Compatibility
+
+Dependencies
+
+Peer dependencies
+
+Permissions
+
+Hooks
+
+Commands
+
+Generators
+
+Configuration schema
+
+Documentation URL
+
+Homepage
+
+Issue tracker
+
+Release notes
+
+====================================================
+PLUGIN PERMISSIONS
+====================================================
+
+Plugins must declare required permissions.
+
+Filesystem
+
+Network
+
+Terminal execution
+
+Environment variables
+
+Git
+
+Docker
+
+Cloud providers
+
+AI providers
+
+Configuration access
+
+Secrets access
+
+Workspace access
+
+Permissions should be explicit.
+
+Users should review permissions before installation.
+
+====================================================
+PLUGIN SANDBOX
+====================================================
+
+Plugins should execute inside a controlled runtime.
+
+Avoid unrestricted execution.
+
+Prevent unauthorized filesystem access.
+
+Prevent unauthorized network requests.
+
+Prevent privilege escalation.
+
+Support isolation where technically feasible.
+
+====================================================
+PLUGIN LIFECYCLE
+====================================================
+
+Plugin lifecycle should include:
+
+Install
+
+Validate
+
+Resolve dependencies
+
+Initialize
+
+Register commands
+
+Register generators
+
+Register hooks
+
+Execute
+
+Update
+
+Disable
+
+Enable
+
+Uninstall
+
+Cleanup
+
+Every lifecycle event should be observable.
+
+====================================================
+HOOK SYSTEM
+====================================================
+
+Plugins should extend behavior through hooks.
+
+Examples:
+
+beforeCLIStart
+
+afterCLIStart
+
+beforeCommand
+
+afterCommand
+
+beforeGeneration
+
+afterGeneration
+
+beforeInstall
+
+afterInstall
+
+beforeDeploy
+
+afterDeploy
+
+beforeUpdate
+
+afterUpdate
+
+beforeShutdown
+
+afterShutdown
+
+Hooks should remain predictable.
+
+Hooks should not modify internal Core behavior directly.
+
+====================================================
+PLUGIN API
+====================================================
+
+Provide a stable SDK.
+
+Expose only public APIs.
+
+Never expose internal implementation details.
+
+API should include:
+
+Logger
+
+Configuration
+
+Workspace
+
+Filesystem
+
+Package manager
+
+Template engine
+
+Prompt system
+
+UI renderer
+
+Task runner
+
+Event bus
+
+Network client
+
+AI client
+
+Progress manager
+
+Notification system
+
+====================================================
+PLUGIN VERSIONING
+====================================================
+
+Plugins should follow semantic versioning.
+
+Support compatibility declarations.
+
+Warn users about incompatible versions.
+
+Support automatic compatibility checks.
+
+Support migration scripts.
+
+====================================================
+PLUGIN DEPENDENCIES
+====================================================
+
+Plugins may depend on:
+
+Other plugins
+
+Templates
+
+Shared libraries
+
+Runtime capabilities
+
+Dependency graphs should detect:
+
+Cycles
+
+Missing dependencies
+
+Version conflicts
+
+====================================================
+MARKETPLACE PHILOSOPHY
+====================================================
+
+Forge CLI should provide a first-class marketplace.
+
+The marketplace should feel similar to:
+
+VS Code Extensions
+
+JetBrains Marketplace
+
+npm
+
+Homebrew
+
+But optimized for developer tooling.
+
+====================================================
+MARKETPLACE FEATURES
+====================================================
+
+Browse plugins.
+
+Browse templates.
+
+Browse generators.
+
+Search.
+
+Categories.
+
+Tags.
+
+Popularity.
+
+Downloads.
+
+Ratings.
+
+Verified authors.
+
+Official badges.
+
+Community collections.
+
+Recently updated.
+
+Trending.
+
+Enterprise approved.
+
+====================================================
+INSTALLATION EXPERIENCE
+====================================================
+
+Installing a plugin should be effortless.
+
+Example:
+
+forge plugin add react-query
+
+Display:
+
+Metadata
+
+Permissions
+
+Compatibility
+
+Size
+
+Dependencies
+
+Installation progress
+
+Verification
+
+Post-install suggestions
+
+====================================================
+UPDATES
+====================================================
+
+Users should manage updates interactively.
+
+View outdated plugins.
+
+View breaking changes.
+
+View release notes.
+
+Batch updates.
+
+Rollback updates.
+
+Ignore versions.
+
+Pin versions.
+
+====================================================
+PLUGIN CONFIGURATION
+====================================================
+
+Plugins may expose configuration.
+
+Configuration should be validated.
+
+Documented.
+
+Discoverable.
+
+Auto-completed.
+
+Integrated into the global configuration system.
+
+====================================================
+PRIVATE REGISTRIES
+====================================================
+
+Support:
+
+Official registry
+
+Community registry
+
+Private company registry
+
+Offline registry
+
+Air-gapped enterprise registry
+
+====================================================
+ENTERPRISE FEATURES
+====================================================
+
+Organizations should publish internal plugins.
+
+Private templates.
+
+Internal generators.
+
+Security policies.
+
+Deployment workflows.
+
+Company coding standards.
+
+====================================================
+PLUGIN QUALITY STANDARDS
+====================================================
+
+Marketplace should encourage quality.
+
+Provide quality indicators.
+
+Automated validation.
+
+Security scanning.
+
+Compatibility testing.
+
+Documentation completeness.
+
+Test coverage.
+
+Performance metrics.
+
+Verified publisher badges.
+
+====================================================
+SDK DOCUMENTATION
+====================================================
+
+The SDK must include:
+
+Quick Start
+
+Architecture Guide
+
+API Reference
+
+Best Practices
+
+Tutorials
+
+Examples
+
+Migration Guides
+
+Testing Guide
+
+Publishing Guide
+
+Debugging Guide
+
+====================================================
+GOLDEN RULE
+====================================================
+
+The Plugin Ecosystem should make Forge CLI infinitely extensible without increasing the complexity of the Core.
+
+The Core should remain stable.
+
+Innovation should happen through plugins.
+
+====================================================
+AI-NATIVE PHILOSOPHY
+====================================================
+
+Forge CLI is not an AI chatbot.
+
+Forge CLI is not a wrapper around an LLM.
+
+Forge CLI is an intelligent developer platform where AI is deeply integrated into the workflow.
+
+Artificial Intelligence should enhance developer productivity without taking control away from the developer.
+
+The developer always makes the final decision.
+
+AI assists.
+
+AI recommends.
+
+AI explains.
+
+AI analyzes.
+
+AI accelerates.
+
+AI never surprises the user with hidden actions.
+
+====================================================
+AI DESIGN PRINCIPLES
+====================================================
+
+Every AI capability must satisfy these principles.
+
+Transparent
+
+Explain why a suggestion exists.
+
+Predictable
+
+Never make silent modifications.
+
+Controllable
+
+Require confirmation before destructive actions.
+
+Context-Aware
+
+Understand the current project.
+
+Helpful
+
+Recommend instead of forcing.
+
+Fast
+
+Avoid unnecessary latency.
+
+Offline-Friendly
+
+Support local providers whenever possible.
+
+Provider-Agnostic
+
+Never lock users into a single AI vendor.
+
+====================================================
+AI SHOULD HELP WITH
+====================================================
+
+Project creation.
+
+Architecture recommendations.
+
+Framework comparison.
+
+Technology selection.
+
+Dependency recommendations.
+
+Folder structure.
+
+Naming conventions.
+
+Code generation.
+
+Documentation.
+
+Testing.
+
+Debugging.
+
+Error diagnosis.
+
+Performance analysis.
+
+Accessibility review.
+
+SEO improvements.
+
+Security analysis.
+
+Dependency upgrades.
+
+Migration planning.
+
+Refactoring.
+
+Release preparation.
+
+Git commit generation.
+
+Pull request descriptions.
+
+Changelog generation.
+
+Developer onboarding.
+
+====================================================
+AI SHOULD NEVER
+====================================================
+
+Modify files silently.
+
+Commit code automatically.
+
+Delete files automatically.
+
+Run dangerous commands without confirmation.
+
+Expose secrets.
+
+Upload project data without explicit permission.
+
+Guess business logic without informing the user.
+
+Ignore compiler or runtime errors.
+
+Invent APIs that do not exist.
+
+Recommend deprecated technologies.
+
+====================================================
+AI PROVIDER ABSTRACTION
+====================================================
+
+The AI layer must be provider-independent.
+
+Support multiple providers through a common interface.
+
+Official providers may include:
+
+OpenAI
+
+Anthropic
+
+Google
+
+OpenRouter
+
+Azure OpenAI
+
+Ollama
+
+LM Studio
+
+Enterprise self-hosted models
+
+Future providers should be installable through plugins.
+
+Changing providers must not require changes in user workflows.
+
+====================================================
+CONTEXT ENGINE
+====================================================
+
+Before asking an AI model to perform a task, Forge CLI should build rich contextual information.
+
+Possible context sources include:
+
+Project structure.
+
+Framework.
+
+Configuration files.
+
+Package manager.
+
+Dependencies.
+
+Git status.
+
+Recent changes.
+
+Open workspace.
+
+Current command.
+
+Template metadata.
+
+Workspace preferences.
+
+Plugin metadata.
+
+The AI should receive only the context required for the requested task.
+
+Avoid unnecessary context to improve speed and reduce cost.
+
+====================================================
+AI TASKS
+====================================================
+
+Examples of supported tasks:
+
+Explain this project.
+
+Review my architecture.
+
+Generate a component.
+
+Generate an API.
+
+Suggest a folder structure.
+
+Improve accessibility.
+
+Optimize bundle size.
+
+Detect dead code.
+
+Explain an error.
+
+Summarize recent changes.
+
+Review dependencies.
+
+Prepare a release.
+
+Generate documentation.
+
+Write tests.
+
+Improve naming.
+
+Detect duplicated logic.
+
+Recommend best practices.
+
+====================================================
+REVIEW BEFORE ACTION
+====================================================
+
+Whenever AI proposes modifications:
+
+Display a preview.
+
+Explain the reasoning.
+
+Highlight affected files.
+
+Allow selective approval.
+
+Allow rejection.
+
+Allow editing before applying.
+
+====================================================
+PROJECT MEMORY
+====================================================
+
+Forge CLI may maintain optional project memory.
+
+Examples:
+
+Preferred architecture.
+
+Naming conventions.
+
+Coding style.
+
+Common generators.
+
+Recent decisions.
+
+Ignored recommendations.
+
+Frequently used commands.
+
+This memory belongs to the project, not to the AI provider.
+
+Users should be able to inspect, edit, export, and delete it at any time.
+
+====================================================
+LEARNING FROM THE USER
+====================================================
+
+Forge CLI should adapt to user preferences over time.
+
+Examples:
+
+Preferred testing framework.
+
+Preferred package manager.
+
+Preferred styling solution.
+
+Preferred deployment provider.
+
+Preferred formatter.
+
+Preferred commit style.
+
+Learning must always remain transparent and reversible.
+
+====================================================
+AI USER EXPERIENCE
+====================================================
+
+AI interactions should feel integrated into the CLI.
+
+Avoid switching the user into a separate chat interface unless necessary.
+
+Prefer inline suggestions.
+
+Provide concise responses by default.
+
+Allow expansion for detailed explanations.
+
+Display confidence when appropriate.
+
+Offer links to documentation if additional reading is useful.
+
+====================================================
+PRIVACY
+====================================================
+
+Respect user privacy.
+
+Never send project data externally without permission.
+
+Allow users to:
+
+Choose what files are shared.
+
+Disable online providers.
+
+Use local models only.
+
+Review outgoing context.
+
+Clear cached context.
+
+====================================================
+FALLBACK STRATEGY
+====================================================
+
+If AI is unavailable:
+
+Forge CLI must continue functioning.
+
+Core functionality must never depend on AI availability.
+
+Provide deterministic, rule-based alternatives whenever possible.
+
+====================================================
+AI QUALITY STANDARDS
+====================================================
+
+AI-generated output should be:
+
+Readable.
+
+Maintainable.
+
+Consistent.
+
+Framework-aware.
+
+Version-aware.
+
+Production-ready.
+
+Aligned with project conventions.
+
+Avoid unnecessary abstractions.
+
+Prefer clarity over cleverness.
+
+====================================================
+FUTURE VISION
+====================================================
+
+Forge CLI should be designed so that future AI capabilities can be added without redesigning the architecture.
+
+The AI layer should evolve independently from the Core.
+
+New providers.
+
+New agents.
+
+New workflows.
+
+New review systems.
+
+New reasoning engines.
+
+All should integrate through stable interfaces and plugins.
+
+====================================================
+GOLDEN RULE
+====================================================
+
+Artificial Intelligence exists to amplify developer capabilities—not to replace developer judgment.
+
+Every AI interaction should increase confidence, reduce repetitive work, and preserve user control.
+
+====================================================
+ENGINEERING EXCELLENCE
+====================================================
+
+Forge CLI should be engineered as software that is expected to remain relevant for at least the next decade.
+
+Every design decision should prioritize long-term sustainability over short-term convenience.
+
+The codebase should be understandable by new contributors.
+
+Architecture should remain stable as the ecosystem grows.
+
+Technical debt should be minimized continuously rather than postponed.
+
+====================================================
+CODE QUALITY
+====================================================
+
+Every line of code generated by Forge CLI must satisfy the following principles.
+
+Readable before clever.
+
+Explicit before implicit.
+
+Composable before duplicated.
+
+Simple before complex.
+
+Maintainable before optimized.
+
+Performance improvements should never significantly reduce readability unless there is measurable benefit.
+
+====================================================
+CODING STANDARDS
+====================================================
+
+Maintain a consistent coding style across the entire project.
+
+Prefer descriptive names.
+
+Avoid abbreviations.
+
+Avoid magic values.
+
+Prefer composition.
+
+Prefer pure functions where practical.
+
+Separate business logic from presentation.
+
+Separate infrastructure from domain logic.
+
+Keep modules focused.
+
+Reduce unnecessary dependencies.
+
+====================================================
+TESTING PHILOSOPHY
+====================================================
+
+Testing is part of development rather than a final step.
+
+Every important module should be testable.
+
+Support multiple testing layers.
+
+Unit Tests
+
+Integration Tests
+
+End-to-End Tests
+
+Snapshot Tests
+
+Contract Tests
+
+Regression Tests
+
+Performance Benchmarks
+
+Generated projects should include an opinionated testing setup while allowing customization.
+
+====================================================
+ERROR RESILIENCE
+====================================================
+
+Forge CLI should recover gracefully whenever possible.
+
+Unexpected failures should provide actionable diagnostics.
+
+Never leave partially completed operations without informing the user.
+
+When recovery is possible:
+
+Explain the issue.
+
+Offer recovery options.
+
+Recommend next steps.
+
+Generate logs.
+
+====================================================
+SECURITY PRINCIPLES
+====================================================
+
+Security is a first-class concern.
+
+Never expose sensitive information in logs.
+
+Never store credentials in plaintext.
+
+Validate all external inputs.
+
+Verify downloaded templates.
+
+Verify plugin integrity.
+
+Support checksum verification.
+
+Support signed releases.
+
+Detect suspicious plugins.
+
+Warn users about elevated permissions.
+
+Support secure secret management.
+
+====================================================
+DEPENDENCY MANAGEMENT
+====================================================
+
+Dependencies should be intentional.
+
+Avoid unnecessary packages.
+
+Monitor outdated dependencies.
+
+Detect incompatible versions.
+
+Highlight deprecated packages.
+
+Recommend modern alternatives.
+
+Allow dependency health reports.
+
+====================================================
+PERFORMANCE
+====================================================
+
+Performance should be measurable.
+
+Establish budgets for:
+
+Startup time.
+
+Memory usage.
+
+Disk operations.
+
+Network operations.
+
+Template generation.
+
+Plugin loading.
+
+Command execution.
+
+Workspace indexing.
+
+Optimize only after measuring.
+
+====================================================
+ACCESSIBILITY
+====================================================
+
+Accessibility applies to terminal applications as well.
+
+Support keyboard-only workflows.
+
+Respect reduced motion settings.
+
+Support high-contrast themes.
+
+Avoid relying solely on color.
+
+Provide meaningful text alternatives where appropriate.
+
+====================================================
+DOCUMENTATION PHILOSOPHY
+====================================================
+
+Documentation should be treated as part of the product.
+
+Every major feature should include:
+
+Overview.
+
+Quick Start.
+
+Examples.
+
+Configuration.
+
+Advanced Usage.
+
+Troubleshooting.
+
+Best Practices.
+
+Migration Notes.
+
+API Reference where applicable.
+
+Documentation should evolve together with the codebase.
+
+====================================================
+HELP EXPERIENCE
+====================================================
+
+Built-in help should be educational.
+
+Examples should be practical.
+
+Commands should include common workflows.
+
+Provide links to extended documentation when necessary.
+
+Avoid overwhelming new users.
+
+====================================================
+OPEN SOURCE PRINCIPLES
+====================================================
+
+Forge CLI should encourage community participation.
+
+Provide:
+
+Contribution guidelines.
+
+Code of Conduct.
+
+Issue templates.
+
+Pull request templates.
+
+Architecture documentation.
+
+Roadmap.
+
+Release process.
+
+Development setup.
+
+Maintain a welcoming contributor experience while preserving code quality.
+
+====================================================
+RELEASE STRATEGY
+====================================================
+
+Adopt semantic versioning.
+
+Automate releases where practical.
+
+Generate release notes.
+
+Maintain changelogs.
+
+Support pre-releases.
+
+Support nightly builds.
+
+Support long-term support versions if required.
+
+====================================================
+TELEMETRY
+====================================================
+
+Telemetry must always be optional.
+
+Explain clearly:
+
+What data is collected.
+
+Why it is collected.
+
+How it is stored.
+
+How to disable it.
+
+Users should retain complete control over telemetry settings.
+
+====================================================
+ROADMAP PHILOSOPHY
+====================================================
+
+Every roadmap item should support the product vision.
+
+Avoid adding features solely because competitors have them.
+
+Evaluate new ideas based on:
+
+Developer value.
+
+Maintenance cost.
+
+Performance impact.
+
+Complexity.
+
+Extensibility.
+
+====================================================
+SUCCESS CRITERIA
+====================================================
+
+Forge CLI succeeds when developers consistently choose it because it improves their workflow.
+
+Indicators include:
+
+Reduced setup time.
+
+Cleaner generated projects.
+
+Higher code quality.
+
+Positive developer feedback.
+
+Strong community contributions.
+
+Reliable releases.
+
+Stable plugin ecosystem.
+
+Excellent documentation.
+
+====================================================
+FINAL PRODUCT VISION
+====================================================
+
+Forge CLI should become more than a command-line tool.
+
+It should become a trusted development companion.
+
+A platform that helps developers make better decisions, adopt modern practices, automate repetitive work, and build production-ready software with confidence.
+
+====================================================
+MASTER PROMPT 0 CONCLUSION
+====================================================
+
+Every future design, feature, module, plugin, generator, template, AI capability, deployment workflow, and user interaction must remain consistent with the principles established in this document.
+
+This document is the constitutional foundation of Forge CLI.
+
+Whenever uncertainty exists, return to these principles before making architectural or product decisions.
+
+
+====================================================
+ENGINEERING EXCELLENCE
+====================================================
+
+Forge CLI should be engineered as software that is expected to remain relevant for at least the next decade.
+
+Every design decision should prioritize long-term sustainability over short-term convenience.
+
+The codebase should be understandable by new contributors.
+
+Architecture should remain stable as the ecosystem grows.
+
+Technical debt should be minimized continuously rather than postponed.
+
+====================================================
+CODE QUALITY
+====================================================
+
+Every line of code generated by Forge CLI must satisfy the following principles.
+
+Readable before clever.
+
+Explicit before implicit.
+
+Composable before duplicated.
+
+Simple before complex.
+
+Maintainable before optimized.
+
+Performance improvements should never significantly reduce readability unless there is measurable benefit.
+
+====================================================
+CODING STANDARDS
+====================================================
+
+Maintain a consistent coding style across the entire project.
+
+Prefer descriptive names.
+
+Avoid abbreviations.
+
+Avoid magic values.
+
+Prefer composition.
+
+Prefer pure functions where practical.
+
+Separate business logic from presentation.
+
+Separate infrastructure from domain logic.
+
+Keep modules focused.
+
+Reduce unnecessary dependencies.
+
+====================================================
+TESTING PHILOSOPHY
+====================================================
+
+Testing is part of development rather than a final step.
+
+Every important module should be testable.
+
+Support multiple testing layers.
+
+Unit Tests
+
+Integration Tests
+
+End-to-End Tests
+
+Snapshot Tests
+
+Contract Tests
+
+Regression Tests
+
+Performance Benchmarks
+
+Generated projects should include an opinionated testing setup while allowing customization.
+
+====================================================
+ERROR RESILIENCE
+====================================================
+
+Forge CLI should recover gracefully whenever possible.
+
+Unexpected failures should provide actionable diagnostics.
+
+Never leave partially completed operations without informing the user.
+
+When recovery is possible:
+
+Explain the issue.
+
+Offer recovery options.
+
+Recommend next steps.
+
+Generate logs.
+
+====================================================
+SECURITY PRINCIPLES
+====================================================
+
+Security is a first-class concern.
+
+Never expose sensitive information in logs.
+
+Never store credentials in plaintext.
+
+Validate all external inputs.
+
+Verify downloaded templates.
+
+Verify plugin integrity.
+
+Support checksum verification.
+
+Support signed releases.
+
+Detect suspicious plugins.
+
+Warn users about elevated permissions.
+
+Support secure secret management.
+
+====================================================
+DEPENDENCY MANAGEMENT
+====================================================
+
+Dependencies should be intentional.
+
+Avoid unnecessary packages.
+
+Monitor outdated dependencies.
+
+Detect incompatible versions.
+
+Highlight deprecated packages.
+
+Recommend modern alternatives.
+
+Allow dependency health reports.
+
+====================================================
+PERFORMANCE
+====================================================
+
+Performance should be measurable.
+
+Establish budgets for:
+
+Startup time.
+
+Memory usage.
+
+Disk operations.
+
+Network operations.
+
+Template generation.
+
+Plugin loading.
+
+Command execution.
+
+Workspace indexing.
+
+Optimize only after measuring.
+
+====================================================
+ACCESSIBILITY
+====================================================
+
+Accessibility applies to terminal applications as well.
+
+Support keyboard-only workflows.
+
+Respect reduced motion settings.
+
+Support high-contrast themes.
+
+Avoid relying solely on color.
+
+Provide meaningful text alternatives where appropriate.
+
+====================================================
+DOCUMENTATION PHILOSOPHY
+====================================================
+
+Documentation should be treated as part of the product.
+
+Every major feature should include:
+
+Overview.
+
+Quick Start.
+
+Examples.
+
+Configuration.
+
+Advanced Usage.
+
+Troubleshooting.
+
+Best Practices.
+
+Migration Notes.
+
+API Reference where applicable.
+
+Documentation should evolve together with the codebase.
+
+====================================================
+HELP EXPERIENCE
+====================================================
+
+Built-in help should be educational.
+
+Examples should be practical.
+
+Commands should include common workflows.
+
+Provide links to extended documentation when necessary.
+
+Avoid overwhelming new users.
+
+====================================================
+OPEN SOURCE PRINCIPLES
+====================================================
+
+Forge CLI should encourage community participation.
+
+Provide:
+
+Contribution guidelines.
+
+Code of Conduct.
+
+Issue templates.
+
+Pull request templates.
+
+Architecture documentation.
+
+Roadmap.
+
+Release process.
+
+Development setup.
+
+Maintain a welcoming contributor experience while preserving code quality.
+
+====================================================
+RELEASE STRATEGY
+====================================================
+
+Adopt semantic versioning.
+
+Automate releases where practical.
+
+Generate release notes.
+
+Maintain changelogs.
+
+Support pre-releases.
+
+Support nightly builds.
+
+Support long-term support versions if required.
+
+====================================================
+TELEMETRY
+====================================================
+
+Telemetry must always be optional.
+
+Explain clearly:
+
+What data is collected.
+
+Why it is collected.
+
+How it is stored.
+
+How to disable it.
+
+Users should retain complete control over telemetry settings.
+
+====================================================
+ROADMAP PHILOSOPHY
+====================================================
+
+Every roadmap item should support the product vision.
+
+Avoid adding features solely because competitors have them.
+
+Evaluate new ideas based on:
+
+Developer value.
+
+Maintenance cost.
+
+Performance impact.
+
+Complexity.
+
+Extensibility.
+
+====================================================
+SUCCESS CRITERIA
+====================================================
+
+Forge CLI succeeds when developers consistently choose it because it improves their workflow.
+
+Indicators include:
+
+Reduced setup time.
+
+Cleaner generated projects.
+
+Higher code quality.
+
+Positive developer feedback.
+
+Strong community contributions.
+
+Reliable releases.
+
+Stable plugin ecosystem.
+
+Excellent documentation.
+
+====================================================
+FINAL PRODUCT VISION
+====================================================
+
+Forge CLI should become more than a command-line tool.
+
+It should become a trusted development companion.
+
+A platform that helps developers make better decisions, adopt modern practices, automate repetitive work, and build production-ready software with confidence.
+
+====================================================
+MASTER PROMPT 0 CONCLUSION
+====================================================
+
+Every future design, feature, module, plugin, generator, template, AI capability, deployment workflow, and user interaction must remain consistent with the principles established in this document.
+
+This document is the constitutional foundation of Forge CLI.
+
+Whenever uncertainty exists, return to these principles before making architectural or product decisions.
+
+# MASTER PROMPT 1
+
+# CORE CLI ENGINE
+
+You are now responsible for designing and implementing the Core Engine of Forge CLI.
+
+Everything created in this prompt must strictly follow the architectural principles established in Master Prompt 0.
+
+The Core Engine is the heart of Forge CLI.
+
+Every other subsystem depends on it.
+
+The Core must remain:
+
+Minimal
+
+Stable
+
+Fast
+
+Extensible
+
+Testable
+
+Framework Agnostic
+
+Plugin Friendly
+
+Future Proof
+
+=====================================================
+
+MISSION
+
+Design a production-grade CLI engine capable of supporting a large open-source ecosystem for many years.
+
+The Core should never contain framework-specific business logic.
+
+Instead,
+
+The Core provides infrastructure.
+
+Other modules provide functionality.
+
+=====================================================
+
+CORE RESPONSIBILITIES
+
+The Core Engine is responsible for:
+
+Application Bootstrapping
+
+Lifecycle Management
+
+Command Registration
+
+Dependency Injection
+
+Configuration Resolution
+
+Plugin Runtime
+
+Service Discovery
+
+Task Execution
+
+Logging
+
+Error Handling
+
+Event System
+
+Terminal Runtime
+
+Update Detection
+
+Version Resolution
+
+Workspace Discovery
+
+Filesystem Abstraction
+
+Environment Detection
+
+Performance Monitoring
+
+=====================================================
+
+WHAT THE CORE MUST NEVER DO
+
+Never generate React code.
+
+Never know Next.js internals.
+
+Never understand Vue.
+
+Never know Tailwind.
+
+Never implement framework logic.
+
+Never hardcode package managers.
+
+Never embed deployment providers.
+
+Never depend on AI providers.
+
+Never know template implementation.
+
+All of these belong to independent modules.
+
+=====================================================
+
+BOOTSTRAP SEQUENCE
+
+Application startup should follow a deterministic pipeline.
+
+Phase 1
+
+Environment Detection
+
+↓
+
+Phase 2
+
+Runtime Validation
+
+↓
+
+Phase 3
+
+Configuration Loading
+
+↓
+
+Phase 4
+
+Dependency Injection Container
+
+↓
+
+Phase 5
+
+Plugin Discovery
+
+↓
+
+Phase 6
+
+Plugin Validation
+
+↓
+
+Phase 7
+
+Service Registration
+
+↓
+
+Phase 8
+
+Command Registration
+
+↓
+
+Phase 9
+
+Theme Initialization
+
+↓
+
+Phase 10
+
+Terminal Runtime
+
+↓
+
+Phase 11
+
+Application Ready
+
+Every phase should be independently testable.
+
+=====================================================
+
+APPLICATION LIFECYCLE
+
+Define explicit lifecycle stages.
+
+PreBootstrap
+
+Bootstrap
+
+ConfigurationLoaded
+
+ServicesReady
+
+PluginsReady
+
+CommandsReady
+
+InteractiveReady
+
+Running
+
+Idle
+
+ShutdownRequested
+
+Shutdown
+
+Disposed
+
+Each stage should emit lifecycle events.
+
+=====================================================
+
+KERNEL
+
+The Core should expose a Kernel.
+
+The Kernel coordinates the system.
+
+Responsibilities:
+
+Initialize runtime.
+
+Load modules.
+
+Resolve services.
+
+Coordinate shutdown.
+
+Provide application context.
+
+The Kernel should never contain business logic.
+
+=====================================================
+
+APPLICATION CONTEXT
+
+Maintain a single immutable application context.
+
+Examples:
+
+Current Version
+
+OS
+
+Architecture
+
+Terminal Capabilities
+
+Current Workspace
+
+Loaded Plugins
+
+Configuration
+
+Theme
+
+Current User Profile
+
+Package Manager
+
+Environment
+
+The context should be read-only.
+
+Mutations should occur through dedicated services.
+
+=====================================================
+
+COMMAND REGISTRY
+
+Commands must self-register.
+
+Each command provides metadata.
+
+Name
+
+Aliases
+
+Description
+
+Category
+
+Examples
+
+Arguments
+
+Flags
+
+Permissions
+
+Visibility
+
+Experimental Status
+
+Deprecated Status
+
+Autocomplete
+
+Related Commands
+
+Help Text
+
+=====================================================
+
+COMMAND EXECUTION PIPELINE
+
+Every command executes through the same pipeline.
+
+Resolve
+
+↓
+
+Validate
+
+↓
+
+Authorize
+
+↓
+
+Prepare Context
+
+↓
+
+Execute
+
+↓
+
+Collect Result
+
+↓
+
+Render Output
+
+↓
+
+Cleanup
+
+↓
+
+Emit Events
+
+↓
+
+Exit
+
+No command should bypass the pipeline.
+
+=====================================================
+
+DEPENDENCY INJECTION
+
+All services should be injected.
+
+Avoid manual instantiation.
+
+Support:
+
+Singleton
+
+Scoped
+
+Transient
+
+Lazy Services
+
+Optional Services
+
+Named Services
+
+Mock Services
+
+Testing Overrides
+
+=====================================================
+
+SERVICE REGISTRY
+
+Every service registers itself.
+
+Metadata:
+
+Identifier
+
+Description
+
+Version
+
+Dependencies
+
+Scope
+
+Lifecycle
+
+Health Status
+
+=====================================================
+
+EVENT BUS
+
+Provide an asynchronous event bus.
+
+Events should support:
+
+Priority
+
+Filtering
+
+Cancellation
+
+Async Handlers
+
+Logging
+
+Tracing
+
+Plugin Listeners
+
+=====================================================
+
+TASK RUNNER
+
+Long-running work should execute through a task runner.
+
+Support:
+
+Sequential Tasks
+
+Parallel Tasks
+
+Background Tasks
+
+Dependent Tasks
+
+Cancelable Tasks
+
+Retryable Tasks
+
+Progress Reporting
+
+Timeouts
+
+=====================================================
+
+GOLDEN RULE
+
+The Core Engine should feel like a modern operating system kernel.
+
+It provides services.
+
+It coordinates modules.
+
+It never owns application-specific business logic.
+
+# Forge CLI — Master Prompt 1
+## Core CLI Engine & Runtime Architecture
+
+You are an elite Principal Software Architect, Staff CLI Engineer, Developer Experience (DX) specialist, Open Source Maintainer, and System Designer.
+
+Your task is to design and implement the Core Engine of Forge CLI, a next-generation AI-native developer platform for building, configuring, analyzing, maintaining, and deploying software projects.
+
+Everything you design must follow the principles defined in Master Prompt 0.
+
+This prompt focuses only on the Core CLI Engine.
+
+Framework-specific logic, templates, AI workflows, project generators, and plugins belong to later prompts.
+
+=====================================================
+MISSION
+=====================================================
+
+Design a production-grade CLI runtime that is:
+
+• Fast
+• Stable
+• Extensible
+• Testable
+• Plugin-first
+• Cross-platform
+• Type-safe
+• Event-driven
+• Future-proof
+
+The Core Engine should behave like the operating system kernel of Forge CLI.
+
+Its responsibility is orchestration—not business logic.
+
+=====================================================
+CORE RESPONSIBILITIES
+=====================================================
+
+The Core Engine is responsible for:
+
+• Application bootstrap
+• Runtime initialization
+• Environment detection
+• Command discovery
+• Command execution
+• Dependency Injection
+• Service container
+• Event Bus
+• Configuration loading
+• Workspace discovery
+• Filesystem abstraction
+• Logging
+• Error handling
+• Diagnostics
+• Update checks
+• Health monitoring
+• Plugin loading
+• Terminal runtime
+• Shutdown lifecycle
+
+The Core must never contain framework-specific logic.
+
+=====================================================
+BOOTSTRAP PIPELINE
+=====================================================
+
+Application startup should follow a deterministic lifecycle.
+
+1. Validate runtime
+2. Detect operating system
+3. Detect shell
+4. Detect terminal capabilities
+5. Detect package managers
+6. Detect Git
+7. Detect Docker
+8. Load configuration
+9. Initialize Dependency Injection
+10. Register services
+11. Discover plugins
+12. Validate plugins
+13. Register commands
+14. Initialize themes
+15. Initialize terminal runtime
+16. Start application
+
+Each phase must be independently testable.
+
+=====================================================
+APPLICATION LIFECYCLE
+=====================================================
+
+Define explicit lifecycle stages.
+
+PreBootstrap
+
+↓
+
+Bootstrap
+
+↓
+
+EnvironmentReady
+
+↓
+
+ConfigurationLoaded
+
+↓
+
+ServicesReady
+
+↓
+
+PluginsReady
+
+↓
+
+CommandsReady
+
+↓
+
+InteractiveReady
+
+↓
+
+Running
+
+↓
+
+Idle
+
+↓
+
+ShutdownRequested
+
+↓
+
+Shutdown
+
+↓
+
+Disposed
+
+Every stage should emit lifecycle events.
+
+=====================================================
+DEPENDENCY INJECTION
+=====================================================
+
+All services must be resolved through Dependency Injection.
+
+Support:
+
+Singleton
+
+Scoped
+
+Transient
+
+Lazy Services
+
+Optional Services
+
+Factory Services
+
+Testing Overrides
+
+Mock Services
+
+Circular dependencies must be detected automatically.
+
+=====================================================
+SERVICE CONTAINER
+=====================================================
+
+The service container should support:
+
+Registration
+
+Resolution
+
+Discovery
+
+Metadata
+
+Health
+
+Lifecycle
+
+Versioning
+
+Diagnostics
+
+Every service should expose:
+
+Name
+
+Identifier
+
+Description
+
+Dependencies
+
+Version
+
+Status
+
+=====================================================
+COMMAND REGISTRY
+=====================================================
+
+Commands should register themselves automatically.
+
+Each command should expose:
+
+Name
+
+Aliases
+
+Description
+
+Category
+
+Arguments
+
+Flags
+
+Examples
+
+Permissions
+
+Visibility
+
+Experimental Status
+
+Deprecated Status
+
+Autocomplete Metadata
+
+Documentation Links
+
+Related Commands
+
+The registry must support dynamic registration by plugins.
+
+=====================================================
+COMMAND EXECUTION PIPELINE
+=====================================================
+
+Every command should execute through the same pipeline.
+
+Resolve
+
+↓
+
+Validate
+
+↓
+
+Load Context
+
+↓
+
+Load Configuration
+
+↓
+
+Execute Hooks
+
+↓
+
+Run Command
+
+↓
+
+Collect Result
+
+↓
+
+Render Output
+
+↓
+
+Cleanup
+
+↓
+
+Emit Events
+
+↓
+
+Exit
+
+No command should bypass the pipeline.
+
+=====================================================
+EVENT BUS
+=====================================================
+
+Provide a lightweight asynchronous Event Bus.
+
+Support:
+
+Async Events
+
+Priority
+
+Cancellation
+
+Filtering
+
+Tracing
+
+Plugin Listeners
+
+Workspace Events
+
+Lifecycle Events
+
+Telemetry Events
+
+Events should never create tight coupling.
+
+=====================================================
+TASK RUNNER
+=====================================================
+
+Long-running operations must execute through a Task Runner.
+
+Support:
+
+Sequential Tasks
+
+Parallel Tasks
+
+Background Tasks
+
+Retry
+
+Cancellation
+
+Timeout
+
+Progress Reporting
+
+Dependencies
+
+Task Groups
+
+Nested Tasks
+
+=====================================================
+CONFIGURATION RESOLUTION
+=====================================================
+
+Configuration must be resolved from multiple layers.
+
+System Defaults
+
+↓
+
+Global Configuration
+
+↓
+
+User Configuration
+
+↓
+
+Workspace Configuration
+
+↓
+
+Project Configuration
+
+↓
+
+Environment Variables
+
+↓
+
+CLI Flags
+
+The result must always be deterministic.
+
+=====================================================
+FILESYSTEM ABSTRACTION
+=====================================================
+
+Never interact directly with the operating system.
+
+Provide an abstract filesystem layer supporting:
+
+Read
+
+Write
+
+Copy
+
+Move
+
+Delete
+
+Watch
+
+Transactions
+
+Rollback
+
+Conflict Detection
+
+Dry Run
+
+Preview
+
+Atomic Operations
+
+=====================================================
+WORKSPACE DISCOVERY
+=====================================================
+
+Automatically detect:
+
+Git repositories
+
+Monorepos
+
+Node projects
+
+Python projects
+
+Rust projects
+
+Go projects
+
+Docker projects
+
+Package managers
+
+Workspace boundaries
+
+Frameworks
+
+Environment files
+
+=====================================================
+RUNTIME DETECTION
+=====================================================
+
+Detect:
+
+Operating System
+
+CPU Architecture
+
+Terminal Type
+
+Shell
+
+Node Version
+
+Git Version
+
+Docker
+
+Container Runtime
+
+Package Managers
+
+Available AI Providers
+
+Installed Forge Plugins
+
+=====================================================
+LOGGING
+=====================================================
+
+Provide multiple log levels.
+
+Silent
+
+Error
+
+Warning
+
+Info
+
+Verbose
+
+Debug
+
+Trace
+
+Support:
+
+Pretty Logs
+
+JSON Logs
+
+Log Files
+
+Colors
+
+Timestamps
+
+Structured Metadata
+
+=====================================================
+ERROR HANDLING
+=====================================================
+
+Errors should be human-friendly.
+
+Every error should include:
+
+Title
+
+Description
+
+Cause
+
+Recovery Suggestions
+
+Documentation Links
+
+Verbose Details
+
+Error Code
+
+Stack Trace (optional)
+
+Never terminate unexpectedly without explanation.
+
+=====================================================
+HEALTH SYSTEM
+=====================================================
+
+Provide built-in diagnostics.
+
+Examples:
+
+Configuration Health
+
+Plugin Health
+
+Dependency Health
+
+Workspace Health
+
+Filesystem Health
+
+Environment Health
+
+Performance Health
+
+=====================================================
+UPDATE SYSTEM
+=====================================================
+
+Support:
+
+Version Detection
+
+Update Notification
+
+Release Channels
+
+Stable
+
+Beta
+
+Nightly
+
+Rollback
+
+Migration Assistance
+
+Release Notes
+
+=====================================================
+PERFORMANCE
+=====================================================
+
+The Core should optimize:
+
+Startup Time
+
+Memory Usage
+
+Disk Access
+
+Configuration Resolution
+
+Plugin Discovery
+
+Command Execution
+
+Workspace Scanning
+
+Use lazy loading where appropriate.
+
+Cache expensive operations.
+
+Avoid unnecessary filesystem traversal.
+
+=====================================================
+SECURITY
+=====================================================
+
+Validate all external input.
+
+Never execute untrusted code automatically.
+
+Validate plugin integrity.
+
+Validate templates.
+
+Protect secrets.
+
+Mask sensitive values in logs.
+
+Require confirmation for destructive operations.
+
+=====================================================
+TESTABILITY
+=====================================================
+
+Every subsystem must be independently testable.
+
+Support:
+
+Unit Tests
+
+Integration Tests
+
+Contract Tests
+
+End-to-End Tests
+
+Snapshot Tests
+
+Performance Benchmarks
+
+Mock Runtime
+
+Mock Filesystem
+
+Mock Event Bus
+
+Mock Services
+
+=====================================================
+AI IMPLEMENTATION INSTRUCTIONS
+=====================================================
+
+When generating the implementation:
+
+Do not build everything in one file.
+
+Use feature-based modular architecture.
+
+Keep interfaces separate from implementations.
+
+Prefer composition.
+
+Avoid hidden state.
+
+Use dependency injection everywhere.
+
+Document public APIs.
+
+Generate production-quality code.
+
+Never generate placeholder implementations.
+
+Never leave TODO comments.
+
+Every exported module should include documentation.
+
+=====================================================
+DELIVERABLES
+=====================================================
+
+Design and implement:
+
+• Core Kernel
+• Bootstrap Engine
+• Runtime Manager
+• Lifecycle Manager
+• Service Container
+• Dependency Injection
+• Event Bus
+• Command Registry
+• Command Dispatcher
+• Task Runner
+• Configuration Resolver
+• Filesystem Layer
+• Environment Detector
+• Workspace Detector
+• Logger
+• Error Manager
+• Health Checker
+• Update Manager
+• Internal APIs
+• Complete folder structure
+• Interfaces
+• Type definitions
+• Unit tests
+• Integration tests
+• Developer documentation
+
+=====================================================
+SUCCESS CRITERIA
+=====================================================
+
+The Core Engine should be capable of supporting millions of developers, thousands of plugins, hundreds of frameworks, and long-term evolution without requiring architectural redesign.
+
+Build a foundation that is simple at the surface, powerful underneath, and extensible by design.
+
+This is the engine that every future Forge CLI capability will rely upon.
+
+# Forge CLI — Master Prompt 2
+## Terminal UI, Interactive Experience & Developer Experience
+
+You are an expert Terminal UI Engineer, UX Designer, Product Designer, and CLI Architect.
+
+Your task is to design the complete Terminal User Interface (TUI) and Developer Experience (DX) for Forge CLI.
+
+The interface should feel comparable to modern premium terminal applications such as:
+
+• LazyGit
+• Lazydocker
+• Warp
+• GitHub CLI
+• Claude Code
+• OpenCode
+• Cursor Terminal
+• VS Code Command Palette
+
+The experience must feel modern, elegant, responsive, keyboard-first, and enjoyable.
+
+=====================================================
+MISSION
+=====================================================
+
+Transform the traditional terminal into a rich, interactive developer workspace.
+
+Users should feel they are using a lightweight IDE rather than a collection of shell commands.
+
+The interface must prioritize:
+
+• Clarity
+• Simplicity
+• Consistency
+• Speed
+• Accessibility
+• Productivity
+
+=====================================================
+DESIGN SYSTEM
+=====================================================
+
+Create a unified visual language.
+
+Define standards for:
+
+• Typography
+• Spacing
+• Colors
+• Icons
+• Borders
+• Cards
+• Panels
+• Menus
+• Tables
+• Lists
+• Modals
+• Notifications
+• Status indicators
+• Progress bars
+• Loading states
+
+Every screen should follow the same visual identity.
+
+=====================================================
+APPLICATION LAYOUT
+=====================================================
+
+Design a flexible layout system.
+
+Support:
+
+Header
+
+Sidebar
+
+Main Content
+
+Context Panel
+
+Footer
+
+Status Bar
+
+Command Palette
+
+Notification Area
+
+Support both:
+
+Compact Layout
+
+Expanded Layout
+
+Automatically adapt to terminal size.
+
+=====================================================
+DASHBOARD
+=====================================================
+
+Create a beautiful startup dashboard.
+
+Possible sections:
+
+Recent Projects
+
+Favorite Projects
+
+Recent Commands
+
+Workspace Status
+
+Plugin Updates
+
+Framework News
+
+Installed Templates
+
+Quick Actions
+
+AI Suggestions
+
+Pinned Commands
+
+The dashboard should be customizable.
+
+=====================================================
+COMMAND PALETTE
+=====================================================
+
+Implement a global command palette.
+
+Inspired by:
+
+VS Code
+
+Cursor
+
+JetBrains
+
+Support:
+
+Instant Search
+
+Fuzzy Search
+
+Categories
+
+Recent Commands
+
+Pinned Commands
+
+AI Commands
+
+Plugin Commands
+
+Workspace Commands
+
+Keyboard Shortcut Support
+
+=====================================================
+INTERACTIVE WIZARDS
+=====================================================
+
+Every wizard should feel like guided onboarding.
+
+Each step should contain:
+
+Title
+
+Description
+
+Current Progress
+
+Validation
+
+Recommended Option
+
+Help Text
+
+Examples
+
+Live Preview
+
+Allow:
+
+Back
+
+Skip
+
+Cancel
+
+Review
+
+Finish
+
+=====================================================
+FORMS
+=====================================================
+
+Design reusable terminal form components.
+
+Support:
+
+Text Input
+
+Password Input
+
+Number Input
+
+Single Select
+
+Multi Select
+
+Checkbox
+
+Radio
+
+Toggle
+
+Date Picker (when meaningful)
+
+Searchable Select
+
+Autocomplete
+
+Validation
+
+=====================================================
+SEARCH EXPERIENCE
+=====================================================
+
+Every searchable interface should support:
+
+Incremental Search
+
+Fuzzy Search
+
+Highlight Matches
+
+Keyboard Navigation
+
+Sorting
+
+Filtering
+
+Recent Searches
+
+Bookmarks
+
+=====================================================
+TABLE COMPONENT
+=====================================================
+
+Tables should support:
+
+Sorting
+
+Filtering
+
+Pagination
+
+Search
+
+Column Visibility
+
+Resize
+
+Copy Values
+
+Export
+
+Context Menu
+
+=====================================================
+LIST COMPONENT
+=====================================================
+
+Lists should support:
+
+Grouping
+
+Nested Items
+
+Icons
+
+Descriptions
+
+Tags
+
+Status
+
+Badges
+
+Keyboard Navigation
+
+Quick Actions
+
+=====================================================
+THEME SYSTEM
+=====================================================
+
+Support built-in themes:
+
+Dark
+
+Light
+
+Nord
+
+Tokyo Night
+
+Gruvbox
+
+Catppuccin
+
+Dracula
+
+Solarized
+
+Minimal
+
+Allow users to create custom themes.
+
+Theme configuration should support:
+
+Colors
+
+Borders
+
+Icons
+
+Animations
+
+Typography
+
+Spacing
+
+=====================================================
+COLOR SYSTEM
+=====================================================
+
+Colors should communicate meaning.
+
+Success
+
+Warning
+
+Error
+
+Information
+
+Muted
+
+Disabled
+
+Selection
+
+Focus
+
+Accent
+
+Never rely solely on color.
+
+=====================================================
+ANIMATIONS
+=====================================================
+
+Animations should improve clarity.
+
+Examples:
+
+Progress
+
+Loading
+
+Expansion
+
+Collapse
+
+Transitions
+
+Selection
+
+Avoid excessive motion.
+
+Respect reduced-motion preferences.
+
+=====================================================
+PROGRESS SYSTEM
+=====================================================
+
+Provide reusable progress components.
+
+Linear Progress
+
+Spinner
+
+Task Tree
+
+Step Progress
+
+Download Progress
+
+Installation Progress
+
+Deployment Progress
+
+Display:
+
+Current Step
+
+Remaining Tasks
+
+Estimated Time
+
+Status
+
+=====================================================
+NOTIFICATIONS
+=====================================================
+
+Support:
+
+Success
+
+Warning
+
+Information
+
+Error
+
+Background Task Updates
+
+Plugin Notifications
+
+Update Notifications
+
+Notifications should be dismissible.
+
+=====================================================
+STATUS BAR
+=====================================================
+
+The status bar may display:
+
+Current Workspace
+
+Current Branch
+
+Framework
+
+Package Manager
+
+Environment
+
+AI Provider
+
+Plugin Count
+
+Background Tasks
+
+=====================================================
+KEYBOARD EXPERIENCE
+=====================================================
+
+Everything should be keyboard-first.
+
+Support:
+
+Tab
+
+Shift+Tab
+
+Arrow Keys
+
+Escape
+
+Enter
+
+Space
+
+Ctrl Shortcuts
+
+Custom Keybindings
+
+Vim Mode (optional)
+
+=====================================================
+MOUSE SUPPORT
+=====================================================
+
+Support mouse interaction.
+
+However,
+
+The entire application must remain fully usable without a mouse.
+
+=====================================================
+RESPONSIVE DESIGN
+=====================================================
+
+Adapt gracefully to:
+
+80-column terminals
+
+Ultra-wide monitors
+
+Window resizing
+
+Split terminals
+
+Collapsed sidebars
+
+=====================================================
+EMPTY STATES
+=====================================================
+
+Every empty screen should educate users.
+
+Examples:
+
+No Projects
+
+No Plugins
+
+No Templates
+
+No History
+
+Suggest useful next actions.
+
+=====================================================
+ERROR SCREENS
+=====================================================
+
+Errors should include:
+
+Friendly Explanation
+
+Technical Details
+
+Recovery Suggestions
+
+Related Documentation
+
+Retry Button
+
+=====================================================
+HELP SYSTEM
+=====================================================
+
+Every screen should provide contextual help.
+
+Support:
+
+Tooltips
+
+Inline Explanations
+
+Keyboard Shortcuts
+
+Examples
+
+Documentation Links
+
+=====================================================
+ACCESSIBILITY
+=====================================================
+
+Support:
+
+Keyboard-only navigation
+
+High Contrast Mode
+
+Reduced Motion
+
+Configurable Themes
+
+Readable Typography
+
+Screen Reader Friendly Output where practical
+
+=====================================================
+PERFORMANCE
+=====================================================
+
+Rendering should remain smooth.
+
+Avoid unnecessary re-renders.
+
+Lazy load heavy views.
+
+Efficiently update only changed UI regions.
+
+Support large workspaces without UI lag.
+
+=====================================================
+IMPLEMENTATION REQUIREMENTS
+=====================================================
+
+Design a reusable TUI component library.
+
+Implement:
+
+Layout Manager
+
+Theme Manager
+
+Component Library
+
+Navigation System
+
+Wizard Framework
+
+Dashboard
+
+Command Palette
+
+Notification Center
+
+Progress Components
+
+Table Components
+
+List Components
+
+Modal System
+
+Search Engine
+
+Keyboard Manager
+
+Mouse Manager
+
+Animation Manager
+
+=====================================================
+DELIVERABLES
+=====================================================
+
+Generate:
+
+Complete TUI Architecture
+
+Folder Structure
+
+Component Hierarchy
+
+Reusable Components
+
+Theme System
+
+Keyboard Mapping
+
+Interaction Patterns
+
+Navigation Rules
+
+Accessibility Standards
+
+Developer Documentation
+
+Testing Strategy
+
+=====================================================
+SUCCESS CRITERIA
+=====================================================
+
+The Forge CLI interface should feel premium from the first launch.
+
+Developers should enjoy using the terminal.
+
+The experience should reduce cognitive load, improve productivity, and establish Forge CLI as one of the best-designed terminal applications in the modern developer ecosystem.
+
+# Forge CLI — Master Prompt 3
+## Project Generator Engine & Template System
+
+You are a Principal Software Architect specializing in project scaffolding systems, template engines, code generators, and developer tooling.
+
+Design and implement the complete Project Generator Engine for Forge CLI.
+
+This engine is responsible for creating production-ready software projects, reusable templates, code scaffolding, and intelligent project initialization.
+
+The system must be modular, extensible, plugin-first, framework-agnostic, and capable of supporting thousands of templates without architectural changes.
+
+=====================================================
+MISSION
+=====================================================
+
+The Project Generator should not simply copy template files.
+
+It should intelligently assemble a project based on user choices, presets, plugins, framework requirements, best practices, and template metadata.
+
+Generated projects should feel handcrafted by experienced engineers.
+
+=====================================================
+CORE RESPONSIBILITIES
+=====================================================
+
+Implement:
+
+• Project Creation Engine
+• Template Engine
+• Variable Resolution
+• Conditional Rendering
+• File Generation
+• Folder Generation
+• Hook System
+• Preset Engine
+• Blueprint Engine
+• Generator Registry
+• Template Validation
+• Version Compatibility
+• Post Generation Tasks
+• Rollback System
+
+=====================================================
+SUPPORTED PROJECT TYPES
+=====================================================
+
+Frontend
+
+Backend
+
+Full Stack
+
+Monorepo
+
+Library
+
+Component Library
+
+CLI
+
+Desktop
+
+Mobile
+
+API
+
+Microservice
+
+Package
+
+Boilerplate
+
+Design System
+
+Browser Extension
+
+Documentation Site
+
+Starter Kit
+
+=====================================================
+GENERATION MODES
+=====================================================
+
+Support:
+
+Quick Generate
+
+Interactive Wizard
+
+Advanced Wizard
+
+Configuration File
+
+Preset-Based Generation
+
+CLI Flags Only
+
+Remote Configuration
+
+Batch Generation
+
+=====================================================
+TEMPLATE ENGINE
+=====================================================
+
+Templates must be first-class citizens.
+
+Support:
+
+Official Templates
+
+Community Templates
+
+Private Templates
+
+Enterprise Templates
+
+Git Templates
+
+Remote Templates
+
+Local Templates
+
+Versioned Templates
+
+=====================================================
+TEMPLATE STRUCTURE
+=====================================================
+
+Each template should contain:
+
+Manifest
+
+Metadata
+
+Variables
+
+Assets
+
+Source Files
+
+Hooks
+
+Documentation
+
+Examples
+
+Tests
+
+Compatibility Rules
+
+Migration Rules
+
+License
+
+Screenshots
+
+Tags
+
+Categories
+
+=====================================================
+VARIABLE SYSTEM
+=====================================================
+
+Support variables such as:
+
+Project Name
+
+Package Name
+
+Organization
+
+Namespace
+
+Framework
+
+Language
+
+Package Manager
+
+Database
+
+ORM
+
+Authentication
+
+Deployment Provider
+
+Testing Framework
+
+Styling Solution
+
+Custom Variables
+
+Allow:
+
+Nested Variables
+
+Computed Variables
+
+Environment Variables
+
+Template Variables
+
+Plugin Variables
+
+Default Values
+
+Validation
+
+Transformations
+
+=====================================================
+CONDITIONAL GENERATION
+=====================================================
+
+Support conditional rendering.
+
+Example:
+
+Generate Docker files only if Docker is enabled.
+
+Generate Prisma only if Prisma is selected.
+
+Generate Tailwind configuration only if Tailwind is enabled.
+
+Conditions should support logical expressions and reusable rules.
+
+=====================================================
+HOOK SYSTEM
+=====================================================
+
+Templates may define hooks.
+
+Examples:
+
+Before Generation
+
+After Generation
+
+Before Install
+
+After Install
+
+Before Dependency Resolution
+
+After Dependency Resolution
+
+Before Git Initialization
+
+After Project Ready
+
+Hooks must execute through the Core lifecycle.
+
+=====================================================
+PRESET ENGINE
+=====================================================
+
+Support reusable presets.
+
+Examples:
+
+Minimal React
+
+Enterprise React
+
+Next SaaS
+
+Express API
+
+Nest Enterprise
+
+Design System
+
+Company Standard
+
+Allow users and organizations to create custom presets.
+
+=====================================================
+GENERATOR REGISTRY
+=====================================================
+
+Every generator must register itself.
+
+Metadata:
+
+Name
+
+Description
+
+Category
+
+Supported Frameworks
+
+Required Plugins
+
+Dependencies
+
+Examples
+
+Documentation
+
+Visibility
+
+Version
+
+=====================================================
+PROJECT STRUCTURE
+=====================================================
+
+Generate opinionated yet configurable folder structures.
+
+Support multiple architectural styles:
+
+Feature-based
+
+Layer-based
+
+Domain-driven
+
+Atomic Design
+
+Clean Architecture
+
+Hexagonal
+
+MVC
+
+Users should be able to select or define their own structure.
+
+=====================================================
+DEPENDENCY RESOLUTION
+=====================================================
+
+Resolve dependencies intelligently.
+
+Avoid duplicates.
+
+Detect conflicts.
+
+Respect peer dependencies.
+
+Recommend compatible versions.
+
+Support npm, pnpm, Bun, and Yarn.
+
+=====================================================
+PACKAGE MANAGER INTEGRATION
+=====================================================
+
+Support:
+
+npm
+
+pnpm
+
+Yarn
+
+Bun
+
+Automatically detect installed package managers.
+
+Generate optimized lockfiles.
+
+=====================================================
+GIT INTEGRATION
+=====================================================
+
+Optionally:
+
+Initialize Git
+
+Create .gitignore
+
+Create initial commit
+
+Configure branch name
+
+Configure hooks
+
+Generate GitHub Actions
+
+=====================================================
+POST-GENERATION TASKS
+=====================================================
+
+Support automated tasks:
+
+Install dependencies
+
+Run formatter
+
+Run linter
+
+Initialize database
+
+Generate ORM client
+
+Run tests
+
+Validate project
+
+Generate README
+
+Display summary
+
+=====================================================
+ROLLBACK
+=====================================================
+
+If generation fails:
+
+Detect incomplete state.
+
+Rollback created files.
+
+Display detailed diagnostics.
+
+Allow retry.
+
+=====================================================
+HEALTH CHECK
+=====================================================
+
+Verify:
+
+Dependencies
+
+Configuration
+
+Generated files
+
+Framework compatibility
+
+Missing tools
+
+Environment
+
+=====================================================
+DOCUMENTATION
+=====================================================
+
+Automatically generate:
+
+README
+
+Getting Started
+
+Folder Structure
+
+Available Commands
+
+Architecture Overview
+
+Environment Variables
+
+Development Guide
+
+Deployment Guide
+
+=====================================================
+PERFORMANCE
+=====================================================
+
+Generation should be fast.
+
+Cache reusable assets.
+
+Parallelize independent tasks.
+
+Minimize filesystem writes.
+
+Support dry-run mode.
+
+Support preview mode.
+
+=====================================================
+SECURITY
+=====================================================
+
+Validate remote templates.
+
+Verify checksums where available.
+
+Prevent path traversal.
+
+Reject malicious templates.
+
+Warn about untrusted sources.
+
+=====================================================
+IMPLEMENTATION REQUIREMENTS
+=====================================================
+
+Implement:
+
+Project Generator Engine
+
+Template Engine
+
+Blueprint Engine
+
+Variable Resolver
+
+Hook Runner
+
+Preset Manager
+
+Generator Registry
+
+Dependency Resolver
+
+Generation Pipeline
+
+Rollback Manager
+
+Health Checker
+
+Documentation Generator
+
+=====================================================
+DELIVERABLES
+=====================================================
+
+Produce:
+
+Complete architecture
+
+Folder structure
+
+Interfaces
+
+Type definitions
+
+Public APIs
+
+Configuration schemas
+
+Template specification
+
+Generator SDK
+
+Tests
+
+Developer documentation
+
+=====================================================
+SUCCESS CRITERIA
+=====================================================
+
+Forge CLI should generate projects that are production-ready, maintainable, modern, and extensible.
+
+Developers should spend their time building features—not configuring boilerplates.
+
+The Project Generator Engine should become one of the defining strengths of Forge CLI.
+
+
+# Forge CLI — Master Prompt 3
+## Project Generator Engine & Template System
+
+You are a Principal Software Architect specializing in project scaffolding systems, template engines, code generators, and developer tooling.
+
+Design and implement the complete Project Generator Engine for Forge CLI.
+
+This engine is responsible for creating production-ready software projects, reusable templates, code scaffolding, and intelligent project initialization.
+
+The system must be modular, extensible, plugin-first, framework-agnostic, and capable of supporting thousands of templates without architectural changes.
+
+=====================================================
+MISSION
+=====================================================
+
+The Project Generator should not simply copy template files.
+
+It should intelligently assemble a project based on user choices, presets, plugins, framework requirements, best practices, and template metadata.
+
+Generated projects should feel handcrafted by experienced engineers.
+
+=====================================================
+CORE RESPONSIBILITIES
+=====================================================
+
+Implement:
+
+• Project Creation Engine
+• Template Engine
+• Variable Resolution
+• Conditional Rendering
+• File Generation
+• Folder Generation
+• Hook System
+• Preset Engine
+• Blueprint Engine
+• Generator Registry
+• Template Validation
+• Version Compatibility
+• Post Generation Tasks
+• Rollback System
+
+=====================================================
+SUPPORTED PROJECT TYPES
+=====================================================
+
+Frontend
+
+Backend
+
+Full Stack
+
+Monorepo
+
+Library
+
+Component Library
+
+CLI
+
+Desktop
+
+Mobile
+
+API
+
+Microservice
+
+Package
+
+Boilerplate
+
+Design System
+
+Browser Extension
+
+Documentation Site
+
+Starter Kit
+
+=====================================================
+GENERATION MODES
+=====================================================
+
+Support:
+
+Quick Generate
+
+Interactive Wizard
+
+Advanced Wizard
+
+Configuration File
+
+Preset-Based Generation
+
+CLI Flags Only
+
+Remote Configuration
+
+Batch Generation
+
+=====================================================
+TEMPLATE ENGINE
+=====================================================
+
+Templates must be first-class citizens.
+
+Support:
+
+Official Templates
+
+Community Templates
+
+Private Templates
+
+Enterprise Templates
+
+Git Templates
+
+Remote Templates
+
+Local Templates
+
+Versioned Templates
+
+=====================================================
+TEMPLATE STRUCTURE
+=====================================================
+
+Each template should contain:
+
+Manifest
+
+Metadata
+
+Variables
+
+Assets
+
+Source Files
+
+Hooks
+
+Documentation
+
+Examples
+
+Tests
+
+Compatibility Rules
+
+Migration Rules
+
+License
+
+Screenshots
+
+Tags
+
+Categories
+
+=====================================================
+VARIABLE SYSTEM
+=====================================================
+
+Support variables such as:
+
+Project Name
+
+Package Name
+
+Organization
+
+Namespace
+
+Framework
+
+Language
+
+Package Manager
+
+Database
+
+ORM
+
+Authentication
+
+Deployment Provider
+
+Testing Framework
+
+Styling Solution
+
+Custom Variables
+
+Allow:
+
+Nested Variables
+
+Computed Variables
+
+Environment Variables
+
+Template Variables
+
+Plugin Variables
+
+Default Values
+
+Validation
+
+Transformations
+
+=====================================================
+CONDITIONAL GENERATION
+=====================================================
+
+Support conditional rendering.
+
+Example:
+
+Generate Docker files only if Docker is enabled.
+
+Generate Prisma only if Prisma is selected.
+
+Generate Tailwind configuration only if Tailwind is enabled.
+
+Conditions should support logical expressions and reusable rules.
+
+=====================================================
+HOOK SYSTEM
+=====================================================
+
+Templates may define hooks.
+
+Examples:
+
+Before Generation
+
+After Generation
+
+Before Install
+
+After Install
+
+Before Dependency Resolution
+
+After Dependency Resolution
+
+Before Git Initialization
+
+After Project Ready
+
+Hooks must execute through the Core lifecycle.
+
+=====================================================
+PRESET ENGINE
+=====================================================
+
+Support reusable presets.
+
+Examples:
+
+Minimal React
+
+Enterprise React
+
+Next SaaS
+
+Express API
+
+Nest Enterprise
+
+Design System
+
+Company Standard
+
+Allow users and organizations to create custom presets.
+
+=====================================================
+GENERATOR REGISTRY
+=====================================================
+
+Every generator must register itself.
+
+Metadata:
+
+Name
+
+Description
+
+Category
+
+Supported Frameworks
+
+Required Plugins
+
+Dependencies
+
+Examples
+
+Documentation
+
+Visibility
+
+Version
+
+=====================================================
+PROJECT STRUCTURE
+=====================================================
+
+Generate opinionated yet configurable folder structures.
+
+Support multiple architectural styles:
+
+Feature-based
+
+Layer-based
+
+Domain-driven
+
+Atomic Design
+
+Clean Architecture
+
+Hexagonal
+
+MVC
+
+Users should be able to select or define their own structure.
+
+=====================================================
+DEPENDENCY RESOLUTION
+=====================================================
+
+Resolve dependencies intelligently.
+
+Avoid duplicates.
+
+Detect conflicts.
+
+Respect peer dependencies.
+
+Recommend compatible versions.
+
+Support npm, pnpm, Bun, and Yarn.
+
+=====================================================
+PACKAGE MANAGER INTEGRATION
+=====================================================
+
+Support:
+
+npm
+
+pnpm
+
+Yarn
+
+Bun
+
+Automatically detect installed package managers.
+
+Generate optimized lockfiles.
+
+=====================================================
+GIT INTEGRATION
+=====================================================
+
+Optionally:
+
+Initialize Git
+
+Create .gitignore
+
+Create initial commit
+
+Configure branch name
+
+Configure hooks
+
+Generate GitHub Actions
+
+=====================================================
+POST-GENERATION TASKS
+=====================================================
+
+Support automated tasks:
+
+Install dependencies
+
+Run formatter
+
+Run linter
+
+Initialize database
+
+Generate ORM client
+
+Run tests
+
+Validate project
+
+Generate README
+
+Display summary
+
+=====================================================
+ROLLBACK
+=====================================================
+
+If generation fails:
+
+Detect incomplete state.
+
+Rollback created files.
+
+Display detailed diagnostics.
+
+Allow retry.
+
+=====================================================
+HEALTH CHECK
+=====================================================
+
+Verify:
+
+Dependencies
+
+Configuration
+
+Generated files
+
+Framework compatibility
+
+Missing tools
+
+Environment
+
+=====================================================
+DOCUMENTATION
+=====================================================
+
+Automatically generate:
+
+README
+
+Getting Started
+
+Folder Structure
+
+Available Commands
+
+Architecture Overview
+
+Environment Variables
+
+Development Guide
+
+Deployment Guide
+
+=====================================================
+PERFORMANCE
+=====================================================
+
+Generation should be fast.
+
+Cache reusable assets.
+
+Parallelize independent tasks.
+
+Minimize filesystem writes.
+
+Support dry-run mode.
+
+Support preview mode.
+
+=====================================================
+SECURITY
+=====================================================
+
+Validate remote templates.
+
+Verify checksums where available.
+
+Prevent path traversal.
+
+Reject malicious templates.
+
+Warn about untrusted sources.
+
+=====================================================
+IMPLEMENTATION REQUIREMENTS
+=====================================================
+
+Implement:
+
+Project Generator Engine
+
+Template Engine
+
+Blueprint Engine
+
+Variable Resolver
+
+Hook Runner
+
+Preset Manager
+
+Generator Registry
+
+Dependency Resolver
+
+Generation Pipeline
+
+Rollback Manager
+
+Health Checker
+
+Documentation Generator
+
+=====================================================
+DELIVERABLES
+=====================================================
+
+Produce:
+
+Complete architecture
+
+Folder structure
+
+Interfaces
+
+Type definitions
+
+Public APIs
+
+Configuration schemas
+
+Template specification
+
+Generator SDK
+
+Tests
+
+Developer documentation
+
+=====================================================
+SUCCESS CRITERIA
+=====================================================
+
+Forge CLI should generate projects that are production-ready, maintainable, modern, and extensible.
+
+Developers should spend their time building features—not configuring boilerplates.
+
+The Project Generator Engine should become one of the defining strengths of Forge CLI.
+
+# Forge CLI — Master Prompt 4
+## Framework Ecosystem & Runtime Integration
+
+You are a Principal Software Architect, Framework Engineer, Developer Experience Expert, and Open Source Maintainer.
+
+Your responsibility is to design and implement the complete Framework Ecosystem for Forge CLI.
+
+Forge CLI must not be tightly coupled to any framework.
+
+Instead, it should provide a unified abstraction layer capable of supporting existing and future frameworks without requiring changes to the Core Engine.
+
+Everything must follow the architecture defined in Master Prompt 0 and integrate with the Core Engine and Project Generator.
+
+=====================================================
+MISSION
+=====================================================
+
+Design a technology ecosystem that allows developers to build, configure, upgrade, analyze, and maintain projects regardless of language, framework, runtime, or package manager.
+
+The experience should remain consistent while respecting the conventions and best practices of each technology.
+
+=====================================================
+ARCHITECTURE PRINCIPLES
+=====================================================
+
+The ecosystem must be:
+
+Framework-agnostic
+
+Runtime-independent
+
+Version-aware
+
+Plugin-driven
+
+Configuration-based
+
+Extensible
+
+Backward-compatible
+
+Future-proof
+
+Every framework integration should implement a common interface while exposing framework-specific capabilities through adapters.
+
+=====================================================
+FRAMEWORK ABSTRACTION LAYER
+=====================================================
+
+Design a unified abstraction for all frameworks.
+
+Every framework adapter should expose:
+
+Metadata
+
+Supported Versions
+
+Recommended Version
+
+Dependencies
+
+Package Manager Support
+
+Build Commands
+
+Development Commands
+
+Production Commands
+
+Configuration Files
+
+Project Detection
+
+Health Checks
+
+Upgrade Strategy
+
+Migration Rules
+
+Generator Support
+
+Deployment Compatibility
+
+Testing Support
+
+Linting Support
+
+Formatting Support
+
+Documentation Strategy
+
+=====================================================
+SUPPORTED FRONTEND FRAMEWORKS
+=====================================================
+
+Support first-class integrations for:
+
+React
+
+Next.js
+
+Vue
+
+Nuxt
+
+Angular
+
+Svelte
+
+SvelteKit
+
+SolidJS
+
+Qwik
+
+Astro
+
+Remix
+
+Preact
+
+Lit
+
+Support community adapters for additional frameworks.
+
+=====================================================
+SUPPORTED BACKEND FRAMEWORKS
+=====================================================
+
+Support:
+
+Express
+
+NestJS
+
+Fastify
+
+Hono
+
+Elysia
+
+AdonisJS
+
+Koa
+
+FastAPI
+
+Django
+
+Flask
+
+Spring Boot
+
+ASP.NET Core
+
+Laravel
+
+Symfony
+
+Go
+
+Rust
+
+Ruby on Rails
+
+Phoenix
+
+=====================================================
+LANGUAGE SUPPORT
+=====================================================
+
+Support multiple languages through adapters.
+
+TypeScript
+
+JavaScript
+
+Go
+
+Rust
+
+Python
+
+Java
+
+Kotlin
+
+PHP
+
+Ruby
+
+C#
+
+Future languages must be installable through plugins.
+
+=====================================================
+PACKAGE MANAGER ABSTRACTION
+=====================================================
+
+Implement a package manager interface.
+
+Support:
+
+npm
+
+pnpm
+
+Yarn
+
+Bun
+
+Automatically detect existing package managers.
+
+Support lockfile generation.
+
+Support dependency analysis.
+
+Support package upgrades.
+
+Support package auditing.
+
+=====================================================
+DATABASE ECOSYSTEM
+=====================================================
+
+Provide database integrations.
+
+PostgreSQL
+
+MySQL
+
+MariaDB
+
+SQLite
+
+MongoDB
+
+Redis
+
+CockroachDB
+
+PlanetScale
+
+Supabase
+
+Firebase
+
+Neon
+
+Every database adapter should expose:
+
+Connection validation
+
+Health checks
+
+Migration support
+
+Environment validation
+
+ORM compatibility
+
+=====================================================
+ORM SUPPORT
+=====================================================
+
+Support:
+
+Prisma
+
+Drizzle
+
+TypeORM
+
+Mongoose
+
+Sequelize
+
+MikroORM
+
+Each ORM adapter should support:
+
+Initialization
+
+Schema generation
+
+Migration generation
+
+Health checks
+
+Client generation
+
+Configuration validation
+
+=====================================================
+AUTHENTICATION
+=====================================================
+
+Support authentication providers.
+
+Auth.js
+
+Clerk
+
+Supabase Auth
+
+Firebase Auth
+
+Keycloak
+
+Auth0
+
+Custom JWT
+
+Enterprise SSO
+
+Adapters should provide:
+
+Setup
+
+Configuration
+
+Environment validation
+
+Migration
+
+Documentation
+
+=====================================================
+STYLING ECOSYSTEM
+=====================================================
+
+Support:
+
+Tailwind CSS
+
+UnoCSS
+
+CSS Modules
+
+SCSS
+
+Sass
+
+Styled Components
+
+Emotion
+
+Vanilla Extract
+
+Panda CSS
+
+Lightning CSS
+
+Each integration should expose generators and best-practice defaults.
+
+=====================================================
+TESTING ECOSYSTEM
+=====================================================
+
+Support:
+
+Vitest
+
+Jest
+
+Playwright
+
+Cypress
+
+Testing Library
+
+Storybook
+
+Provide unified commands while preserving framework-specific capabilities.
+
+=====================================================
+BUILD TOOLS
+=====================================================
+
+Support:
+
+Vite
+
+Webpack
+
+Rspack
+
+Turbopack
+
+Rollup
+
+esbuild
+
+Parcel
+
+Adapters should provide build optimization recommendations.
+
+=====================================================
+DEPLOYMENT INTEGRATIONS
+=====================================================
+
+Support:
+
+Vercel
+
+Netlify
+
+Cloudflare
+
+Railway
+
+Fly.io
+
+Render
+
+AWS
+
+Azure
+
+Google Cloud
+
+Docker
+
+Kubernetes
+
+Each deployment provider should expose:
+
+Configuration
+
+Environment validation
+
+Deployment commands
+
+Health checks
+
+Rollback support
+
+=====================================================
+FRAMEWORK DETECTION
+=====================================================
+
+Automatically detect:
+
+Framework
+
+Language
+
+Runtime
+
+Build Tool
+
+Package Manager
+
+Database
+
+ORM
+
+Testing Framework
+
+Styling Solution
+
+Deployment Configuration
+
+Present recommendations based on the detected stack.
+
+=====================================================
+VERSION MANAGEMENT
+=====================================================
+
+Track supported versions.
+
+Detect deprecated versions.
+
+Recommend upgrades.
+
+Generate migration plans.
+
+Warn about incompatible combinations.
+
+=====================================================
+HEALTH ANALYSIS
+=====================================================
+
+Provide ecosystem-aware diagnostics.
+
+Examples:
+
+Outdated framework
+
+Missing configuration
+
+Deprecated APIs
+
+Broken dependencies
+
+Invalid environment
+
+Security risks
+
+Performance recommendations
+
+=====================================================
+GENERATOR INTEGRATION
+=====================================================
+
+Every framework adapter must integrate with:
+
+Project Generator
+
+Template Engine
+
+Code Generators
+
+AI Engine
+
+Deployment Engine
+
+Plugin System
+
+Documentation Generator
+
+=====================================================
+AI IMPLEMENTATION GUIDELINES
+=====================================================
+
+When implementing this ecosystem:
+
+Never duplicate logic across frameworks.
+
+Use adapters.
+
+Prefer interfaces over inheritance.
+
+Keep framework-specific logic isolated.
+
+Support graceful degradation.
+
+Generate maintainable code.
+
+Avoid hardcoded assumptions.
+
+=====================================================
+DELIVERABLES
+=====================================================
+
+Design and implement:
+
+Framework Adapter SDK
+
+Runtime Abstraction Layer
+
+Package Manager Abstraction
+
+Database Adapters
+
+ORM Adapters
+
+Authentication Adapters
+
+Styling Adapters
+
+Testing Adapters
+
+Deployment Adapters
+
+Detection Engine
+
+Version Manager
+
+Migration Planner
+
+Health Analyzer
+
+Documentation
+
+Tests
+
+=====================================================
+SUCCESS CRITERIA
+=====================================================
+
+Forge CLI should provide a consistent developer experience regardless of the chosen technology stack.
+
+Developers should be able to switch frameworks, upgrade technologies, and extend the ecosystem without changing the Core Engine.
+
+The Framework Ecosystem should become one of the strongest competitive advantages of Forge CLI.
+
+# Forge CLI — Master Prompt 5
+## Developer Workspace & Engineering Toolkit
+
+You are a Principal Software Architect, Developer Experience Lead, Software Productivity Researcher, and Engineering Tools Designer.
+
+Your task is to transform Forge CLI from a project generator into a complete engineering workspace.
+
+Forge CLI should remain valuable throughout the entire software development lifecycle—not only during project creation.
+
+Every tool must integrate seamlessly with the Core Engine, Framework Ecosystem, AI Engine, Plugin System, and Terminal UI.
+
+=====================================================
+MISSION
+=====================================================
+
+Forge CLI should become the primary command-line workspace developers use every day.
+
+The platform should reduce context switching, automate repetitive engineering tasks, surface useful insights, and provide a unified interface for common development workflows.
+
+=====================================================
+WORKSPACE PHILOSOPHY
+=====================================================
+
+The workspace is project-centric.
+
+Every command, dashboard, generator, analysis, and recommendation should understand the active workspace.
+
+The workspace should expose a consistent experience regardless of framework or programming language.
+
+=====================================================
+WORKSPACE CAPABILITIES
+=====================================================
+
+Provide tools for:
+
+Project navigation
+
+Workspace exploration
+
+Dependency management
+
+Configuration editing
+
+Code generation
+
+Code search
+
+Project analysis
+
+Git workflows
+
+Documentation
+
+Release management
+
+Testing
+
+Debugging
+
+Performance analysis
+
+Security auditing
+
+Technical debt inspection
+
+Task automation
+
+=====================================================
+PROJECT EXPLORER
+=====================================================
+
+Implement a workspace explorer capable of:
+
+Viewing project structure
+
+Filtering files
+
+Searching folders
+
+Recognizing framework conventions
+
+Displaying generated assets
+
+Showing ignored files
+
+Bookmarking locations
+
+Tracking recent files
+
+=====================================================
+SMART SEARCH
+=====================================================
+
+Implement project-wide search.
+
+Support:
+
+File search
+
+Symbol search
+
+Component search
+
+Command search
+
+Template search
+
+Plugin search
+
+Configuration search
+
+Documentation search
+
+Fuzzy matching
+
+Filters
+
+Bookmarks
+
+=====================================================
+CODE GENERATION
+=====================================================
+
+Provide generators for:
+
+Components
+
+Pages
+
+Layouts
+
+Hooks
+
+Services
+
+Stores
+
+Contexts
+
+Routes
+
+API Clients
+
+Schemas
+
+Utilities
+
+Tests
+
+Stories
+
+Documentation
+
+Configurations
+
+Generators must be framework-aware.
+
+=====================================================
+PROJECT INSIGHTS
+=====================================================
+
+Continuously analyze the workspace.
+
+Provide insights such as:
+
+Largest folders
+
+Unused files
+
+Duplicate logic
+
+Circular dependencies
+
+Bundle size concerns
+
+Architecture violations
+
+Configuration inconsistencies
+
+Dependency health
+
+=====================================================
+DEPENDENCY TOOLS
+=====================================================
+
+Support:
+
+Dependency tree visualization
+
+Unused dependency detection
+
+Missing dependency detection
+
+Version conflicts
+
+Upgrade recommendations
+
+License inspection
+
+Security audit integration
+
+=====================================================
+CONFIGURATION MANAGEMENT
+=====================================================
+
+Provide configuration editing for:
+
+TypeScript
+
+ESLint
+
+Biome
+
+Prettier
+
+Tailwind
+
+Vite
+
+Webpack
+
+Next.js
+
+Docker
+
+GitHub Actions
+
+Package Manager
+
+Environment variables
+
+Offer validation and previews before applying changes.
+
+=====================================================
+DOCUMENTATION TOOLKIT
+=====================================================
+
+Generate and maintain:
+
+README
+
+Architecture overview
+
+Folder documentation
+
+API documentation
+
+Component documentation
+
+Environment documentation
+
+Changelog
+
+Release notes
+
+=====================================================
+GIT TOOLKIT
+=====================================================
+
+Provide commands for:
+
+Repository status
+
+Branch management
+
+Commit generation
+
+Commit validation
+
+Merge preparation
+
+Conflict assistance
+
+Tag management
+
+Release preparation
+
+GitHub integration
+
+=====================================================
+TESTING TOOLKIT
+=====================================================
+
+Integrate with supported testing frameworks.
+
+Allow:
+
+Run all tests
+
+Run affected tests
+
+Watch mode
+
+Coverage reports
+
+Snapshot management
+
+Test scaffolding
+
+=====================================================
+PERFORMANCE TOOLKIT
+=====================================================
+
+Provide performance analysis.
+
+Examples:
+
+Bundle inspection
+
+Large assets
+
+Slow builds
+
+Tree shaking opportunities
+
+Dead code
+
+Code splitting recommendations
+
+=====================================================
+SECURITY TOOLKIT
+=====================================================
+
+Analyze:
+
+Secrets
+
+Vulnerabilities
+
+Unsafe dependencies
+
+Insecure configuration
+
+Environment issues
+
+Outdated packages
+
+=====================================================
+TASK AUTOMATION
+=====================================================
+
+Allow users to define reusable workflows.
+
+Examples:
+
+Build → Test → Lint
+
+Generate → Format → Commit
+
+Install → Configure → Run
+
+Workflows should support variables, conditions, and reusable steps.
+
+=====================================================
+IMPLEMENTATION REQUIREMENTS
+=====================================================
+
+Implement a modular engineering toolkit composed of independent services.
+
+Every capability should expose public APIs and support extension through plugins.
+
+Avoid duplicated logic.
+
+Reuse Core Engine services whenever possible.
+
+=====================================================
+DELIVERABLES
+=====================================================
+
+Generate:
+
+Workspace Manager
+
+Project Explorer
+
+Search Engine
+
+Generator Toolkit
+
+Dependency Toolkit
+
+Documentation Toolkit
+
+Git Toolkit
+
+Testing Toolkit
+
+Performance Toolkit
+
+Security Toolkit
+
+Task Automation Engine
+
+Folder Structure
+
+Interfaces
+
+Tests
+
+Developer Documentation
+
+=====================================================
+SUCCESS CRITERIA
+=====================================================
+
+Forge CLI should become the command developers keep open throughout the entire day.
+
+The Workspace should save time, improve software quality, reduce repetitive work, and provide a unified engineering experience across every supported technology stack.
+
+# Forge CLI — Master Prompt 6
+## AI Native Engine, Intelligent Agents & Context Architecture
+
+You are a Principal AI Systems Architect, Staff Software Engineer, LLM Infrastructure Engineer, Prompt Engineer, and Developer Experience Architect.
+
+Your responsibility is to design and implement the complete AI Engine of Forge CLI.
+
+This AI Engine must become one of the most advanced AI-native developer platforms ever built.
+
+The AI should not behave as a chatbot.
+
+It should behave as an intelligent software engineering partner deeply integrated into the developer workflow.
+
+Everything must integrate seamlessly with the Core Engine, Workspace, Generator Engine, Framework Ecosystem, Plugin SDK, and Terminal UI.
+
+=====================================================
+MISSION
+=====================================================
+
+Design an AI architecture that helps developers build, understand, refactor, debug, maintain, review, document, and evolve software projects.
+
+The AI must increase developer productivity while preserving developer control.
+
+Every recommendation should be explainable, transparent, and reversible.
+
+=====================================================
+ARCHITECTURAL PRINCIPLES
+=====================================================
+
+The AI Engine must be:
+
+Provider-agnostic
+
+Context-aware
+
+Project-aware
+
+Workspace-aware
+
+Language-aware
+
+Framework-aware
+
+Version-aware
+
+Plugin-aware
+
+Secure
+
+Privacy-first
+
+Composable
+
+Extensible
+
+Offline-capable when local models are available
+
+=====================================================
+AI CAPABILITIES
+=====================================================
+
+Support:
+
+Project Understanding
+
+Architecture Analysis
+
+Code Explanation
+
+Code Generation
+
+Component Generation
+
+API Generation
+
+Refactoring
+
+Migration
+
+Documentation
+
+Debugging
+
+Error Analysis
+
+Dependency Analysis
+
+Performance Optimization
+
+Accessibility Review
+
+Security Review
+
+Testing Assistance
+
+Release Preparation
+
+Pull Request Review
+
+Commit Message Generation
+
+Changelog Generation
+
+Technical Debt Analysis
+
+Codebase Summarization
+
+=====================================================
+AI PROVIDER ABSTRACTION
+=====================================================
+
+Implement a unified provider interface.
+
+Support providers such as:
+
+OpenAI
+
+Anthropic
+
+Google Gemini
+
+OpenRouter
+
+Azure OpenAI
+
+Ollama
+
+LM Studio
+
+Local GGUF Models
+
+Enterprise Models
+
+Future providers should integrate through plugins without modifying the Core.
+
+=====================================================
+CONTEXT ENGINE
+=====================================================
+
+Before every AI request, construct structured context.
+
+Possible context includes:
+
+Workspace metadata
+
+Project structure
+
+Framework
+
+Dependencies
+
+Configuration files
+
+Git status
+
+Open files
+
+Recent edits
+
+Current command
+
+Plugin metadata
+
+Template metadata
+
+Environment
+
+Diagnostics
+
+Terminal state
+
+Only include information relevant to the current task.
+
+Minimize unnecessary tokens.
+
+=====================================================
+PROJECT MEMORY
+=====================================================
+
+Maintain optional project memory.
+
+Examples:
+
+Architecture decisions
+
+Coding conventions
+
+Naming patterns
+
+Folder organization
+
+Preferred generators
+
+Ignored recommendations
+
+Previous AI decisions
+
+Development history
+
+Memory must be editable, exportable, and removable.
+
+=====================================================
+PROMPT ENGINE
+=====================================================
+
+Implement a Prompt Engine capable of:
+
+Prompt Templates
+
+Prompt Variables
+
+Prompt Versioning
+
+Prompt Validation
+
+Prompt Chaining
+
+Prompt Composition
+
+Role-based prompts
+
+Task-specific prompts
+
+Localization
+
+Plugin extensions
+
+=====================================================
+AI AGENTS
+=====================================================
+
+Implement specialized engineering agents.
+
+Examples:
+
+Architecture Agent
+
+Frontend Agent
+
+Backend Agent
+
+Database Agent
+
+DevOps Agent
+
+Security Agent
+
+Testing Agent
+
+Documentation Agent
+
+Performance Agent
+
+Accessibility Agent
+
+Refactoring Agent
+
+Migration Agent
+
+Release Agent
+
+Git Agent
+
+Dependency Agent
+
+Each agent should have a clearly defined scope and responsibilities.
+
+=====================================================
+WORKFLOW ORCHESTRATION
+=====================================================
+
+Allow multiple agents to collaborate.
+
+Example:
+
+Architecture Review
+
+↓
+
+Dependency Analysis
+
+↓
+
+Performance Analysis
+
+↓
+
+Security Review
+
+↓
+
+Generate Recommendations
+
+↓
+
+Produce Final Report
+
+Workflows should support sequential and parallel execution.
+
+=====================================================
+STREAMING RESPONSES
+=====================================================
+
+Support streaming output.
+
+Display:
+
+Reasoning progress (when appropriate)
+
+Current task
+
+Completed steps
+
+Generated files
+
+Warnings
+
+Recommendations
+
+Cancellation
+
+Retry
+
+=====================================================
+CODE GENERATION
+=====================================================
+
+Generated code should:
+
+Follow project conventions
+
+Respect formatting
+
+Reuse existing abstractions
+
+Avoid unnecessary dependencies
+
+Be production-ready
+
+Include documentation when appropriate
+
+Integrate with generators rather than bypass them.
+
+=====================================================
+CODE REVIEW
+=====================================================
+
+Provide intelligent reviews.
+
+Analyze:
+
+Architecture
+
+Naming
+
+Complexity
+
+Maintainability
+
+Readability
+
+Performance
+
+Accessibility
+
+Security
+
+Framework best practices
+
+Offer prioritized recommendations with explanations.
+
+=====================================================
+DEBUGGING
+=====================================================
+
+Analyze:
+
+Compiler errors
+
+Runtime errors
+
+Stack traces
+
+Logs
+
+Configuration issues
+
+Dependency conflicts
+
+Suggest likely causes and actionable fixes.
+
+=====================================================
+REFACTORING
+=====================================================
+
+Support safe refactoring.
+
+Examples:
+
+Rename
+
+Extract function
+
+Extract component
+
+Move module
+
+Split file
+
+Merge files
+
+Simplify logic
+
+Reduce duplication
+
+Every change should include a preview and rollback option.
+
+=====================================================
+DOCUMENTATION
+=====================================================
+
+Generate and maintain:
+
+README
+
+API documentation
+
+Architecture documentation
+
+Component documentation
+
+Configuration documentation
+
+Migration guides
+
+Developer onboarding
+
+=====================================================
+SECURITY
+=====================================================
+
+Never expose secrets.
+
+Never transmit project data without permission.
+
+Allow users to inspect outgoing context.
+
+Support local-only AI mode.
+
+Mask sensitive values automatically.
+
+=====================================================
+IMPLEMENTATION REQUIREMENTS
+=====================================================
+
+Implement:
+
+AI Runtime
+
+Provider SDK
+
+Context Engine
+
+Prompt Engine
+
+Memory Engine
+
+Agent Framework
+
+Workflow Orchestrator
+
+Streaming Engine
+
+Review Engine
+
+Debug Engine
+
+Refactoring Engine
+
+Documentation Engine
+
+Security Layer
+
+Configuration
+
+Public APIs
+
+Tests
+
+Developer Documentation
+
+=====================================================
+DELIVERABLES
+=====================================================
+
+Generate:
+
+Complete AI Architecture
+
+Folder Structure
+
+Interfaces
+
+Type Definitions
+
+Provider SDK
+
+Agent SDK
+
+Workflow Engine
+
+Memory System
+
+Context Builder
+
+Prompt Library
+
+Testing Strategy
+
+Performance Strategy
+
+Security Strategy
+
+Developer Documentation
+
+=====================================================
+SUCCESS CRITERIA
+=====================================================
+
+Forge CLI should become an AI-native engineering platform rather than an AI-powered CLI.
+
+Developers should feel they are collaborating with an experienced software architect and engineering team—not interacting with a generic chatbot.
+
+Every AI capability should improve confidence, reduce repetitive work, preserve user control, and integrate naturally into the software development lifecycle.
+
+# Forge CLI — Master Prompt 7
+## Workspace Platform, Monorepo & Project Lifecycle Management
+
+You are a Principal Platform Architect, Build Systems Engineer, Monorepo Specialist, and Developer Productivity Expert.
+
+Design and implement the complete Workspace Platform for Forge CLI.
+
+This system is responsible for managing projects of every size—from single applications to enterprise-scale monorepos containing hundreds of packages and services.
+
+The Workspace Platform must integrate seamlessly with the Core Engine, Framework Ecosystem, AI Engine, Generator Engine, Plugin SDK, and Developer Workspace.
+
+=====================================================
+MISSION
+=====================================================
+
+Design a unified workspace platform that enables developers and organizations to manage projects efficiently throughout their entire lifecycle.
+
+The workspace should become the central operating environment for development rather than simply a project directory.
+
+=====================================================
+DESIGN PRINCIPLES
+=====================================================
+
+The Workspace Platform must be:
+
+Project-centric
+
+Language-independent
+
+Framework-independent
+
+Scalable
+
+Plugin-driven
+
+AI-aware
+
+Workspace-aware
+
+Extensible
+
+Deterministic
+
+Reliable
+
+=====================================================
+SUPPORTED WORKSPACE TYPES
+=====================================================
+
+Support:
+
+Single Project
+
+Multi Project
+
+Monorepo
+
+Polyrepo
+
+Microservices
+
+Libraries
+
+Component Libraries
+
+Design Systems
+
+Documentation Projects
+
+Enterprise Platforms
+
+Hybrid Workspaces
+
+Nested Workspaces
+
+=====================================================
+MONOREPO SUPPORT
+=====================================================
+
+Support first-class integrations for:
+
+pnpm Workspaces
+
+Turborepo
+
+Nx
+
+Rush
+
+Lerna
+
+Bun Workspaces
+
+Yarn Workspaces
+
+Custom Workspace Definitions
+
+Automatically detect and configure supported workspace types.
+
+=====================================================
+WORKSPACE DISCOVERY
+=====================================================
+
+Automatically discover:
+
+Applications
+
+Packages
+
+Libraries
+
+Shared Components
+
+Services
+
+Utilities
+
+Infrastructure
+
+Documentation
+
+Scripts
+
+Configuration Files
+
+Environment Files
+
+CI/CD Pipelines
+
+=====================================================
+PROJECT REGISTRY
+=====================================================
+
+Maintain a centralized registry of all projects inside the workspace.
+
+Each project should expose:
+
+Identifier
+
+Name
+
+Description
+
+Language
+
+Framework
+
+Runtime
+
+Package Manager
+
+Dependencies
+
+Status
+
+Health
+
+Tags
+
+Owner
+
+Relationships
+
+=====================================================
+DEPENDENCY GRAPH
+=====================================================
+
+Generate an intelligent dependency graph.
+
+Support:
+
+Project Dependencies
+
+Package Dependencies
+
+Service Dependencies
+
+Build Dependencies
+
+Runtime Dependencies
+
+Visualization
+
+Circular Dependency Detection
+
+Impact Analysis
+
+=====================================================
+WORKSPACE CONFIGURATION
+=====================================================
+
+Implement layered configuration.
+
+Global Workspace
+
+↓
+
+Project
+
+↓
+
+Package
+
+↓
+
+Environment
+
+↓
+
+Command
+
+Support inheritance, overrides, validation, and schema enforcement.
+
+=====================================================
+TASK ORCHESTRATION
+=====================================================
+
+Provide a workspace task runner.
+
+Support:
+
+Build
+
+Test
+
+Lint
+
+Format
+
+Deploy
+
+Generate
+
+Analyze
+
+Clean
+
+Watch
+
+Custom Tasks
+
+Support sequential, parallel, conditional, and distributed execution.
+
+=====================================================
+INCREMENTAL EXECUTION
+=====================================================
+
+Implement intelligent incremental execution.
+
+Only execute affected projects when possible.
+
+Support:
+
+Dependency Analysis
+
+Change Detection
+
+Affected Graph
+
+Selective Builds
+
+Selective Tests
+
+Selective Deployments
+
+=====================================================
+WORKSPACE DASHBOARD
+=====================================================
+
+Provide a real-time dashboard displaying:
+
+Projects
+
+Services
+
+Recent Changes
+
+Dependency Graph
+
+Background Tasks
+
+Build Status
+
+Test Status
+
+Deployment Status
+
+Health
+
+AI Insights
+
+=====================================================
+PROJECT LIFECYCLE
+=====================================================
+
+Manage the entire lifecycle of projects.
+
+Create
+
+Configure
+
+Develop
+
+Test
+
+Analyze
+
+Document
+
+Deploy
+
+Maintain
+
+Archive
+
+Remove
+
+=====================================================
+WORKSPACE ANALYTICS
+=====================================================
+
+Provide insights such as:
+
+Largest Projects
+
+Slowest Builds
+
+Unused Packages
+
+Dependency Health
+
+Technical Debt
+
+Code Duplication
+
+Test Coverage
+
+Release Readiness
+
+=====================================================
+VERSION MANAGEMENT
+=====================================================
+
+Support:
+
+Semantic Versioning
+
+Workspace Versioning
+
+Independent Versioning
+
+Locked Versioning
+
+Release Planning
+
+Package Synchronization
+
+=====================================================
+ENVIRONMENT MANAGEMENT
+=====================================================
+
+Manage:
+
+Development
+
+Testing
+
+Staging
+
+Production
+
+Preview
+
+Local
+
+Validate environment variables.
+
+Detect missing configuration.
+
+Support secure secret references.
+
+=====================================================
+IMPLEMENTATION REQUIREMENTS
+=====================================================
+
+Implement:
+
+Workspace Manager
+
+Project Registry
+
+Dependency Graph Engine
+
+Task Orchestrator
+
+Workspace Dashboard
+
+Configuration Manager
+
+Environment Manager
+
+Workspace Analytics
+
+Version Manager
+
+Lifecycle Manager
+
+=====================================================
+DELIVERABLES
+=====================================================
+
+Generate:
+
+Complete Workspace Architecture
+
+Folder Structure
+
+Interfaces
+
+Workspace APIs
+
+Configuration Schemas
+
+Dependency Graph
+
+Task Engine
+
+Workspace SDK
+
+Tests
+
+Documentation
+
+=====================================================
+SUCCESS CRITERIA
+=====================================================
+
+Forge CLI should scale seamlessly from a single personal project to enterprise monorepos containing hundreds of applications and services.
+
+The Workspace Platform should simplify project organization, improve collaboration, optimize builds, and provide complete visibility into the software ecosystem.
+
+# Forge CLI — Master Prompt 8
+## DevOps Platform, Cloud Deployment, Infrastructure Automation & Release Engineering
+
+You are a Principal DevOps Architect, Platform Engineer, Cloud Infrastructure Expert, Release Engineer, Site Reliability Engineer (SRE), and Developer Productivity Specialist.
+
+Your responsibility is to design and implement the complete DevOps Platform for Forge CLI.
+
+This platform must transform deployment, infrastructure management, release engineering, automation, environment management, and operational workflows into a unified developer experience.
+
+Everything must integrate seamlessly with:
+
+• Core Engine
+• Terminal UI
+• Workspace Platform
+• AI Engine
+• Framework Ecosystem
+• Generator Engine
+• Plugin SDK
+
+=====================================================
+MISSION
+=====================================================
+
+Forge CLI should eliminate the complexity of modern deployment workflows.
+
+Developers should deploy applications, provision infrastructure, manage environments, monitor releases, and automate delivery through one consistent interface.
+
+The platform should support individuals, startups, enterprises, and cloud-native teams.
+
+=====================================================
+ARCHITECTURAL PRINCIPLES
+=====================================================
+
+The DevOps Platform must be:
+
+Cloud Agnostic
+
+Provider Independent
+
+Environment Aware
+
+Workspace Aware
+
+AI Assisted
+
+Plugin Driven
+
+Declarative
+
+Observable
+
+Repeatable
+
+Secure
+
+Scalable
+
+Idempotent
+
+=====================================================
+SUPPORTED CLOUD PROVIDERS
+=====================================================
+
+Provide official integrations for:
+
+AWS
+
+Microsoft Azure
+
+Google Cloud Platform
+
+Cloudflare
+
+Vercel
+
+Netlify
+
+Railway
+
+Render
+
+Fly.io
+
+DigitalOcean
+
+Oracle Cloud
+
+Firebase
+
+Supabase
+
+Future providers must integrate through adapters.
+
+=====================================================
+CONTAINER PLATFORM
+=====================================================
+
+Support containerized development.
+
+Docker
+
+Docker Compose
+
+Podman
+
+BuildKit
+
+OCI Images
+
+Container Registry
+
+Image Inspection
+
+Image Optimization
+
+Container Security
+
+Multi-stage Builds
+
+Development Containers
+
+=====================================================
+KUBERNETES
+=====================================================
+
+Provide Kubernetes support.
+
+Generate manifests.
+
+Helm support.
+
+Kustomize.
+
+Namespaces.
+
+Secrets.
+
+Ingress.
+
+Services.
+
+Deployments.
+
+Jobs.
+
+CronJobs.
+
+Persistent Volumes.
+
+Health Checks.
+
+Rollbacks.
+
+=====================================================
+ENVIRONMENT MANAGEMENT
+=====================================================
+
+Support environments.
+
+Local
+
+Development
+
+Testing
+
+Preview
+
+QA
+
+Staging
+
+Production
+
+Environment inheritance.
+
+Validation.
+
+Secret references.
+
+Environment synchronization.
+
+=====================================================
+SECRETS MANAGEMENT
+=====================================================
+
+Secrets must never be stored insecurely.
+
+Support:
+
+Environment Variables
+
+Encrypted Secrets
+
+Cloud Secret Managers
+
+Vault Integrations
+
+Secret Validation
+
+Secret Rotation
+
+Secret Masking
+
+Permission Validation
+
+=====================================================
+CI/CD PLATFORM
+=====================================================
+
+Generate and manage pipelines.
+
+Support:
+
+GitHub Actions
+
+GitLab CI
+
+Azure Pipelines
+
+CircleCI
+
+Jenkins
+
+Bitbucket Pipelines
+
+Buildkite
+
+Drone
+
+Custom Pipelines
+
+Support reusable workflow templates.
+
+=====================================================
+DEPLOYMENT ENGINE
+=====================================================
+
+Implement a deployment engine supporting:
+
+Build
+
+Package
+
+Verify
+
+Deploy
+
+Health Check
+
+Smoke Tests
+
+Traffic Shift
+
+Rollback
+
+Deployment Reports
+
+Deployment History
+
+=====================================================
+RELEASE ENGINEERING
+=====================================================
+
+Automate release workflows.
+
+Semantic Versioning.
+
+Release Branches.
+
+Git Tags.
+
+Release Notes.
+
+Changelog Generation.
+
+Artifact Generation.
+
+Package Publishing.
+
+Release Validation.
+
+Rollback Strategy.
+
+=====================================================
+ARTIFACT MANAGEMENT
+=====================================================
+
+Manage build artifacts.
+
+Applications.
+
+Libraries.
+
+Docker Images.
+
+Packages.
+
+Documentation.
+
+Static Assets.
+
+Checksums.
+
+Signatures.
+
+Retention Policies.
+
+=====================================================
+OBSERVABILITY
+=====================================================
+
+Support observability integrations.
+
+Logging
+
+Metrics
+
+Tracing
+
+Health Monitoring
+
+Performance Monitoring
+
+Error Tracking
+
+Crash Reports
+
+Synthetic Monitoring
+
+Service Status
+
+=====================================================
+MONITORING PROVIDERS
+=====================================================
+
+Support:
+
+OpenTelemetry
+
+Grafana
+
+Prometheus
+
+Datadog
+
+New Relic
+
+Sentry
+
+Elastic Stack
+
+CloudWatch
+
+Azure Monitor
+
+Google Cloud Monitoring
+
+=====================================================
+ROLLBACK
+=====================================================
+
+Rollback should be first-class.
+
+Support:
+
+Deployment Rollback
+
+Database Rollback Guidance
+
+Configuration Rollback
+
+Artifact Rollback
+
+Version Rollback
+
+Automatic Recovery
+
+=====================================================
+DATABASE OPERATIONS
+=====================================================
+
+Support operational workflows.
+
+Migration Execution
+
+Migration Validation
+
+Backup
+
+Restore
+
+Seed
+
+Health Checks
+
+Schema Verification
+
+Environment Safety Checks
+
+=====================================================
+INFRASTRUCTURE AUTOMATION
+=====================================================
+
+Support Infrastructure as Code.
+
+Terraform
+
+Pulumi
+
+CloudFormation
+
+Bicep
+
+Crossplane
+
+Custom Templates
+
+Validate infrastructure before deployment.
+
+=====================================================
+POLICY ENGINE
+=====================================================
+
+Organizations should define policies.
+
+Examples:
+
+Naming Rules
+
+Deployment Restrictions
+
+Required Reviews
+
+Protected Environments
+
+Security Rules
+
+Compliance Validation
+
+Policy Violations
+
+=====================================================
+SECURITY
+=====================================================
+
+Implement deployment security.
+
+Least Privilege
+
+Credential Validation
+
+Token Expiration
+
+Signed Artifacts
+
+Supply Chain Verification
+
+Dependency Verification
+
+Container Scanning
+
+Secret Detection
+
+=====================================================
+PERFORMANCE
+=====================================================
+
+Optimize:
+
+Parallel Deployments
+
+Artifact Caching
+
+Incremental Builds
+
+Distributed Builds
+
+Remote Cache
+
+Deployment Time
+
+Build Time
+
+=====================================================
+AI IMPLEMENTATION GUIDELINES
+=====================================================
+
+The AI Engine should assist with:
+
+Deployment Planning
+
+Infrastructure Recommendations
+
+Pipeline Generation
+
+Security Reviews
+
+Cost Optimization
+
+Rollback Guidance
+
+Performance Analysis
+
+Release Summaries
+
+Risk Assessment
+
+=====================================================
+IMPLEMENTATION REQUIREMENTS
+=====================================================
+
+Implement:
+
+Deployment Manager
+
+Cloud Adapter SDK
+
+Environment Manager
+
+Secrets Manager
+
+Pipeline Generator
+
+Release Manager
+
+Artifact Manager
+
+Rollback Engine
+
+Infrastructure Manager
+
+Monitoring Manager
+
+Observability SDK
+
+Policy Engine
+
+Database Operations Manager
+
+=====================================================
+DELIVERABLES
+=====================================================
+
+Generate:
+
+Complete DevOps Architecture
+
+Folder Structure
+
+Public APIs
+
+Cloud Adapter SDK
+
+Deployment Engine
+
+CI/CD Templates
+
+Infrastructure Templates
+
+Configuration Schemas
+
+Environment Specifications
+
+Release Workflow
+
+Rollback Workflow
+
+Testing Strategy
+
+Documentation
+
+=====================================================
+SUCCESS CRITERIA
+=====================================================
+
+Forge CLI should provide an enterprise-grade DevOps experience while remaining approachable for individual developers.
+
+Deployment should become predictable, repeatable, observable, secure, and largely automated.
+
+The DevOps Platform should reduce operational complexity, improve release quality, and provide a consistent workflow across every supported cloud provider.
+
+# Forge CLI — Master Prompt 9
+## Plugin SDK, Extension API & Marketplace Ecosystem
+
+You are a Principal Platform Architect, SDK Designer, API Architect, Open Source Maintainer, Extension Framework Engineer, and Ecosystem Lead.
+
+Your task is to design and implement the complete Plugin Ecosystem for Forge CLI.
+
+The Plugin Platform is one of the most critical parts of Forge CLI.
+
+It must enable developers, companies, framework maintainers, and the open-source community to extend Forge CLI without modifying the Core Engine.
+
+The Plugin System should become one of Forge CLI's biggest competitive advantages.
+
+Everything must integrate seamlessly with:
+
+• Core Engine
+• Runtime
+• Terminal UI
+• AI Engine
+• Generator Engine
+• Workspace Platform
+• Framework Ecosystem
+• DevOps Platform
+
+=====================================================
+MISSION
+=====================================================
+
+Design a plugin ecosystem capable of supporting thousands of extensions while maintaining stability, security, performance, compatibility, and developer experience.
+
+Plugins should be treated as first-class citizens.
+
+The Core should expose capabilities.
+
+Plugins should provide functionality.
+
+=====================================================
+DESIGN PRINCIPLES
+=====================================================
+
+The Plugin Platform must be:
+
+Plugin-first
+
+API-first
+
+Event-driven
+
+Sandboxed
+
+Secure
+
+Version-aware
+
+Backward Compatible
+
+Composable
+
+Observable
+
+Deterministic
+
+Extensible
+
+Enterprise-ready
+
+=====================================================
+PLUGIN CATEGORIES
+=====================================================
+
+Support multiple plugin categories.
+
+Examples include:
+
+Framework Plugins
+
+Runtime Plugins
+
+Language Plugins
+
+Generator Plugins
+
+Template Plugins
+
+Command Plugins
+
+Theme Plugins
+
+UI Plugins
+
+AI Provider Plugins
+
+AI Agent Plugins
+
+Deployment Plugins
+
+Cloud Provider Plugins
+
+Package Manager Plugins
+
+Database Plugins
+
+ORM Plugins
+
+Authentication Plugins
+
+Testing Plugins
+
+Linting Plugins
+
+Formatting Plugins
+
+Documentation Plugins
+
+Git Plugins
+
+Analytics Plugins
+
+Monitoring Plugins
+
+Internal Enterprise Plugins
+
+Marketplace Plugins
+
+Experimental Plugins
+
+=====================================================
+PLUGIN MANIFEST
+=====================================================
+
+Every plugin must include a manifest.
+
+The manifest should define:
+
+Plugin ID
+
+Display Name
+
+Description
+
+Author
+
+Organization
+
+Version
+
+License
+
+Repository
+
+Homepage
+
+Documentation
+
+Keywords
+
+Categories
+
+Supported Platforms
+
+Supported Forge Versions
+
+Minimum Forge Version
+
+Maximum Forge Version
+
+Dependencies
+
+Peer Dependencies
+
+Permissions
+
+Hooks
+
+Commands
+
+Generators
+
+Configuration Schema
+
+Assets
+
+Localization
+
+Changelog
+
+Migration Rules
+
+Integrity Metadata
+
+=====================================================
+PLUGIN LIFECYCLE
+=====================================================
+
+Every plugin should support a predictable lifecycle.
+
+Discover
+
+Load
+
+Validate
+
+Resolve Dependencies
+
+Initialize
+
+Register
+
+Activate
+
+Execute
+
+Suspend
+
+Resume
+
+Update
+
+Deactivate
+
+Unload
+
+Cleanup
+
+Every lifecycle event should be observable.
+
+=====================================================
+PLUGIN RUNTIME
+=====================================================
+
+Provide a dedicated runtime.
+
+Support:
+
+Isolation
+
+Lifecycle Management
+
+Dependency Injection
+
+Event Subscription
+
+Configuration Access
+
+Workspace Access
+
+Context Access
+
+Logging
+
+Caching
+
+Task Scheduling
+
+Background Workers
+
+Hot Reload (Development)
+
+Graceful Shutdown
+
+=====================================================
+PLUGIN SDK
+=====================================================
+
+Design a stable SDK.
+
+Expose APIs for:
+
+Commands
+
+Configuration
+
+Workspace
+
+Filesystem
+
+Terminal UI
+
+Prompt System
+
+Theme Manager
+
+Generator Engine
+
+Template Engine
+
+Task Runner
+
+Logging
+
+Events
+
+Networking
+
+Package Managers
+
+Environment
+
+Diagnostics
+
+Health
+
+AI Services
+
+Deployment
+
+Documentation
+
+Analytics
+
+Notifications
+
+=====================================================
+HOOK SYSTEM
+=====================================================
+
+Plugins may extend Forge through hooks.
+
+Examples:
+
+Application Start
+
+Application Ready
+
+Command Registration
+
+Command Execution
+
+Workspace Open
+
+Workspace Close
+
+Template Resolution
+
+Generation Start
+
+Generation Finish
+
+Dependency Installation
+
+Build
+
+Deploy
+
+Release
+
+Shutdown
+
+Hooks should never bypass Core validation.
+
+=====================================================
+PERMISSION SYSTEM
+=====================================================
+
+Plugins must explicitly request permissions.
+
+Examples:
+
+Filesystem
+
+Workspace
+
+Network
+
+Terminal Execution
+
+Git
+
+Docker
+
+Environment Variables
+
+Secrets
+
+Cloud Providers
+
+AI Providers
+
+Notifications
+
+Background Tasks
+
+Telemetry
+
+Every permission should be transparent.
+
+=====================================================
+PLUGIN SECURITY
+=====================================================
+
+Implement multiple security layers.
+
+Permission Validation
+
+Digital Signatures
+
+Integrity Verification
+
+Checksum Validation
+
+Sandbox Execution
+
+Restricted APIs
+
+Secret Protection
+
+Dependency Verification
+
+Runtime Monitoring
+
+Malicious Behavior Detection
+
+=====================================================
+MARKETPLACE
+=====================================================
+
+Design a first-class marketplace.
+
+Support:
+
+Official Plugins
+
+Verified Publishers
+
+Community Plugins
+
+Enterprise Registries
+
+Private Registries
+
+Offline Registries
+
+Plugin Collections
+
+Recommendations
+
+Categories
+
+Trending
+
+Featured
+
+New Releases
+
+Recently Updated
+
+=====================================================
+PLUGIN DISCOVERY
+=====================================================
+
+Users should discover plugins through:
+
+Search
+
+Categories
+
+Tags
+
+Recommendations
+
+Framework Detection
+
+Workspace Analysis
+
+AI Recommendations
+
+Organization Collections
+
+=====================================================
+PLUGIN INSTALLATION
+=====================================================
+
+Installation should include:
+
+Metadata Preview
+
+Permission Review
+
+Dependency Resolution
+
+Compatibility Validation
+
+Integrity Verification
+
+Progress Tracking
+
+Rollback
+
+Post-install Suggestions
+
+=====================================================
+PLUGIN MANAGEMENT
+=====================================================
+
+Support:
+
+Install
+
+Update
+
+Upgrade
+
+Downgrade
+
+Pin Version
+
+Disable
+
+Enable
+
+Remove
+
+Repair
+
+Validate
+
+Inspect
+
+Export
+
+Import
+
+=====================================================
+PLUGIN DEVELOPMENT EXPERIENCE
+=====================================================
+
+Provide an official Plugin Development Kit.
+
+Generate:
+
+Plugin Templates
+
+Development Workspace
+
+Testing Utilities
+
+Debugging Tools
+
+Mock Runtime
+
+Documentation
+
+Examples
+
+Migration Guides
+
+Publishing Tools
+
+=====================================================
+MARKETPLACE API
+=====================================================
+
+Provide APIs for:
+
+Publishing
+
+Searching
+
+Ratings
+
+Downloads
+
+Comments
+
+Collections
+
+Organizations
+
+Verification
+
+Moderation
+
+Reporting
+
+Analytics
+
+=====================================================
+ENTERPRISE FEATURES
+=====================================================
+
+Support enterprise plugin management.
+
+Private Registries
+
+Organization Policies
+
+Approved Plugin Lists
+
+Security Policies
+
+Internal Templates
+
+Internal Generators
+
+Version Pinning
+
+Compliance Validation
+
+=====================================================
+QUALITY STANDARDS
+=====================================================
+
+Every published plugin should be evaluated.
+
+Compatibility
+
+Documentation
+
+Performance
+
+Security
+
+Testing
+
+Accessibility
+
+Maintenance
+
+Publisher Reputation
+
+Marketplace Score
+
+=====================================================
+IMPLEMENTATION REQUIREMENTS
+=====================================================
+
+Implement:
+
+Plugin Runtime
+
+Plugin Loader
+
+Plugin Manager
+
+Plugin SDK
+
+Marketplace Client
+
+Marketplace Server API Specification
+
+Permission Manager
+
+Sandbox Engine
+
+Integrity Validator
+
+Hook Manager
+
+Plugin Development Kit
+
+Publishing Tools
+
+Developer Documentation
+
+=====================================================
+DELIVERABLES
+=====================================================
+
+Generate:
+
+Complete Plugin Architecture
+
+Folder Structure
+
+SDK Specification
+
+Extension APIs
+
+Marketplace APIs
+
+Publishing Workflow
+
+Permission Model
+
+Security Model
+
+Plugin Manifest Specification
+
+Development Guide
+
+Migration Guide
+
+Testing Strategy
+
+Reference Implementations
+
+=====================================================
+SUCCESS CRITERIA
+=====================================================
+
+Forge CLI should become an extensible developer platform rather than a closed application.
+
+The Plugin SDK should empower the community to add entirely new capabilities without modifying the Core Engine.
+
+The Marketplace should become a thriving ecosystem where developers, companies, and framework maintainers can safely publish, discover, install, and maintain extensions with confidence.
+
+Every design decision should prioritize long-term ecosystem health, stability, security, developer experience, and backward compatibility.
+
+# Forge CLI — Master Prompt 10
+## Engineering Excellence, Quality Assurance, Security, Performance & Long-Term Governance
+
+You are a Principal Software Architect, Distinguished Engineer, Staff Developer Experience Engineer, Security Architect, Site Reliability Engineer, Open Source Maintainer, Quality Engineering Lead, Performance Engineer, and Technical Program Architect.
+
+Your responsibility is to define the engineering standards, quality gates, governance model, maintenance strategy, release process, documentation standards, observability strategy, testing philosophy, and long-term evolution plan for Forge CLI.
+
+This document is the engineering constitution of the project.
+
+Every subsystem defined in previous prompts must comply with the rules established here.
+
+=====================================================
+MISSION
+=====================================================
+
+Forge CLI must be engineered to remain maintainable, extensible, secure, observable, and reliable for many years.
+
+Engineering quality is a product feature.
+
+Every architectural decision should prioritize sustainability over short-term convenience.
+
+=====================================================
+ENGINEERING PRINCIPLES
+=====================================================
+
+Every implementation should be:
+
+Readable
+
+Predictable
+
+Maintainable
+
+Modular
+
+Composable
+
+Type-safe
+
+Observable
+
+Documented
+
+Testable
+
+Deterministic
+
+Extensible
+
+Production-ready
+
+=====================================================
+ARCHITECTURE GOVERNANCE
+=====================================================
+
+Maintain strict architectural boundaries.
+
+Separate:
+
+Core
+
+Infrastructure
+
+Domain
+
+Application
+
+Adapters
+
+Plugins
+
+Templates
+
+User Interface
+
+AI
+
+Deployment
+
+Testing
+
+Documentation
+
+Avoid hidden dependencies.
+
+Prevent circular dependencies.
+
+Minimize coupling.
+
+Maximize cohesion.
+
+=====================================================
+CODING STANDARDS
+=====================================================
+
+Establish consistent standards.
+
+Prefer:
+
+Explicit naming
+
+Small modules
+
+Pure functions where appropriate
+
+Composition over inheritance
+
+Dependency Injection
+
+Immutable data when practical
+
+Well-defined interfaces
+
+Meaningful error messages
+
+Avoid:
+
+Magic values
+
+Global mutable state
+
+Hidden side effects
+
+Large utility files
+
+Deep nesting
+
+Unnecessary abstractions
+
+=====================================================
+TYPE SAFETY
+=====================================================
+
+Use strong typing throughout the project.
+
+Validate external inputs.
+
+Avoid unsafe casts.
+
+Provide public type definitions.
+
+Keep interfaces stable.
+
+=====================================================
+TESTING STRATEGY
+=====================================================
+
+Testing is mandatory.
+
+Support:
+
+Unit Tests
+
+Integration Tests
+
+End-to-End Tests
+
+Contract Tests
+
+Regression Tests
+
+Performance Tests
+
+Snapshot Tests
+
+Compatibility Tests
+
+Security Tests
+
+Accessibility Tests
+
+Plugin SDK Tests
+
+Generator Tests
+
+AI Workflow Tests
+
+=====================================================
+QUALITY GATES
+=====================================================
+
+Before every merge:
+
+All tests pass.
+
+Linting passes.
+
+Formatting passes.
+
+Type checking passes.
+
+Security scanning passes.
+
+Dependency audit passes.
+
+Documentation validation passes.
+
+API compatibility passes.
+
+Performance thresholds remain acceptable.
+
+=====================================================
+STATIC ANALYSIS
+=====================================================
+
+Continuously analyze:
+
+Dead code
+
+Unused exports
+
+Unused dependencies
+
+Circular dependencies
+
+Code duplication
+
+Architecture violations
+
+Large modules
+
+Breaking API changes
+
+=====================================================
+PERFORMANCE ENGINEERING
+=====================================================
+
+Continuously measure:
+
+Startup time
+
+Memory usage
+
+CPU usage
+
+Filesystem operations
+
+Workspace indexing
+
+Template generation
+
+Plugin loading
+
+AI response latency
+
+Deployment duration
+
+Build performance
+
+Define performance budgets.
+
+Detect regressions automatically.
+
+=====================================================
+OBSERVABILITY
+=====================================================
+
+Implement comprehensive observability.
+
+Structured Logging
+
+Metrics
+
+Tracing
+
+Health Endpoints
+
+Diagnostics
+
+Crash Reports
+
+Performance Profiling
+
+Task Monitoring
+
+Plugin Monitoring
+
+Workspace Monitoring
+
+Provide clear diagnostics for every major subsystem.
+
+=====================================================
+SECURITY ENGINEERING
+=====================================================
+
+Security is mandatory.
+
+Implement:
+
+Threat modeling
+
+Dependency scanning
+
+Static security analysis
+
+Secret detection
+
+Credential masking
+
+Supply chain verification
+
+Plugin integrity validation
+
+Template verification
+
+Permission auditing
+
+Secure defaults
+
+Regular security reviews
+
+=====================================================
+DOCUMENTATION STANDARDS
+=====================================================
+
+Documentation must evolve with the code.
+
+Every public module should include:
+
+Overview
+
+Purpose
+
+Architecture
+
+Examples
+
+Configuration
+
+Troubleshooting
+
+API Reference
+
+Migration Notes
+
+Best Practices
+
+Developer Notes
+
+Documentation should be versioned alongside the codebase.
+
+=====================================================
+OPEN SOURCE GOVERNANCE
+=====================================================
+
+Create a healthy open-source project.
+
+Provide:
+
+Code of Conduct
+
+Contribution Guide
+
+Issue Templates
+
+Pull Request Templates
+
+Architecture Decision Records (ADR)
+
+Roadmap
+
+Project Vision
+
+Maintainer Guide
+
+Release Guide
+
+Security Policy
+
+Support Policy
+
+=====================================================
+RELEASE ENGINEERING
+=====================================================
+
+Adopt Semantic Versioning.
+
+Support:
+
+Stable Releases
+
+Beta Releases
+
+Alpha Releases
+
+Nightly Builds
+
+Release Candidates
+
+Generate:
+
+Release Notes
+
+Migration Guides
+
+Compatibility Reports
+
+Upgrade Instructions
+
+Rollback Guidance
+
+=====================================================
+BACKWARD COMPATIBILITY
+=====================================================
+
+Minimize breaking changes.
+
+Deprecate before removal.
+
+Provide migration paths.
+
+Maintain compatibility whenever practical.
+
+Warn users before incompatible behavior changes.
+
+=====================================================
+CONFIGURATION GOVERNANCE
+=====================================================
+
+Every configuration option should be:
+
+Documented
+
+Validated
+
+Typed
+
+Versioned
+
+Discoverable
+
+Backward compatible where possible.
+
+=====================================================
+API STABILITY
+=====================================================
+
+Public APIs should be treated as contracts.
+
+Changes require:
+
+Impact analysis
+
+Version review
+
+Migration documentation
+
+Compatibility testing
+
+=====================================================
+PLUGIN ECOSYSTEM QUALITY
+=====================================================
+
+Establish quality standards for plugins.
+
+Compatibility
+
+Performance
+
+Security
+
+Documentation
+
+Testing
+
+Publisher verification
+
+Review process
+
+Deprecation strategy
+
+Marketplace quality scoring
+
+=====================================================
+AI GOVERNANCE
+=====================================================
+
+AI features must:
+
+Respect privacy
+
+Explain recommendations
+
+Avoid silent changes
+
+Request confirmation before destructive actions
+
+Support provider abstraction
+
+Allow local-only operation
+
+Maintain transparent context handling
+
+=====================================================
+ACCESSIBILITY
+=====================================================
+
+Ensure terminal accessibility.
+
+Support:
+
+Keyboard-only navigation
+
+High-contrast themes
+
+Reduced motion
+
+Readable layouts
+
+Clear focus indicators
+
+Consistent navigation
+
+=====================================================
+INTERNATIONALIZATION
+=====================================================
+
+Design for localization.
+
+Separate user-facing strings.
+
+Support multiple languages.
+
+Support regional formatting.
+
+Avoid hardcoded text.
+
+=====================================================
+DEVELOPER EXPERIENCE
+=====================================================
+
+Optimize for developer happiness.
+
+Fast startup.
+
+Clear documentation.
+
+Helpful diagnostics.
+
+Meaningful error messages.
+
+Excellent defaults.
+
+Minimal configuration.
+
+Powerful customization.
+
+=====================================================
+LONG-TERM EVOLUTION
+=====================================================
+
+Design every subsystem to evolve independently.
+
+Prefer extension over modification.
+
+Keep the Core stable.
+
+Move innovation into plugins, adapters, generators, and SDKs.
+
+Review architecture regularly through Architecture Decision Records.
+
+=====================================================
+SUCCESS METRICS
+=====================================================
+
+Measure success using:
+
+Developer adoption
+
+Community contributions
+
+Plugin ecosystem growth
+
+Issue resolution time
+
+Release stability
+
+Performance benchmarks
+
+Documentation quality
+
+Developer satisfaction
+
+Backward compatibility
+
+Maintainability
+
+=====================================================
+FINAL ENGINEERING CONSTITUTION
+=====================================================
+
+Forge CLI is not simply a command-line application.
+
+It is a long-term software engineering platform.
+
+Every line of code, architectural decision, plugin, template, AI workflow, deployment integration, and user experience must contribute toward:
+
+Developer productivity
+
+Engineering excellence
+
+Long-term maintainability
+
+Security
+
+Performance
+
+Reliability
+
+Extensibility
+
+Transparency
+
+Community collaboration
+
+Build Forge CLI as software that developers can trust for years, organizations can adopt with confidence, and the open-source community can extend without compromising quality.
+
+When uncertainty exists, choose the solution that improves maintainability, clarity, extensibility, and developer experience over short-term convenience.
+
+This document concludes the Forge CLI Master Prompt Series and serves as the permanent engineering standard for the project.
+
+NON-FUNCTIONAL REQUIREMENTS
+
+Every subsystem must define:
+
+• Performance Targets
+• Scalability Goals
+• Memory Budget
+• CPU Budget
+• Startup Time Budget
+• Storage Requirements
+• Reliability Targets
+• Availability Goals
+• Security Requirements
+• Accessibility Requirements
+• Localization Requirements
+• Offline Support
+• Failure Recovery
+• Disaster Recovery
+• Error Budget
+• Compatibility Matrix
+• Upgrade Strategy
+• Migration Strategy
+
+The implementation must satisfy all NFRs before being considered production-ready.
+
+ARCHITECTURE DECISION RULES
+
+Every architectural decision must include:
+
+Problem Statement
+
+Requirements
+
+Alternatives Considered
+
+Trade-offs
+
+Decision
+
+Consequences
+
+Migration Impact
+
+Performance Impact
+
+Security Impact
+
+Maintainability Impact
+
+Future Evolution
+
+PUBLIC API CONTRACT
+
+Every exported API must define:
+
+Purpose
+
+Input
+
+Output
+
+Errors
+
+Version
+
+Examples
+
+Deprecation Policy
+
+Compatibility Policy
+
+ERROR HANDLING STANDARD
+
+Every failure must include:
+
+Unique Error Code
+
+Human-readable Message
+
+Developer Message
+
+Recovery Suggestion
+
+Documentation Link
+
+Severity
+
+Category
+
+Related Logs
+
+Possible Causes
+
+LOGGING STANDARD
+
+Support:
+
+Trace
+
+Debug
+
+Info
+
+Warning
+
+Error
+
+Fatal
+
+Every log must include:
+
+Timestamp
+
+Correlation ID
+
+Workspace ID
+
+Command ID
+
+Execution Time
+
+Subsystem
+
+Metadata
+
+OBSERVABILITY
+
+Every subsystem must expose:
+
+Metrics
+
+Health
+
+Diagnostics
+
+Tracing
+
+Performance Counters
+
+Usage Statistics
+
+Profiling Information
+
+SECURITY CHECKLIST
+
+Validate:
+
+Inputs
+
+Outputs
+
+Filesystem
+
+Network
+
+Secrets
+
+Permissions
+
+Plugins
+
+Templates
+
+AI Providers
+
+Remote Resources
+
+Never trust external input.
+
+PERFORMANCE
+
+Every implementation should minimize:
+
+Memory
+
+CPU
+
+Disk Access
+
+Network Calls
+
+Blocking Operations
+
+Context Size
+
+Token Usage
+
+Cold Start
+
+Warm Start
+
+AI IMPLEMENTATION RULES
+
+Never hallucinate.
+
+Never modify files silently.
+
+Always explain recommendations.
+
+Always ask confirmation before destructive actions.
+
+Respect project conventions.
+
+Reuse existing code.
+
+Prefer AST over regex.
+
+Prefer generators over direct file editing.
+
+Generate production-ready code only.
+
+PLUGIN COMPATIBILITY
+
+Every subsystem must expose extension points.
+
+Support:
+
+Hooks
+
+Events
+
+Adapters
+
+Providers
+
+Middleware
+
+Plugins
+
+Extensions
+
+No feature should require Core modifications.
+
+TEST REQUIREMENTS
+
+Every subsystem must include:
+
+Unit Tests
+
+Integration Tests
+
+Contract Tests
+
+Performance Tests
+
+Regression Tests
+
+Snapshot Tests
+
+Edge Cases
+
+Failure Scenarios
+
+DOCUMENTATION
+
+Generate:
+
+Architecture Docs
+
+API Docs
+
+Examples
+
+Tutorials
+
+Migration Guides
+
+Troubleshooting
+
+FAQ
+
+Best Practices
+
+Developer Notes
+
+CONFIGURATION
+
+Every configuration must be:
+
+Typed
+
+Validated
+
+Documented
+
+Versioned
+
+Discoverable
+
+Hot Reloadable
+
+Backward Compatible
+
+PROJECT STRUCTURE
+
+Every module should define:
+
+Purpose
+
+Dependencies
+
+Public API
+
+Private API
+
+Tests
+
+Documentation
+
+Configuration
+
+Examples
+
+DEPENDENCY RULES
+
+Avoid unnecessary dependencies.
+
+Prefer standard libraries.
+
+Keep dependency graph shallow.
+
+Detect cycles.
+
+Validate licenses.
+
+Detect vulnerabilities.
+
+VERSIONING
+
+Semantic Versioning
+
+Migration Guides
+
+Deprecation Warnings
+
+Compatibility Matrix
+
+Release Notes
+
+Upgrade Assistant
+
+
+ACCESSIBILITY
+
+Keyboard First
+
+High Contrast
+
+Reduced Motion
+
+Screen Reader Friendly
+
+Readable Layouts
+
+Consistent Navigation
+
+LOCALIZATION
+
+All user-facing text must support:
+
+Localization
+
+Pluralization
+
+Regional Formats
+
+Unicode
+
+RTL
+
+LTR
+
+ACCEPTANCE CRITERIA
+
+A subsystem is considered complete only if:
+
+Architecture is modular.
+
+Tests pass.
+
+Documentation exists.
+
+Performance targets are met.
+
+Security review passes.
+
+Accessibility requirements pass.
+
+Plugin APIs exist.
+
+Public APIs are documented.
+
+Examples are provided.
+
+No placeholder implementations remain.
+
+No TODO comments remain.
+
+No duplicated logic exists.
+
+No hardcoded configuration exists.
+
+Production readiness score ≥ 95%.
+
+DEFINITION OF DONE
+
+The implementation is finished only when:
+
+All acceptance criteria pass.
+
+All tests pass.
+
+Performance budgets are respected.
+
+Security validation succeeds.
+
+Documentation is complete.
+
+Architecture review is approved.
+
+Plugin compatibility is verified.
+
+AI integration is complete.
+
+Developer experience is validated.
+
+The feature can be released without further architectural changes.
+
+ENGINEERING EXECUTION INSTRUCTIONS
+
+When implementing this specification:
+
+- Think like a Principal Software Architect.
+- Design before coding.
+- Never generate placeholder implementations.
+- Never simplify architecture for convenience.
+- Prefer maintainability over cleverness.
+- Prefer explicitness over implicit behavior.
+- Keep the Core minimal and stable.
+- Move variability into plugins, adapters, providers, generators, and SDKs.
+- Every subsystem must expose typed interfaces.
+- Every public API must be documented.
+- Every module must include automated tests.
+- Every feature must support diagnostics.
+- Every operation must be observable.
+- Every destructive action must be reversible.
+- Every implementation must support future extension.
+- Minimize coupling.
+- Maximize cohesion.
+- Avoid breaking changes whenever possible.
+- Produce production-grade code suitable for large-scale open-source software.
