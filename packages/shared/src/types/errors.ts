@@ -1,0 +1,74 @@
+export enum ErrorCode {
+  // General
+  UNKNOWN = 'FORGE_001',
+  INTERNAL = 'FORGE_002',
+  NOT_IMPLEMENTED = 'FORGE_003',
+
+  // Configuration
+  CONFIG_INVALID = 'FORGE_100',
+  CONFIG_NOT_FOUND = 'FORGE_101',
+  CONFIG_LAYER_ERROR = 'FORGE_102',
+  CONFIG_MIGRATION_REQUIRED = 'FORGE_103',
+
+  // Command
+  COMMAND_NOT_FOUND = 'FORGE_200',
+  COMMAND_INVALID_ARGS = 'FORGE_201',
+  COMMAND_INVALID_FLAGS = 'FORGE_202',
+  COMMAND_AUTHORIZATION_FAILED = 'FORGE_203',
+  COMMAND_EXECUTION_FAILED = 'FORGE_204',
+
+  // Plugin
+  PLUGIN_NOT_FOUND = 'FORGE_300',
+  PLUGIN_INVALID = 'FORGE_301',
+  PLUGIN_INCOMPATIBLE = 'FORGE_302',
+  PLUGIN_DEPENDENCY_MISSING = 'FORGE_303',
+  PLUGIN_PERMISSION_DENIED = 'FORGE_304',
+  PLUGIN_LOAD_FAILED = 'FORGE_305',
+
+  // Template
+  TEMPLATE_NOT_FOUND = 'FORGE_400',
+  TEMPLATE_INVALID = 'FORGE_401',
+  TEMPLATE_DOWNLOAD_FAILED = 'FORGE_402',
+  TEMPLATE_GENERATION_FAILED = 'FORGE_403',
+
+  // Filesystem
+  FS_READ_ERROR = 'FORGE_500',
+  FS_WRITE_ERROR = 'FORGE_501',
+  FS_PERMISSION_ERROR = 'FORGE_502',
+  FS_NOT_FOUND = 'FORGE_503',
+  FS_CONFLICT = 'FORGE_504',
+
+  // Network
+  NETWORK_REQUEST_FAILED = 'FORGE_600',
+  NETWORK_TIMEOUT = 'FORGE_601',
+  NETWORK_UNAUTHORIZED = 'FORGE_602',
+
+  // Workspace
+  WORKSPACE_NOT_FOUND = 'FORGE_700',
+  WORKSPACE_INVALID = 'FORGE_701',
+  WORKSPACE_PACKAGE_ERROR = 'FORGE_702',
+
+  // Deployment
+  DEPLOYMENT_FAILED = 'FORGE_800',
+  DEPLOYMENT_ROLLBACK_FAILED = 'FORGE_801',
+
+  // AI
+  AI_PROVIDER_NOT_CONFIGURED = 'FORGE_900',
+  AI_REQUEST_FAILED = 'FORGE_901',
+  AI_CONTEXT_ERROR = 'FORGE_902',
+}
+
+export type ErrorSeverity = 'error' | 'warning' | 'info'
+
+export interface ForgeErrorDetails {
+  code: ErrorCode
+  title: string
+  message: string
+  description?: string
+  cause?: Error
+  severity: ErrorSeverity
+  category: string
+  recovery?: string[]
+  docsUrl?: string
+  metadata?: Record<string, unknown>
+}
