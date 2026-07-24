@@ -107,6 +107,18 @@ export { Lister } from './list/lister.js'
 export type { ListItem, ListOptions, ListResult } from './list/types.js'
 export type { ListerOptions } from './list/lister.js'
 
+// Dev
+export { DevDetector } from './dev/detector.js'
+export { DevRunner } from './dev/runner.js'
+export type { DevTool, DevDetectorOptions } from './dev/detector.js'
+export type { DevOptions, DevResult, DevRunnerOptions } from './dev/runner.js'
+
+// Project
+export { ProjectCreator } from './project/creator.js'
+export { TEMPLATES, getTemplate, getTemplatesByCategory, searchTemplates } from './project/templates.js'
+export type { ProjectTemplate, ProjectFile, CreateOptions, CreateResult } from './project/types.js'
+export type { CreatorOptions } from './project/creator.js'
+
 // Filesystem
 export { NodeFileSystem } from './fs/node.js'
 export { MemoryFileSystem } from './fs/memory.js'

@@ -19,6 +19,7 @@ import { runCompletion } from './commands/completion/index.js'
 import { runInit } from './commands/init/index.js'
 import { runBuild, runBuildDetect } from './commands/build/index.js'
 import { runList, runListAvailable } from './commands/list/index.js'
+import { runDev, runDevDetect } from './commands/dev/index.js'
 
 export function createProgram(): Command {
   const program = new Command()
@@ -37,9 +38,12 @@ export function createProgram(): Command {
     .command('create')
     .description('Create a new project')
     .argument('[project-name]', 'Name of the project')
-    .option('-t, --template <template>', 'Template to use')
+    .option('-t, --template <template>', 'Template to use (react, nextjs, vue, node, library, empty)')
     .option('-p, --package-manager <pm>', 'Package manager (npm, pnpm, yarn, bun)')
     .option('-f, --framework <framework>', 'Framework to use')
+    .option('-l, --language <language>', 'Language (typescript, javascript)')
+    .option('--no-git', 'Skip git initialization')
+    .option('--no-install', 'Skip dependency installation')
     .action(async (projectName, options) => {
       const kernel = new Kernel({ flags: program.opts() })
       await kernel.bootstrap()
@@ -86,6 +90,34 @@ export function createProgram(): Command {
       await kernel.shutdown()
     })
 
+  // ─── dev ─────────────────────────────────────────────────────
+  program
+    .command('dev')
+    .description('Start the development server')
+    .option('-t, --tool <tool>', 'Dev tool to use (vite, next, etc.)')
+    .option('-p, --port <port>', 'Port number', parseInt)
+    .option('--args <args...>', 'Additional arguments to pass to the dev server')
+    .action(async (options) => {
+      const kernel = new Kernel({ flags: program.opts() })
+      await kernel.bootstrap()
+      await runDev(kernel, {
+        tool: options.tool,
+        port: options.port,
+        args: options.args,
+      })
+      await kernel.shutdown()
+    })
+
+  program
+    .command('dev:detect')
+    .description('Detect available dev tools')
+    .action(async () => {
+      const kernel = new Kernel({ flags: program.opts() })
+      await kernel.bootstrap()
+      await runDevDetect(kernel)
+      await kernel.shutdown()
+    })
+
   // ─── list ────────────────────────────────────────────────────
   program
     .command('list [type]')
@@ -94,11 +126,16 @@ export function createProgram(): Command {
     .option('--sort <field>', 'Sort by name, version, status, or type')
     .option('--limit <n>', 'Limit number of results', parseInt)
     .option('--json', 'Output as JSON')
-    .action(async (type?: string, options?) => {
-      const kernel = new Kernel({ flags: program.opts() })
+    .action(async (type?: string, options?: { filter?: string; sort?: string; limit?: number; json?: boolean }) => {
+      const globalOpts = program.opts()
+      const kernel = new Kernel({ flags: globalOpts })
       await kernel.bootstrap()
+      const opts = {
+        ...options,
+        json: options?.json ?? globalOpts.json,
+      }
       if (type) {
-        await runList(kernel, type, options ?? {})
+        await runList(kernel, type, opts)
       } else {
         await runListAvailable(kernel)
       }
