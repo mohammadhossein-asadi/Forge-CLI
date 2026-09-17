@@ -1,4 +1,3 @@
-import React from 'react'
 import { Text as InkText } from 'ink'
 
 export interface TextProps {
@@ -11,8 +10,9 @@ export interface TextProps {
   strikethrough?: boolean
   dimColor?: boolean
   invisible?: boolean
+  [key: string]: unknown
 }
 
 export function Text(props: TextProps) {
-  return <InkText {...props} />
+  return <InkText {...(props as object)} />
 }

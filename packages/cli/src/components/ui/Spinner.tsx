@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import { Text } from './Text.js'
+import { useEffect, useState } from 'react'
 import { icons } from '../../rendering/icons.js'
+import { Text } from './Text.js'
 
 const FRAMES = icons.spinnerFrames
 
@@ -21,7 +21,8 @@ export function Spinner({ label, color = '#6C9EEB' }: SpinnerProps) {
 
   return (
     <Text color={color}>
-      {FRAMES[frame]}{label ? ` ${label}` : ''}
+      {FRAMES[frame]}
+      {label ? ` ${label}` : ''}
     </Text>
   )
 }

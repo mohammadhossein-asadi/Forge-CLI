@@ -1,6 +1,6 @@
-import { describe, it, expect } from 'vitest'
-import { PluginSandbox } from './sandbox.js'
+import { describe, expect, it } from 'vitest'
 import { Logger } from '../logging/logger.js'
+import { PluginSandbox } from './sandbox.js'
 
 function createSandbox() {
   return new PluginSandbox({

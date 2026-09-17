@@ -1,7 +1,6 @@
-import React from 'react'
+import { CLI_NAME, CLI_VERSION } from '@forge/shared'
 import { Box } from '../ui/Box.js'
 import { Text } from '../ui/Text.js'
-import { CLI_NAME, CLI_VERSION } from '@forge/shared'
 
 export interface HeaderProps {
   subtitle?: string
@@ -14,13 +13,9 @@ export function Header({ subtitle }: HeaderProps) {
         <Text bold color="#6C9EEB">
           {CLI_NAME}
         </Text>
-        <Text dimColor>
-          v{CLI_VERSION}
-        </Text>
+        <Text dimColor>v{CLI_VERSION}</Text>
       </Box>
-      {subtitle && (
-        <Text dimColor>{subtitle}</Text>
-      )}
+      {subtitle && <Text dimColor>{subtitle}</Text>}
     </Box>
   )
 }

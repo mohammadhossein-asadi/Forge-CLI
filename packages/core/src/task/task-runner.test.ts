@@ -1,7 +1,7 @@
-import { describe, it, expect, vi } from 'vitest'
-import { TaskRunner } from './task-runner.js'
-import { Logger } from '../logging/logger.js'
+import { describe, expect, it } from 'vitest'
 import { EventBus } from '../events/event-bus.js'
+import { Logger } from '../logging/logger.js'
+import { TaskRunner } from './task-runner.js'
 import type { TaskDefinition } from './types.js'
 
 function createRunner() {
@@ -37,7 +37,7 @@ describe('TaskRunner', () => {
     expect(report.success).toBe(true)
     expect(report.completedCount).toBe(1)
     expect(report.failedCount).toBe(0)
-    expect(report.tasks[0]!.status).toBe('completed')
+    expect(report.tasks[0]?.status).toBe('completed')
   })
 
   it('should run multiple independent tasks', async () => {
@@ -103,7 +103,7 @@ describe('TaskRunner', () => {
 
     expect(report.success).toBe(false)
     expect(report.failedCount).toBe(1)
-    expect(report.tasks[0]!.status).toBe('failed')
+    expect(report.tasks[0]?.status).toBe('failed')
   })
 
   it('should skip dependent tasks when dependency fails', async () => {
@@ -127,8 +127,8 @@ describe('TaskRunner', () => {
     const report = await runner.runAll(tasks)
 
     expect(report.success).toBe(false)
-    expect(report.tasks[0]!.status).toBe('failed')
-    expect(report.tasks[1]!.status).toBe('skipped')
+    expect(report.tasks[0]?.status).toBe('failed')
+    expect(report.tasks[1]?.status).toBe('skipped')
   })
 
   it('should retry failed tasks', async () => {

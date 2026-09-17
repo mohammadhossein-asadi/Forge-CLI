@@ -1,14 +1,14 @@
 import { deepMerge } from '@forge/shared'
 import type { ForgeConfig, ResolvedConfig } from '@forge/shared'
-import { validateConfig } from './schema.js'
-import type { ConfigLayer } from './types.js'
 import { DefaultsLayer } from './layers/defaults-layer.js'
-import { GlobalConfigLayer } from './layers/global-layer.js'
-import { UserConfigLayer } from './layers/user-layer.js'
-import { WorkspaceConfigLayer } from './layers/workspace-layer.js'
-import { ProjectConfigLayer } from './layers/project-layer.js'
 import { EnvironmentLayer } from './layers/environment-layer.js'
 import { FlagsLayer } from './layers/flags-layer.js'
+import { GlobalConfigLayer } from './layers/global-layer.js'
+import { ProjectConfigLayer } from './layers/project-layer.js'
+import { UserConfigLayer } from './layers/user-layer.js'
+import { WorkspaceConfigLayer } from './layers/workspace-layer.js'
+import { validateConfig } from './schema.js'
+import type { ConfigLayer } from './types.js'
 
 export class ConfigResolver {
   private layers: ConfigLayer[]

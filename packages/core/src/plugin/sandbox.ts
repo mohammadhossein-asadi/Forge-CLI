@@ -47,7 +47,10 @@ export class PluginSandbox {
       const result = await Promise.race([
         Promise.resolve(fn()),
         new Promise<never>((_, reject) =>
-          setTimeout(() => reject(new Error(`Execution timed out after ${this.maxCpuTime}ms`)), this.maxCpuTime),
+          setTimeout(
+            () => reject(new Error(`Execution timed out after ${this.maxCpuTime}ms`)),
+            this.maxCpuTime,
+          ),
         ),
       ])
 

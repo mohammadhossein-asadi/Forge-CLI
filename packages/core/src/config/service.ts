@@ -2,10 +2,10 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import { ForgeConfigSchema } from '@forge/shared'
 import type { ResolvedConfig } from '@forge/shared'
+import type { EventBus } from '../events/event-bus.js'
+import type { Logger } from '../logging/logger.js'
 import { ConfigResolver } from './resolver.js'
 import type { ConfigLayer } from './types.js'
-import { EventBus } from '../events/event-bus.js'
-import type { Logger } from '../logging/logger.js'
 
 export interface ConfigServiceOptions {
   logger: Logger
@@ -104,16 +104,17 @@ export class ConfigService {
 
     // Set nested key
     const parts = key.split('.')
+    const lastPart = parts.pop()
+    if (!lastPart) return
     let current = config
-    for (let i = 0; i < parts.length - 1; i++) {
-      const part = parts[i]!
+    for (const part of parts) {
       if (!(part in current) || typeof current[part] !== 'object') {
         current[part] = {}
       }
       current = current[part] as Record<string, unknown>
     }
 
-    current[parts[parts.length - 1]!] = value
+    current[lastPart] = value
 
     // Write back
     await this.writeConfigFile(configPath, config)
@@ -136,14 +137,15 @@ export class ConfigService {
     }
 
     const parts = key.split('.')
+    const lastPart = parts.pop()
+    if (!lastPart) return
     let current = config
-    for (let i = 0; i < parts.length - 1; i++) {
-      const part = parts[i]!
+    for (const part of parts) {
       if (!(part in current) || typeof current[part] !== 'object') return
       current = current[part] as Record<string, unknown>
     }
 
-    delete current[parts[parts.length - 1]!]
+    delete current[lastPart]
 
     await this.writeConfigFile(configPath, config)
     this.resolved = await this.resolver.resolve()
@@ -211,13 +213,17 @@ export class ConfigService {
 
   private async getConfigFilePath(layer?: string): Promise<string | null> {
     if (layer === 'global') {
-      const configDir = process.platform === 'win32'
-        ? path.join(process.env.LOCALAPPDATA ?? path.join(process.env.HOME ?? '', 'AppData', 'Local'), 'forge')
-        : process.platform === 'darwin'
-          ? path.join(process.env.HOME ?? '', 'Library', 'Application Support', 'forge')
-          : process.env.XDG_CONFIG_HOME
-            ? path.join(process.env.XDG_CONFIG_HOME, 'forge')
-            : path.join(process.env.HOME ?? '', '.config', 'forge')
+      const configDir =
+        process.platform === 'win32'
+          ? path.join(
+              process.env.LOCALAPPDATA ?? path.join(process.env.HOME ?? '', 'AppData', 'Local'),
+              'forge',
+            )
+          : process.platform === 'darwin'
+            ? path.join(process.env.HOME ?? '', 'Library', 'Application Support', 'forge')
+            : process.env.XDG_CONFIG_HOME
+              ? path.join(process.env.XDG_CONFIG_HOME, 'forge')
+              : path.join(process.env.HOME ?? '', '.config', 'forge')
       return path.join(configDir, 'config.json')
     }
 
@@ -227,15 +233,14 @@ export class ConfigService {
 
   private async writeConfigFile(filePath: string, config: Record<string, unknown>): Promise<void> {
     await fs.mkdir(path.dirname(filePath), { recursive: true })
-    await fs.writeFile(filePath, JSON.stringify(config, null, 2) + '\n', 'utf-8')
+    await fs.writeFile(filePath, `${JSON.stringify(config, null, 2)}\n`, 'utf-8')
   }
 
   // ─── Export/Import ───────────────────────────────────────────
 
   async exportConfig(format: 'json' | 'yaml' | 'toml' = 'json'): Promise<string> {
     const config = this.get()
-    const exportable = { ...config }
-    delete (exportable as Record<string, unknown>)._resolvedFrom
+    const { _resolvedFrom: _omit, ...exportable } = config as Record<string, unknown>
 
     if (format === 'json') {
       return JSON.stringify(exportable, null, 2)

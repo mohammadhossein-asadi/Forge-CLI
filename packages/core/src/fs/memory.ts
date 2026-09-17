@@ -31,7 +31,7 @@ export class MemoryFileSystem implements FileSystemInterface {
     return {
       isFile: true,
       isDirectory: false,
-      size: this.files.get(path)!.length,
+      size: this.files.get(path)?.length ?? 0,
       modifiedAt: new Date(),
     }
   }
@@ -61,11 +61,12 @@ export class MemoryFileSystem implements FileSystemInterface {
     return [...this.files.keys()]
   }
 
-  async glob(pattern: string): Promise<string[]> {
-    const regex = new RegExp(
-      '^' + pattern.replace(/\*/g, '.*').replace(/\?/g, '.') + '$',
-    )
-    return [...this.files.keys()].filter((f) => regex.test(f))
+  async glob(pattern: string, cwd?: string): Promise<string[]> {
+    const base = cwd ? (cwd.endsWith('/') ? cwd : `${cwd}/`) : ''
+    const regex = new RegExp(`^${pattern.replace(/\*/g, '.*').replace(/\?/g, '.')}$`)
+    return [...this.files.keys()]
+      .filter((f) => f.startsWith(base))
+      .filter((f) => regex.test(f.slice(base.length)))
   }
 
   async readFileJson<T = unknown>(path: string): Promise<T> {
@@ -74,7 +75,7 @@ export class MemoryFileSystem implements FileSystemInterface {
   }
 
   async writeFileJson(path: string, data: unknown, indent = 2): Promise<void> {
-    await this.writeFile(path, JSON.stringify(data, null, indent) + '\n')
+    await this.writeFile(path, `${JSON.stringify(data, null, indent)}\n`)
   }
 
   // Test helpers

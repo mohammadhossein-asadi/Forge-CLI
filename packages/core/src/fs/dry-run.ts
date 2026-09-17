@@ -68,6 +68,6 @@ export class DryRunFileSystem implements FileSystemInterface {
   }
 
   async writeFileJson(path: string, data: unknown, indent = 2): Promise<void> {
-    await this.writeFile(path, JSON.stringify(data, null, indent) + '\n')
+    await this.writeFile(path, `${JSON.stringify(data, null, indent)}\n`)
   }
 }

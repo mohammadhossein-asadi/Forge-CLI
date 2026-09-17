@@ -1,8 +1,8 @@
-import { CLI_VERSION, CLI_NAME } from '@forge/shared'
-import { Kernel } from '../kernel.js'
+import { CLI_NAME, CLI_VERSION } from '@forge/shared'
 import { ForgeError } from '../error/forge-error.js'
-import type { CommandRegistry } from './registry.js'
+import { Kernel } from '../kernel.js'
 import { HelpFormatter } from './help.js'
+import type { CommandRegistry } from './registry.js'
 
 export interface RunnerOptions {
   verbose?: boolean
@@ -11,9 +11,11 @@ export interface RunnerOptions {
   noColor?: boolean
 }
 
-export interface CommandAction {
-  (kernel: Kernel, args: Record<string, unknown>, flags: Record<string, unknown>): Promise<void>
-}
+export type CommandAction = (
+  kernel: Kernel,
+  args: Record<string, unknown>,
+  flags: Record<string, unknown>,
+) => Promise<void>
 
 export class CLIRunner {
   private kernel?: Kernel

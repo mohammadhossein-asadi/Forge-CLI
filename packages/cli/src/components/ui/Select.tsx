@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Box } from './Box.js'
 import { Text } from './Text.js'
-import { icons } from '../../rendering/icons.js'
 
 export interface SelectOption {
   label: string
@@ -18,8 +17,13 @@ export interface SelectProps {
   focusColor?: string
 }
 
-export function Select({ options, selected, onSelect, color = '#F9FAFB', focusColor = '#6C9EEB' }: SelectProps) {
-  const [hovered, setHovered] = useState(selected)
+export function Select({
+  options,
+  selected,
+  color = '#F9FAFB',
+  focusColor = '#6C9EEB',
+}: SelectProps) {
+  const [hovered] = useState(selected)
 
   return (
     <Box flexDirection="column" gap={0}>
@@ -29,9 +33,7 @@ export function Select({ options, selected, onSelect, color = '#F9FAFB', focusCo
 
         return (
           <Box key={option.value} flexDirection="row" gap={1}>
-            <Text color={isSelected ? focusColor : undefined}>
-              {isSelected ? '●' : '○'}
-            </Text>
+            <Text color={isSelected ? focusColor : undefined}>{isSelected ? '●' : '○'}</Text>
             <Text
               bold={isSelected}
               color={isSelected ? focusColor : isHovered ? color : undefined}
@@ -39,9 +41,7 @@ export function Select({ options, selected, onSelect, color = '#F9FAFB', focusCo
             >
               {option.label}
             </Text>
-            {option.description && (
-              <Text dimColor> — {option.description}</Text>
-            )}
+            {option.description && <Text dimColor> — {option.description}</Text>}
           </Box>
         )
       })}

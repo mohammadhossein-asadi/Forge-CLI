@@ -33,7 +33,7 @@ export function createPluginNotFoundError(name: string): PluginError {
     recovery: [
       `Install the plugin with: forge plugin install ${name}`,
       'Check the plugin name for typos',
-      'Search for available plugins: forge plugin search ' + name,
+      `Search for available plugins: forge plugin search ${name}`,
     ],
   })
 }
@@ -53,7 +53,11 @@ export function createPluginLoadError(name: string, cause: Error): PluginError {
   })
 }
 
-export function createPluginIncompatibleError(name: string, required: string, actual: string): PluginError {
+export function createPluginIncompatibleError(
+  name: string,
+  required: string,
+  actual: string,
+): PluginError {
   return new PluginError({
     code: ErrorCode.PLUGIN_INCOMPATIBLE,
     message: `Plugin "${name}" requires Forge CLI ${required}, but found ${actual}`,

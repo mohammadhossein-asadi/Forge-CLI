@@ -1,25 +1,27 @@
 import { Command } from 'commander'
-import { CLI_NAME, CLI_VERSION, CLI_DESCRIPTION } from '@forge/shared'
+const parseIntSafe = (v: string) => Number.parseInt(v, 10)
 import { Kernel } from '@forge/core'
+import { CLI_DESCRIPTION, CLI_NAME, CLI_VERSION } from '@forge/shared'
+import { runBuild, runBuildDetect } from './commands/build/index.js'
+import { runCompletion } from './commands/completion/index.js'
+import { runConfigGet, runConfigList, runConfigSet } from './commands/config/index.js'
+import { runCreate } from './commands/create/index.js'
+import { runDev, runDevDetect } from './commands/dev/index.js'
 import { runDoctor } from './commands/doctor/index.js'
-import { runConfigGet, runConfigSet, runConfigList } from './commands/config/index.js'
+import { runInit } from './commands/init/index.js'
+import { type ListCommandOptions, runList, runListAvailable } from './commands/list/index.js'
 import {
-  runPluginList,
+  runPluginConfig,
+  runPluginCreate,
+  runPluginInfo,
   runPluginInstall,
+  runPluginList,
   runPluginRemove,
   runPluginSearch,
-  runPluginInfo,
-  runPluginCreate,
   runPluginUpdate,
-  runPluginConfig,
 } from './commands/plugin/index.js'
-import { runCreate } from './commands/create/index.js'
 import { runUpgrade } from './commands/upgrade/index.js'
-import { runCompletion } from './commands/completion/index.js'
-import { runInit } from './commands/init/index.js'
-import { runBuild, runBuildDetect } from './commands/build/index.js'
-import { runList, runListAvailable } from './commands/list/index.js'
-import { runDev, runDevDetect } from './commands/dev/index.js'
+import { runWorkspace } from './commands/workspace/index.js'
 
 export function createProgram(): Command {
   const program = new Command()
@@ -38,7 +40,10 @@ export function createProgram(): Command {
     .command('create')
     .description('Create a new project')
     .argument('[project-name]', 'Name of the project')
-    .option('-t, --template <template>', 'Template to use (react, nextjs, vue, node, library, empty)')
+    .option(
+      '-t, --template <template>',
+      'Template to use (react, nextjs, vue, node, library, empty)',
+    )
     .option('-p, --package-manager <pm>', 'Package manager (npm, pnpm, yarn, bun)')
     .option('-f, --framework <framework>', 'Framework to use')
     .option('-l, --language <language>', 'Language (typescript, javascript)')
@@ -95,7 +100,7 @@ export function createProgram(): Command {
     .command('dev')
     .description('Start the development server')
     .option('-t, --tool <tool>', 'Dev tool to use (vite, next, etc.)')
-    .option('-p, --port <port>', 'Port number', parseInt)
+    .option('-p, --port <port>', 'Port number', parseIntSafe)
     .option('--args <args...>', 'Additional arguments to pass to the dev server')
     .action(async (options) => {
       const kernel = new Kernel({ flags: program.opts() })
@@ -124,28 +129,32 @@ export function createProgram(): Command {
     .description('List items (projects, plugins, templates, config, tools, files)')
     .option('--filter <text>', 'Filter items by name/description')
     .option('--sort <field>', 'Sort by name, version, status, or type')
-    .option('--limit <n>', 'Limit number of results', parseInt)
+    .option('--limit <n>', 'Limit number of results', parseIntSafe)
     .option('--json', 'Output as JSON')
-    .action(async (type?: string, options?: { filter?: string; sort?: string; limit?: number; json?: boolean }) => {
-      const globalOpts = program.opts()
-      const kernel = new Kernel({ flags: globalOpts })
-      await kernel.bootstrap()
-      const opts = {
-        ...options,
-        json: options?.json ?? globalOpts.json,
-      }
-      if (type) {
-        await runList(kernel, type, opts)
-      } else {
-        await runListAvailable(kernel)
-      }
-      await kernel.shutdown()
-    })
+    .action(
+      async (
+        type?: string,
+        options?: { filter?: string; sort?: string; limit?: number; json?: boolean },
+      ) => {
+        const globalOpts = program.opts()
+        const kernel = new Kernel({ flags: globalOpts })
+        await kernel.bootstrap()
+        const opts = {
+          ...options,
+          sort: options?.sort as ListCommandOptions['sort'],
+          json: options?.json ?? globalOpts.json,
+        }
+        if (type) {
+          await runList(kernel, type, opts)
+        } else {
+          await runListAvailable()
+        }
+        await kernel.shutdown()
+      },
+    )
 
   // ─── config ──────────────────────────────────────────────────
-  const configCmd = program
-    .command('config')
-    .description('Manage Forge configuration')
+  const configCmd = program.command('config').description('Manage Forge configuration')
 
   configCmd
     .command('get')
@@ -181,9 +190,7 @@ export function createProgram(): Command {
     })
 
   // ─── plugin ──────────────────────────────────────────────────
-  const pluginCmd = program
-    .command('plugin')
-    .description('Manage Forge plugins')
+  const pluginCmd = program.command('plugin').description('Manage Forge plugins')
 
   pluginCmd
     .command('install')
@@ -276,6 +283,17 @@ export function createProgram(): Command {
       const kernel = new Kernel({ flags: program.opts() })
       await kernel.bootstrap()
       await runPluginConfig(kernel, plugin, key, value)
+      await kernel.shutdown()
+    })
+
+  // ─── workspace ─────────────────────────────────────────────
+  program
+    .command('workspace')
+    .description('Show workspace information')
+    .action(async () => {
+      const kernel = new Kernel({ flags: program.opts() })
+      await kernel.bootstrap()
+      await runWorkspace(kernel)
       await kernel.shutdown()
     })
 

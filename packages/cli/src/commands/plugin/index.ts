@@ -1,4 +1,10 @@
-import { Kernel, MarketplaceClient, PluginTemplate, PluginUpdater, PluginInstaller } from '@forge/core'
+import {
+  type Kernel,
+  MarketplaceClient,
+  PluginInstaller,
+  PluginTemplate,
+  PluginUpdater,
+} from '@forge/core'
 import { CLI_NAME } from '@forge/shared'
 
 export async function runPluginList(kernel: Kernel): Promise<void> {
@@ -39,7 +45,11 @@ export async function runPluginList(kernel: Kernel): Promise<void> {
   console.log('')
 }
 
-export async function runPluginInstall(kernel: Kernel, name: string, options?: { version?: string; dryRun?: boolean }): Promise<void> {
+export async function runPluginInstall(
+  kernel: Kernel,
+  name: string,
+  options?: { version?: string; dryRun?: boolean },
+): Promise<void> {
   const logger = kernel.getLogger()
   const workspace = kernel.getWorkspace()
   const installer = new PluginInstaller()
@@ -67,8 +77,8 @@ export async function runPluginInstall(kernel: Kernel, name: string, options?: {
     console.log('')
     console.log('  Suggestions:')
     console.log(`    Check if the plugin exists: ${CLI_NAME} plugin search ${name}`)
-    console.log(`    Check your internet connection`)
-    console.log(`    Check your package manager is installed`)
+    console.log('    Check your internet connection')
+    console.log('    Check your package manager is installed')
     console.log('')
     return
   }
@@ -203,10 +213,14 @@ export async function runPluginInfo(kernel: Kernel, name: string): Promise<void>
   console.log('')
 }
 
-export async function runPluginCreate(kernel: Kernel, name: string, options: { description?: string; author?: string }): Promise<void> {
+export async function runPluginCreate(
+  kernel: Kernel,
+  name: string,
+  options: { description?: string; author?: string },
+): Promise<void> {
   const logger = kernel.getLogger()
-  const template = new PluginTemplate(logger)
   const workspace = kernel.getWorkspace()
+  const template = new PluginTemplate(logger)
 
   const result = await template.scaffold({
     name,
@@ -237,7 +251,10 @@ export async function runPluginCreate(kernel: Kernel, name: string, options: { d
   }
 }
 
-export async function runPluginUpdate(kernel: Kernel, options?: { name?: string; all?: boolean }): Promise<void> {
+export async function runPluginUpdate(
+  kernel: Kernel,
+  options?: { name?: string; all?: boolean },
+): Promise<void> {
   const logger = kernel.getLogger()
   const manager = kernel.getPluginManager()
   const workspace = kernel.getWorkspace()
@@ -272,12 +289,12 @@ export async function runPluginUpdate(kernel: Kernel, options?: { name?: string;
     const update = await updater.checkPlugin(entry)
 
     if (!update.updateAvailable) {
-      console.log(`  ${entry.name} is already up to date (v${entry.currentVersion})`)
+      console.log(`  ${entry.name} is already up to date (v${entry.version})`)
       console.log('')
       return
     }
 
-    console.log(`  Update available: ${entry.name} ${entry.currentVersion} → ${update.latestVersion}`)
+    console.log(`  Update available: ${entry.name} ${entry.version} → ${update.latestVersion}`)
     console.log('')
 
     // Perform the update
@@ -359,10 +376,12 @@ export async function runPluginUpdate(kernel: Kernel, options?: { name?: string;
   }
 }
 
-export async function runPluginConfig(kernel: Kernel, pluginName: string, key?: string, value?: string): Promise<void> {
-  const logger = kernel.getLogger()
-  const workspace = kernel.getWorkspace()
-
+export async function runPluginConfig(
+  _kernel: Kernel,
+  pluginName: string,
+  key?: string,
+  value?: string,
+): Promise<void> {
   // Plugin config manager would be initialized here
   // For now, show a placeholder
   console.log('')

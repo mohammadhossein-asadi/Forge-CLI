@@ -1,4 +1,3 @@
-import React from 'react'
 import { Box as InkBox } from 'ink'
 
 export interface BoxProps {

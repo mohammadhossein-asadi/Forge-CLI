@@ -41,7 +41,7 @@ export class PluginConfigManager {
     }
 
     try {
-      await fs.writeFile(this.configPath, JSON.stringify(data, null, 2) + '\n', 'utf-8')
+      await fs.writeFile(this.configPath, `${JSON.stringify(data, null, 2)}\n`, 'utf-8')
       this.logger.debug('Plugin configs saved')
     } catch (error) {
       this.logger.error(`Failed to save plugin configs: ${error}`)
@@ -75,15 +75,16 @@ export class PluginConfigManager {
   setValues(pluginName: string, key: string, value: unknown): void {
     const config = this.configs.get(pluginName) ?? {}
     const parts = key.split('.')
+    const lastPart = parts.pop()
+    if (!lastPart) return
     let current = config
-    for (let i = 0; i < parts.length - 1; i++) {
-      const part = parts[i]!
+    for (const part of parts) {
       if (!(part in current) || typeof current[part] !== 'object') {
         current[part] = {}
       }
       current = current[part] as Record<string, unknown>
     }
-    current[parts[parts.length - 1]!] = value
+    current[lastPart] = value
     this.configs.set(pluginName, config)
   }
 

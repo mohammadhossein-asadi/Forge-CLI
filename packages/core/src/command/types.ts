@@ -1,4 +1,4 @@
-import type { CommandMetadata, CommandFlags, CommandArgs } from '@forge/shared'
+import type { CommandArgs, CommandFlags, CommandMetadata } from '@forge/shared'
 
 export type { CommandMetadata, CommandFlags, CommandArgs }
 

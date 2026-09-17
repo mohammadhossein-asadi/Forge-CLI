@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { Container } from './container.js'
 
 describe('Container', () => {
@@ -34,7 +34,9 @@ describe('Container', () => {
 
   it('should throw when resolving unregistered token', () => {
     const container = new Container()
-    expect(() => container.resolve('nonexistent')).toThrow('No registration found for token: nonexistent')
+    expect(() => container.resolve('nonexistent')).toThrow(
+      'No registration found for token: nonexistent',
+    )
   })
 
   it('should check if token is registered', () => {

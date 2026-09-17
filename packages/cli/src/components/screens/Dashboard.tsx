@@ -1,9 +1,8 @@
-import React from 'react'
-import { Box } from '../ui/Box.js'
-import { Text } from '../ui/Text.js'
-import { Badge } from '../ui/Badge.js'
-import { Divider } from '../ui/Divider.js'
 import { icons } from '../../rendering/icons.js'
+import { Badge } from '../ui/Badge.js'
+import { Box } from '../ui/Box.js'
+import { Divider } from '../ui/Divider.js'
+import { Text } from '../ui/Text.js'
 
 export interface DashboardProps {
   workspace?: {
@@ -37,13 +36,17 @@ export function Dashboard({ workspace, environment, plugins }: DashboardProps) {
         </Text>
         {workspace ? (
           <Box flexDirection="column" gap={0} paddingLeft={2}>
-            <Text>Root: <Text color="#A78BFA">{workspace.root}</Text></Text>
-            <Text>Type: <Badge label={workspace.type} /></Text>
+            <Text>
+              Root: <Text color="#A78BFA">{workspace.root}</Text>
+            </Text>
+            <Text>
+              Type: <Badge label={workspace.type} />
+            </Text>
             {workspace.projects && workspace.projects.length > 0 && (
               <>
                 <Text>Projects:</Text>
-                {workspace.projects.map((p, i) => (
-                  <Text key={i} paddingLeft={4}>
+                {workspace.projects.map((p) => (
+                  <Text key={p.name} paddingLeft={4}>
                     {icons.bullet} {p.name}
                   </Text>
                 ))}
@@ -51,7 +54,9 @@ export function Dashboard({ workspace, environment, plugins }: DashboardProps) {
             )}
           </Box>
         ) : (
-          <Text dimColor paddingLeft={2}>No workspace detected</Text>
+          <Text dimColor paddingLeft={2}>
+            No workspace detected
+          </Text>
         )}
       </Box>
 
@@ -61,18 +66,24 @@ export function Dashboard({ workspace, environment, plugins }: DashboardProps) {
         </Text>
         {environment ? (
           <Box flexDirection="column" gap={0} paddingLeft={2}>
-            <Text>Platform: <Text color="#4ADE80">{environment.platform}</Text></Text>
-            <Text>Node: <Text color="#4ADE80">{environment.nodeVersion}</Text></Text>
+            <Text>
+              Platform: <Text color="#4ADE80">{environment.platform}</Text>
+            </Text>
+            <Text>
+              Node: <Text color="#4ADE80">{environment.nodeVersion}</Text>
+            </Text>
             <Text>Tools:</Text>
-            {environment.tools.map((tool, i) => (
-              <Text key={i} paddingLeft={4}>
+            {environment.tools.map((tool) => (
+              <Text key={tool.name} paddingLeft={4}>
                 {tool.available ? '✔' : '✘'} {tool.name}
                 {tool.version && <Text dimColor> ({tool.version})</Text>}
               </Text>
             ))}
           </Box>
         ) : (
-          <Text dimColor paddingLeft={2}>Detecting environment...</Text>
+          <Text dimColor paddingLeft={2}>
+            Detecting environment...
+          </Text>
         )}
       </Box>
 
@@ -82,14 +93,16 @@ export function Dashboard({ workspace, environment, plugins }: DashboardProps) {
         </Text>
         {plugins && plugins.length > 0 ? (
           <Box flexDirection="column" gap={0} paddingLeft={2}>
-            {plugins.map((p, i) => (
-              <Text key={i}>
+            {plugins.map((p) => (
+              <Text key={p.name}>
                 {icons.bullet} {p.name} <Text dimColor>v{p.version}</Text>
               </Text>
             ))}
           </Box>
         ) : (
-          <Text dimColor paddingLeft={2}>No plugins installed</Text>
+          <Text dimColor paddingLeft={2}>
+            No plugins installed
+          </Text>
         )}
       </Box>
     </Box>
