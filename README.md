@@ -7,6 +7,7 @@
 A pnpm monorepo powering an AI-native CLI and plugin ecosystem for building, configuring, analyzing, maintaining, and deploying software projects — built with Turborepo, Biome, and TypeScript.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-0a0a0a?style=for-the-badge&labelColor=0a0a0a&color=22c55e)](LICENSE)
+[![CI](https://github.com/mohammadhossein-asadi/Forge-CLI/actions/workflows/ci.yml/badge.svg?style=for-the-badge)](https://github.com/mohammadhossein-asadi/Forge-CLI/actions/workflows/ci.yml)
 
 </div>
 
@@ -123,6 +124,12 @@ pnpm format        # Biome format
 
 [![GitHub](https://img.shields.io/badge/GitHub-mohammadhossein--asadi-0a0a0a?style=flat-square&logo=github)](https://github.com/mohammadhossein-asadi)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mohammadhossein--asadi-0a66c2?style=flat-square&logo=linkedin)](https://linkedin.com/in/mohammadhossein-asadi)
+
+---
+
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for how to set up the project, our coding standards, and the pull request process.
 
 ---
 
