@@ -119,7 +119,7 @@ export class Lister {
   private async listPlugins(_options: ListOptions): Promise<ListResult> {
     const items: ListItem[] = []
 
-    // Check node_modules for forge plugins
+    // Check node_modules for forge plugins (top-level and scoped packages)
     const nodeModulesDir = path.join(this.workspaceRoot, 'node_modules')
     try {
       const entries = await fs.readdir(nodeModulesDir, { withFileTypes: true })
@@ -127,32 +127,62 @@ export class Lister {
         if (!entry.isDirectory()) continue
         if (entry.name.startsWith('.')) continue
 
+        if (entry.name.startsWith('@')) {
+          // Scoped packages: @scope/plugin-* live one level deeper
+          const scopeDir = path.join(nodeModulesDir, entry.name)
+          const scoped = await fs.readdir(scopeDir, { withFileTypes: true })
+          for (const scopedEntry of scoped) {
+            if (!scopedEntry.isDirectory()) continue
+            const scopedName = `${entry.name}/${scopedEntry.name}`
+            if (
+              scopedName.startsWith('@forge/plugin-') ||
+              scopedEntry.name.startsWith('forge-plugin-')
+            ) {
+              const item = await this.readPluginPackage(
+                path.join(scopeDir, scopedEntry.name),
+                scopedName,
+              )
+              if (item) items.push(item)
+            }
+          }
+          continue
+        }
+
         if (entry.name.startsWith('@forge/plugin-') || entry.name.startsWith('forge-plugin-')) {
           const pluginPath = path.join(nodeModulesDir, entry.name)
-          try {
-            const manifestPath = path.join(pluginPath, 'package.json')
-            const content = await fs.readFile(manifestPath, 'utf-8')
-            const manifest = JSON.parse(content) as Record<string, unknown>
-
-            if (manifest.forge) {
-              items.push({
-                name: manifest.name as string,
-                description: manifest.description as string | undefined,
-                version: manifest.version as string | undefined,
-                type: 'plugin',
-                path: pluginPath,
-                metadata: {
-                  forge: manifest.forge,
-                  author: manifest.author,
-                },
-              })
-            }
-          } catch {}
+          const item = await this.readPluginPackage(pluginPath, entry.name)
+          if (item) items.push(item)
         }
       }
     } catch {}
 
     return this.filterAndSort(items, _options)
+  }
+
+  private async readPluginPackage(
+    pluginPath: string,
+    _packageName: string,
+  ): Promise<ListItem | null> {
+    try {
+      const manifestPath = path.join(pluginPath, 'package.json')
+      const content = await fs.readFile(manifestPath, 'utf-8')
+      const manifest = JSON.parse(content) as Record<string, unknown>
+
+      if (manifest.forge) {
+        return {
+          name: manifest.name as string,
+          description: manifest.description as string | undefined,
+          version: manifest.version as string | undefined,
+          type: 'plugin',
+          path: pluginPath,
+          metadata: {
+            forge: manifest.forge,
+            author: manifest.author,
+          },
+        }
+      }
+    } catch {}
+    return null
   }
 
   // ─── Templates ───────────────────────────────────────────────

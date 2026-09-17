@@ -17,9 +17,10 @@ export function ProgressBar({
   color = '#4ADE80',
   trackColor = '#374151',
 }: ProgressBarProps) {
-  const percent = Math.min(Math.round((current / total) * 100), 100)
-  const filled = Math.round((current / total) * width)
-  const empty = width - filled
+  const ratio = total > 0 ? Math.min(Math.max(current / total, 0), 1) : 0
+  const percent = Math.round(ratio * 100)
+  const filled = Math.round(ratio * width)
+  const empty = Math.max(width - filled, 0)
 
   const filledBar = '█'.repeat(filled)
   const emptyBar = '░'.repeat(empty)
