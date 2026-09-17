@@ -8,6 +8,9 @@ A pnpm monorepo powering an AI-native CLI and plugin ecosystem for building, con
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-0a0a0a?style=for-the-badge&labelColor=0a0a0a&color=22c55e)](LICENSE)
 [![CI](https://github.com/mohammadhossein-asadi/Forge-CLI/actions/workflows/ci.yml/badge.svg?style=for-the-badge)](https://github.com/mohammadhossein-asadi/Forge-CLI/actions/workflows/ci.yml)
+[![TypeScript](https://img.shields.io/badge/TypeScript_5.7-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Turborepo](https://img.shields.io/badge/Turborepo_2.3-EF4444?style=for-the-badge&logo=turborepo&logoColor=white)](https://turbo.build/)
+[![Biome](https://img.shields.io/badge/Biome_1.9-60A5FA?style=for-the-badge&logo=biome&logoColor=white)](https://biomejs.dev/)
 
 </div>
 
@@ -118,12 +121,22 @@ pnpm format        # Biome format
 
 ---
 
-## Author
+## Key Architecture Decisions
 
-**Mohammadhossein Asadi** — Frontend & Full-Stack Engineer
+### Turborepo for Monorepo Management
+Turborepo provides intelligent caching, parallel execution, and dependency graph awareness — critical for a multi-package AI-native platform where packages frequently change together.
 
-[![GitHub](https://img.shields.io/badge/GitHub-mohammadhossein--asadi-0a0a0a?style=flat-square&logo=github)](https://github.com/mohammadhossein-asadi)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-mohammadhossein--asadi-0a66c2?style=flat-square&logo=linkedin)](https://linkedin.com/in/mohammadhossein-asadi)
+### Biome for Unified Toolchain
+Biome replaces ESLint + Prettier + TypeScript ESLint with a single, fast Rust-based toolchain. Configuration lives in `biome.json` at the root.
+
+### ES Modules Only
+All packages use `"type": "module"` in package.json and ESNext module resolution. No CommonJS, no transpilation for Node.js >= 18.
+
+### Plugin-First Design
+The `plugin-sdk` package defines the contract for all Forge extensions. Core functionality is implemented as plugins, dogfooding the SDK.
+
+### Shared TypeScript Config
+`tsconfig.base.json` provides strict, consistent settings across all packages. Each package extends it with `references` for project references.
 
 ---
 
@@ -136,3 +149,14 @@ Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for how to set
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+**Mohammadhossein Asadi** — Frontend & Full-Stack Engineer
+
+[![GitHub](https://img.shields.io/badge/GitHub-mohammadhossein--asadi-0a0a0a?style=flat-square&logo=github)](https://github.com/mohammadhossein-asadi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-mohammadhossein--asadi-0a66c2?style=flat-square&logo=linkedin)](https://linkedin.com/in/mohammadhossein-asadi)
+
+</div>
