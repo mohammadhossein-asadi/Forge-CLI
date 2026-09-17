@@ -42,7 +42,9 @@ describe('WorkspaceDetector', () => {
     await fs.writeFile(path.join(root, 'pnpm-workspace.yaml'), 'packages:\n  - "packages/*"\n')
     await fs.mkdir(path.join(root, 'packages', 'shared'), { recursive: true })
     await fs.mkdir(path.join(root, 'packages', 'cli'), { recursive: true })
-    await writeJson(path.join(root, 'packages', 'shared'), 'package.json', { name: '@fixture/shared' })
+    await writeJson(path.join(root, 'packages', 'shared'), 'package.json', {
+      name: '@fixture/shared',
+    })
     await writeJson(path.join(root, 'packages', 'cli'), 'package.json', { name: '@fixture/cli' })
 
     const workspace = await detector.detect(root)
@@ -51,7 +53,10 @@ describe('WorkspaceDetector', () => {
     expect(workspace.hasPackageJson).toBe(true)
     expect(workspace.type).toBe('monorepo')
     expect(workspace.workspaceTool).toBe('pnpm')
-    expect(workspace.projects.map((p) => p.name).sort()).toEqual(['@fixture/cli', '@fixture/shared'])
+    expect(workspace.projects.map((p) => p.name).sort()).toEqual([
+      '@fixture/cli',
+      '@fixture/shared',
+    ])
   })
 
   it('should detect a single project with framework and language', async () => {
