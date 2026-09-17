@@ -1,7 +1,7 @@
 import type { EventMap, EventSubscription } from '@forge/shared'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-type AnyHandler = (data: any) => void | Promise<void>
+type AnyHandler = (data: unknown) => void | Promise<void>
 
 interface ListenerEntry {
   handler: AnyHandler
@@ -73,7 +73,7 @@ export class EventBus {
       once: options?.once ?? false,
     }
 
-    this.listeners.get(event)!.add(entry)
+    this.listeners.get(event)?.add(entry)
 
     return {
       unsubscribe: () => {

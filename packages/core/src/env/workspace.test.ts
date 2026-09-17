@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { WorkspaceDetector } from './workspace.js'
 
 describe('WorkspaceDetector', () => {
@@ -14,7 +14,9 @@ describe('WorkspaceDetector', () => {
   })
 
   it('should detect Forge CLI workspace', async () => {
-    const workspace = await detector.detect('C:\\Users\\MohammadHossein\\Desktop\\projects\\Forge-CLI')
+    const workspace = await detector.detect(
+      'C:\\Users\\MohammadHossein\\Desktop\\projects\\Forge-CLI',
+    )
     expect(workspace.root).toBe('C:\\Users\\MohammadHossein\\Desktop\\projects\\Forge-CLI')
     expect(workspace.hasPackageJson).toBe(true)
     // Forge CLI is a pnpm workspace

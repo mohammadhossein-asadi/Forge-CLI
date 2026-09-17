@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import { PluginHookRunner } from './hooks.js'
 
 describe('PluginHookRunner', () => {
@@ -17,9 +17,27 @@ describe('PluginHookRunner', () => {
     const order: number[] = []
 
     runner.register([
-      { event: 'test', handler: async () => { order.push(2) }, priority: 2 },
-      { event: 'test', handler: async () => { order.push(1) }, priority: 1 },
-      { event: 'test', handler: async () => { order.push(3) }, priority: 3 },
+      {
+        event: 'test',
+        handler: async () => {
+          order.push(2)
+        },
+        priority: 2,
+      },
+      {
+        event: 'test',
+        handler: async () => {
+          order.push(1)
+        },
+        priority: 1,
+      },
+      {
+        event: 'test',
+        handler: async () => {
+          order.push(3)
+        },
+        priority: 3,
+      },
     ])
 
     await runner.run('test', {})
@@ -32,7 +50,12 @@ describe('PluginHookRunner', () => {
     const handler2 = vi.fn()
 
     runner.register([
-      { event: 'test', handler: async () => { throw new Error('fail') } },
+      {
+        event: 'test',
+        handler: async () => {
+          throw new Error('fail')
+        },
+      },
       { event: 'test', handler: handler2 },
     ])
 
@@ -96,14 +119,15 @@ describe('PluginHookRunner', () => {
   it('should get hooks by plugin name', () => {
     const runner = new PluginHookRunner()
 
-    runner.register([
-      { event: 'a', handler: async () => {} },
-      { event: 'b', handler: async () => {} },
-    ], 'plugin-a')
+    runner.register(
+      [
+        { event: 'a', handler: async () => {} },
+        { event: 'b', handler: async () => {} },
+      ],
+      'plugin-a',
+    )
 
-    runner.register([
-      { event: 'c', handler: async () => {} },
-    ], 'plugin-b')
+    runner.register([{ event: 'c', handler: async () => {} }], 'plugin-b')
 
     expect(runner.getByPlugin('plugin-a')).toHaveLength(2)
     expect(runner.getByPlugin('plugin-b')).toHaveLength(1)

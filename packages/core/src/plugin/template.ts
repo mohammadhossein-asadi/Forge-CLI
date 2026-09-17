@@ -67,7 +67,7 @@ export class PluginTemplate {
           permissions: [],
         },
       }
-      await this.writeFile(pluginDir, 'package.json', JSON.stringify(packageJson, null, 2) + '\n')
+      await this.writeFile(pluginDir, 'package.json', `${JSON.stringify(packageJson, null, 2)}\n`)
       files.push('package.json')
 
       // Create tsconfig.json
@@ -79,7 +79,7 @@ export class PluginTemplate {
         },
         include: ['src'],
       }
-      await this.writeFile(pluginDir, 'tsconfig.json', JSON.stringify(tsconfig, null, 2) + '\n')
+      await this.writeFile(pluginDir, 'tsconfig.json', `${JSON.stringify(tsconfig, null, 2)}\n`)
       files.push('tsconfig.json')
 
       // Create tsup.config.ts
@@ -98,7 +98,10 @@ export default defineConfig({
       files.push('tsup.config.ts')
 
       // Create src/index.ts
-      const pluginName = name.replace(/^@[^/]+\//, '').replace(/-plugin$/, '').replace(/forge-/, '')
+      const pluginName = name
+        .replace(/^@[^/]+\//, '')
+        .replace(/-plugin$/, '')
+        .replace(/forge-/, '')
       const indexTs = `import { definePlugin, defineCommand, createPluginLogger } from '@forge/plugin-sdk'
 
 const logger = createPluginLogger('${pluginName}')

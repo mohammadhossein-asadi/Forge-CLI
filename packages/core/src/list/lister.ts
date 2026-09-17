@@ -66,12 +66,7 @@ export class Lister {
   }
 
   private async detectWorkspaceType(): Promise<'single' | 'monorepo'> {
-    const checks = [
-      'pnpm-workspace.yaml',
-      'lerna.json',
-      'nx.json',
-      'turbo.json',
-    ]
+    const checks = ['pnpm-workspace.yaml', 'lerna.json', 'nx.json', 'turbo.json']
 
     for (const file of checks) {
       try {
@@ -92,8 +87,10 @@ export class Lister {
 
     try {
       const pkg = await this.readPackageJson(this.workspaceRoot)
-      const workspaces = (pkg?.pnpm as { packages?: string[] })?.packages ??
-        (Array.isArray(pkg?.workspaces) ? pkg?.workspaces as string[] : []) ?? []
+      const workspaces =
+        (pkg?.pnpm as { packages?: string[] })?.packages ??
+        (Array.isArray(pkg?.workspaces) ? (pkg?.workspaces as string[]) : []) ??
+        []
 
       for (const pattern of workspaces) {
         const dirs = await this.globDirs(pattern, this.workspaceRoot)
@@ -101,7 +98,7 @@ export class Lister {
           const pkgJson = await this.readPackageJson(path.join(this.workspaceRoot, dir))
           if (pkgJson) {
             items.push({
-              name: pkgJson.name as string ?? dir,
+              name: (pkgJson.name as string) ?? dir,
               description: pkgJson.description as string | undefined,
               version: pkgJson.version as string | undefined,
               type: 'package',

@@ -116,11 +116,62 @@ export const themes: Record<string, Theme> = {
       foreground: '#F8F8F2',
     },
   },
+  gruvbox: {
+    name: 'gruvbox',
+    colors: {
+      primary: '#83A598',
+      secondary: '#D3869B',
+      success: '#B8BB26',
+      warning: '#FABD2F',
+      error: '#FB4934',
+      info: '#8EC07C',
+      muted: '#928374',
+      accent: '#FE8019',
+      focus: '#83A598',
+      border: '#3C3836',
+      background: '#282828',
+      foreground: '#EBDBB2',
+    },
+  },
+  solarized: {
+    name: 'solarized',
+    colors: {
+      primary: '#268BD2',
+      secondary: '#6C71C4',
+      success: '#859900',
+      warning: '#B58900',
+      error: '#DC322F',
+      info: '#2AA198',
+      muted: '#93A1A1',
+      accent: '#D33682',
+      focus: '#268BD2',
+      border: '#586E75',
+      background: '#002B36',
+      foreground: '#EEE8D5',
+    },
+  },
+  minimal: {
+    name: 'minimal',
+    colors: {
+      primary: '#FFFFFF',
+      secondary: '#A0A0A0',
+      success: '#D0D0D0',
+      warning: '#B0B0B0',
+      error: '#FF6B6B',
+      info: '#C0C0C0',
+      muted: '#808080',
+      accent: '#E0E0E0',
+      focus: '#F0F0F0',
+      border: '#404040',
+      background: '#000000',
+      foreground: '#EDEDED',
+    },
+  },
 }
 
 export function getTheme(name?: string): Theme {
   if (name && name in themes) {
-    return themes[name]!
+    return themes[name] as Theme
   }
   return defaultTheme
 }

@@ -1,4 +1,5 @@
-import { Kernel, BuildDetector, BuildRunner } from '@forge/core'
+import { BuildDetector, BuildRunner } from '@forge/core'
+import type { Kernel } from '@forge/core'
 import { CLI_NAME } from '@forge/shared'
 
 export interface BuildCommandOptions {
@@ -32,10 +33,8 @@ export async function runBuild(kernel: Kernel, options: BuildCommandOptions = {}
   }
 
   // 2. Select tool
-  let tool = tools.find((t) => t.name === options.tool)
-  if (!tool) {
-    tool = await detector.detectPrimary()
-  }
+  const tool =
+    tools.find((t) => t.name === options.tool) ?? (await detector.detectPrimary()) ?? undefined
 
   if (!tool) {
     console.log('  Multiple build tools detected:')
@@ -66,7 +65,7 @@ export async function runBuild(kernel: Kernel, options: BuildCommandOptions = {}
 
   if (result.success) {
     console.log('')
-    console.log(`  Build completed successfully`)
+    console.log('  Build completed successfully')
     console.log(`    Tool: ${result.tool}`)
     console.log(`    Duration: ${result.duration.toFixed(0)}ms`)
     if (result.output) {
@@ -83,7 +82,7 @@ export async function runBuild(kernel: Kernel, options: BuildCommandOptions = {}
     console.log('')
   } else {
     console.log('')
-    console.log(`  Build failed`)
+    console.log('  Build failed')
     console.log(`    Tool: ${result.tool}`)
     console.log(`    Duration: ${result.duration.toFixed(0)}ms`)
     if (result.error) {

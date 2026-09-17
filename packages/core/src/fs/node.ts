@@ -69,6 +69,6 @@ export class NodeFileSystem implements FileSystemInterface {
   }
 
   async writeFileJson(filePath: string, data: unknown, indent = 2): Promise<void> {
-    await this.writeFile(filePath, JSON.stringify(data, null, indent) + '\n')
+    await this.writeFile(filePath, `${JSON.stringify(data, null, indent)}\n`)
   }
 }

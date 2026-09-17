@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { PluginPermissionManager } from './permissions.js'
 
 describe('PluginPermissionManager', () => {
@@ -62,8 +62,8 @@ describe('PluginPermissionManager', () => {
 
     const checks = mgr.validatePermissions('plugin-a', ['filesystem.read', 'filesystem.write'])
     expect(checks).toHaveLength(2)
-    expect(checks[0]!.granted).toBe(true)
-    expect(checks[1]!.granted).toBe(false)
+    expect(checks[0]?.granted).toBe(true)
+    expect(checks[1]?.granted).toBe(false)
   })
 
   it('should auto-approve when enabled', () => {

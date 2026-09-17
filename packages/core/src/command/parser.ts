@@ -1,4 +1,4 @@
-import type { CommandFlags, CommandArgs } from '@forge/shared'
+import type { CommandArgs, CommandFlags } from '@forge/shared'
 
 export interface ParsedCommand {
   command: string
@@ -24,7 +24,8 @@ export class CommandParser {
 
     let i = 0
     while (i < tokens.length) {
-      const token = tokens[i]!
+      const token = tokens[i]
+      if (token === undefined) break
 
       if (token.startsWith('--')) {
         // Long flag
@@ -35,18 +36,19 @@ export class CommandParser {
           flags[flagName] = true
         } else if (flagDef) {
           // Expect value on next token
-          i++
-          if (i < tokens.length) {
-            const value = tokens[i]!
+          const value = tokens[i + 1]
+          if (value !== undefined) {
             flags[flagName] = this.coerceValue(value, flagDef.type)
           }
+          i++
         } else {
           // Unknown flag — store as-is
           flags[flagName] = true
         }
       } else if (token.startsWith('-') && token.length === 2) {
         // Short flag
-        const char = token[1]!
+        const char = token[1]
+        if (char === undefined) break
         const flagEntry = Object.entries(options.flags).find(([, def]) => def.char === char)
 
         if (flagEntry) {
@@ -54,10 +56,11 @@ export class CommandParser {
           if (def.type === 'boolean') {
             flags[name] = true
           } else {
-            i++
-            if (i < tokens.length) {
-              flags[name] = this.coerceValue(tokens[i]!, def.type)
+            const value = tokens[i + 1]
+            if (value !== undefined) {
+              flags[name] = this.coerceValue(value, def.type)
             }
+            i++
           }
         }
       } else {
@@ -71,7 +74,9 @@ export class CommandParser {
     // Map positional arguments to defined args
     const argDefs = Object.entries(options.args)
     for (let j = 0; j < argDefs.length && j < raw.length; j++) {
-      const [name, def] = argDefs[j]!
+      const entry = argDefs[j]
+      if (!entry) continue
+      const [name, def] = entry
       args[name] = def.variadic ? raw.slice(j) : raw[j]
     }
 

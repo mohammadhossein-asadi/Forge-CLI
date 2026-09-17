@@ -38,7 +38,7 @@ export class EnvironmentDetector {
       platform: this.detectPlatform(),
       arch: this.detectArch(),
       nodeVersion,
-      nodeMajor: parseInt(nodeVersion.slice(1).split('.')[0]!, 10),
+      nodeMajor: Number.parseInt(nodeVersion.slice(1).split('.')[0] ?? '0', 10),
       shell,
       terminal: this.detectTerminal(),
       tools,
@@ -66,7 +66,9 @@ export class EnvironmentDetector {
   async detectShell(): Promise<string> {
     const platform = this.detectPlatform()
     if (platform === 'windows') {
-      return process.env.ComSpec ? process.env.ComSpec.split('\\').pop()! : 'cmd.exe'
+      const comspec = process.env.ComSpec
+      const shellName = comspec ? comspec.split('\\').pop() : undefined
+      return shellName ?? 'cmd.exe'
     }
     return process.env.SHELL ?? '/bin/sh'
   }

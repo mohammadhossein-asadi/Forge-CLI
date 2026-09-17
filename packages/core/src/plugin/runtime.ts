@@ -1,5 +1,5 @@
 import type { ForgePlugin } from '@forge/shared'
-import { Container } from '../container/container.js'
+import type { Container } from '../container/container.js'
 import type { Logger } from '../logging/logger.js'
 
 export interface PluginRuntimeOptions {

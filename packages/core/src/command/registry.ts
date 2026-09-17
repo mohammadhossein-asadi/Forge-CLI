@@ -1,4 +1,4 @@
-import type { CommandMetadata, CommandFlags, CommandArgs } from '@forge/shared'
+import type { CommandArgs, CommandFlags, CommandMetadata } from '@forge/shared'
 import type { BaseCommand } from './types.js'
 
 export interface CommandRegistration {
@@ -37,7 +37,8 @@ export class CommandRegistry {
 
   list(options?: { includeHidden?: boolean; category?: string }): CommandRegistration[] {
     const commands = [...this.commands.values()]
-    let filtered = options?.includeHidden === true ? commands : commands.filter((c) => !c.metadata.hidden)
+    let filtered =
+      options?.includeHidden === true ? commands : commands.filter((c) => !c.metadata.hidden)
     if (options?.category) {
       filtered = filtered.filter((c) => c.metadata.category === options.category)
     }

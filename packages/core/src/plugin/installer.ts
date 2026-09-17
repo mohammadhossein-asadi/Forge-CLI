@@ -25,7 +25,8 @@ export class PluginInstaller {
   async install(options: InstallOptions): Promise<InstallResult> {
     const startTime = performance.now()
     const { name, version, workspaceRoot, logger, dryRun } = options
-    const packageManager = options.packageManager ?? await this.detectPackageManager(workspaceRoot)
+    const packageManager =
+      options.packageManager ?? (await this.detectPackageManager(workspaceRoot))
 
     logger.info(`Installing ${name}${version ? `@${version}` : ''} via ${packageManager}`)
 
@@ -101,10 +102,16 @@ export class PluginInstaller {
     }
   }
 
-  async uninstall(options: { name: string; workspaceRoot: string; logger: Logger; packageManager?: string }): Promise<InstallResult> {
+  async uninstall(options: {
+    name: string
+    workspaceRoot: string
+    logger: Logger
+    packageManager?: string
+  }): Promise<InstallResult> {
     const startTime = performance.now()
     const { name, workspaceRoot, logger } = options
-    const packageManager = options.packageManager ?? await this.detectPackageManager(workspaceRoot)
+    const packageManager =
+      options.packageManager ?? (await this.detectPackageManager(workspaceRoot))
 
     logger.info(`Uninstalling ${name} via ${packageManager}`)
 
@@ -194,7 +201,11 @@ export class PluginInstaller {
     }
   }
 
-  private async validateInstalled(pluginPath: string, name: string, _logger: Logger): Promise<{ valid: boolean; warnings: string[] }> {
+  private async validateInstalled(
+    pluginPath: string,
+    name: string,
+    _logger: Logger,
+  ): Promise<{ valid: boolean; warnings: string[] }> {
     const warnings: string[] = []
 
     try {

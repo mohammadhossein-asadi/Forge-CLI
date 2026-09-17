@@ -1,6 +1,6 @@
-import { spawn, type ChildProcess } from 'node:child_process'
-import type { Logger } from '../logging/logger.js'
+import { type ChildProcess, spawn } from 'node:child_process'
 import type { EventBus } from '../events/event-bus.js'
+import type { Logger } from '../logging/logger.js'
 import type { DevTool } from './detector.js'
 
 export interface DevOptions {
@@ -56,8 +56,8 @@ export class DevRunner {
     try {
       // Split command into parts
       const parts = cmd.split(' ')
-      const command = parts[0]!
-      const args = parts.slice(1)
+      const command = parts.shift() ?? cmd
+      const args = parts
 
       // Spawn the process
       this.process = spawn(command, args, {
@@ -104,9 +104,8 @@ export class DevRunner {
           duration,
           process: this.process,
         }
-      } else {
-        throw new Error('Dev server failed to start')
       }
+      throw new Error('Dev server failed to start')
     } catch (error) {
       const duration = performance.now() - startTime
       const errorMessage = error instanceof Error ? error.message : String(error)

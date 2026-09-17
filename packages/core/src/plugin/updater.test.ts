@@ -1,7 +1,7 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { PluginUpdater } from './updater.js'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { Logger } from '../logging/logger.js'
 import type { PluginEntry } from './types.js'
+import { PluginUpdater } from './updater.js'
 
 describe('PluginUpdater', () => {
   let updater: PluginUpdater
@@ -78,10 +78,7 @@ describe('PluginUpdater', () => {
       json: async () => ({ version: '2.0.0' }),
     })
 
-    const entries = [
-      createEntry('plugin-a', '1.0.0'),
-      createEntry('plugin-b', '1.0.0'),
-    ]
+    const entries = [createEntry('plugin-a', '1.0.0'), createEntry('plugin-b', '1.0.0')]
 
     const updates = await updater.checkForUpdates(entries)
 

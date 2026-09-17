@@ -1,18 +1,26 @@
-import os from 'node:os'
 import { execSync } from 'node:child_process'
+import os from 'node:os'
 import type { HealthCheckFn } from './checker.js'
 
 export const nodeVersionCheck: HealthCheckFn = () => {
   const version = process.version
-  const major = parseInt(version.slice(1), 10)
+  const major = Number.parseInt(version.slice(1), 10)
 
   if (major >= 18) {
     return { name: 'node-version', status: 'ok', message: `Node.js ${version}` }
   }
   if (major >= 16) {
-    return { name: 'node-version', status: 'warning', message: `Node.js ${version} — recommended >= 18` }
+    return {
+      name: 'node-version',
+      status: 'warning',
+      message: `Node.js ${version} — recommended >= 18`,
+    }
   }
-  return { name: 'node-version', status: 'error', message: `Node.js ${version} — minimum required is 18` }
+  return {
+    name: 'node-version',
+    status: 'error',
+    message: `Node.js ${version} — minimum required is 18`,
+  }
 }
 
 export const envCheck: HealthCheckFn = () => {
@@ -27,7 +35,11 @@ export const envCheck: HealthCheckFn = () => {
 
 export const gitCheck: HealthCheckFn = () => {
   try {
-    const version = execSync('git --version', { encoding: 'utf-8', timeout: 5000, stdio: 'pipe' }).trim()
+    const version = execSync('git --version', {
+      encoding: 'utf-8',
+      timeout: 5000,
+      stdio: 'pipe',
+    }).trim()
     return { name: 'git', status: 'ok', message: version }
   } catch {
     return { name: 'git', status: 'warning', message: 'Git is not installed' }
@@ -36,7 +48,11 @@ export const gitCheck: HealthCheckFn = () => {
 
 export const dockerCheck: HealthCheckFn = () => {
   try {
-    const version = execSync('docker --version', { encoding: 'utf-8', timeout: 5000, stdio: 'pipe' }).trim()
+    const version = execSync('docker --version', {
+      encoding: 'utf-8',
+      timeout: 5000,
+      stdio: 'pipe',
+    }).trim()
     return { name: 'docker', status: 'ok', message: version }
   } catch {
     return { name: 'docker', status: 'warning', message: 'Docker is not installed' }
@@ -49,10 +65,18 @@ export const diskSpaceCheck: HealthCheckFn = () => {
   const freePercent = (freeBytes / totalBytes) * 100
 
   if (freePercent < 10) {
-    return { name: 'disk-space', status: 'error', message: `Low disk space: ${freePercent.toFixed(1)}% free` }
+    return {
+      name: 'disk-space',
+      status: 'error',
+      message: `Low disk space: ${freePercent.toFixed(1)}% free`,
+    }
   }
   if (freePercent < 25) {
-    return { name: 'disk-space', status: 'warning', message: `Disk space: ${freePercent.toFixed(1)}% free` }
+    return {
+      name: 'disk-space',
+      status: 'warning',
+      message: `Disk space: ${freePercent.toFixed(1)}% free`,
+    }
   }
   return {
     name: 'disk-space',

@@ -1,5 +1,5 @@
-import type { CommandRegistration } from './registry.js'
 import type { CommandMetadata } from '@forge/shared'
+import type { CommandRegistration } from './registry.js'
 
 export interface HelpOptions {
   programName: string
@@ -86,7 +86,8 @@ export class HelpFormatter {
       for (const [name, flag] of Object.entries(flags)) {
         const char = flag.char ? `-${flag.char}, ` : '    '
         const value = flag.type !== 'boolean' ? ` <${flag.type}>` : ''
-        const defaultVal = flag.default !== undefined ? ` (default: ${JSON.stringify(flag.default)})` : ''
+        const defaultVal =
+          flag.default !== undefined ? ` (default: ${JSON.stringify(flag.default)})` : ''
         lines.push(`    ${char}--${name}${value}${flag.required ? ' (required)' : ''}${defaultVal}`)
         if (flag.description) {
           lines.push(`        ${flag.description}`)
@@ -111,7 +112,10 @@ export class HelpFormatter {
     return ''
   }
 
-  private formatUsageArgs(_metadata: CommandMetadata, args: Record<string, { type: string; required?: boolean; variadic?: boolean }>): string {
+  private formatUsageArgs(
+    _metadata: CommandMetadata,
+    args: Record<string, { type: string; required?: boolean; variadic?: boolean }>,
+  ): string {
     const parts: string[] = []
     for (const [name, arg] of Object.entries(args)) {
       if (arg.required) {
@@ -120,6 +124,6 @@ export class HelpFormatter {
         parts.push(arg.variadic ? `[${name}...]` : `[${name}]`)
       }
     }
-    return parts.length > 0 ? ' ' + parts.join(' ') : ''
+    return parts.length > 0 ? ` ${parts.join(' ')}` : ''
   }
 }

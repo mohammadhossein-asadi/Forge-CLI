@@ -1,6 +1,6 @@
-import { describe, it, expect } from 'vitest'
-import { ForgeError } from './forge-error.js'
 import { ErrorCode } from '@forge/shared'
+import { describe, expect, it } from 'vitest'
+import { ForgeError } from './forge-error.js'
 
 describe('ForgeError', () => {
   it('should create error with all properties', () => {

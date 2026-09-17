@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { Box } from '../ui/Box.js'
-import { Text } from '../ui/Text.js'
 import { Divider } from '../ui/Divider.js'
+import { Text } from '../ui/Text.js'
 
 export interface CommandItem {
   id: string
@@ -18,7 +18,7 @@ export interface CommandPaletteProps {
 }
 
 export function CommandPalette({ commands, onSelect, onClose }: CommandPaletteProps) {
-  const [query, setQuery] = useState('')
+  const [query] = useState('')
   const [selectedIndex, setSelectedIndex] = useState(0)
 
   const filtered = useMemo(() => {
@@ -40,16 +40,19 @@ export function CommandPalette({ commands, onSelect, onClose }: CommandPalettePr
       case 'down':
         setSelectedIndex((prev) => Math.min(filtered.length - 1, prev + 1))
         break
-      case 'enter':
-        if (filtered[selectedIndex]) {
-          onSelect(filtered[selectedIndex]!.id)
+      case 'enter': {
+        const selected = filtered[selectedIndex]
+        if (selected) {
+          onSelect(selected.id)
         }
         break
+      }
       case 'escape':
         onClose()
         break
     }
   }
+  void handleKeyDown
 
   return (
     <Box flexDirection="column" gap={1} width={60}>
@@ -70,18 +73,12 @@ export function CommandPalette({ commands, onSelect, onClose }: CommandPalettePr
             <Text bold={i === selectedIndex} color={i === selectedIndex ? '#6C9EEB' : undefined}>
               {cmd.label}
             </Text>
-            {cmd.description && (
-              <Text dimColor> — {cmd.description}</Text>
-            )}
-            {cmd.shortcut && (
-              <Text dimColor> [{cmd.shortcut}]</Text>
-            )}
+            {cmd.description && <Text dimColor> — {cmd.description}</Text>}
+            {cmd.shortcut && <Text dimColor> [{cmd.shortcut}]</Text>}
           </Box>
         ))}
       </Box>
-      {filtered.length === 0 && (
-        <Text dimColor>No commands found.</Text>
-      )}
+      {filtered.length === 0 && <Text dimColor>No commands found.</Text>}
     </Box>
   )
 }

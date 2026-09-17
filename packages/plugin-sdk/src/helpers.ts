@@ -1,17 +1,17 @@
 import type {
   ForgePlugin,
   PluginCommand,
-  PluginHook,
-  PluginGenerator,
-  PluginConfigProvider,
-  PluginTheme,
-  PluginContext,
-  PluginLogger,
-  PluginFileSystem,
   PluginCommandContext,
   PluginCommandResult,
+  PluginConfigProvider,
+  PluginContext,
+  PluginFileSystem,
+  PluginGenerator,
   PluginGeneratorContext,
   PluginGeneratorResult,
+  PluginHook,
+  PluginLogger,
+  PluginTheme,
 } from './types.js'
 
 // ─── Plugin Builder ────────────────────────────────────────────

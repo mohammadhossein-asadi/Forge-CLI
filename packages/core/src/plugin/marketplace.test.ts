@@ -1,6 +1,6 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { MarketplaceClient } from './marketplace.js'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { Logger } from '../logging/logger.js'
+import { MarketplaceClient } from './marketplace.js'
 
 describe('MarketplaceClient', () => {
   let client: MarketplaceClient
@@ -38,7 +38,7 @@ describe('MarketplaceClient', () => {
     const result = await client.search({ query: 'test' })
 
     expect(result.plugins).toHaveLength(1)
-    expect(result.plugins[0]!.name).toBe('@forge/plugin-test')
+    expect(result.plugins[0]?.name).toBe('@forge/plugin-test')
     expect(result.total).toBe(1)
   })
 
@@ -66,8 +66,8 @@ describe('MarketplaceClient', () => {
     const plugin = await client.getPlugin('@forge/plugin-test')
 
     expect(plugin).not.toBeNull()
-    expect(plugin!.name).toBe('@forge/plugin-test')
-    expect(plugin!.version).toBe('1.0.0')
+    expect(plugin?.name).toBe('@forge/plugin-test')
+    expect(plugin?.version).toBe('1.0.0')
   })
 
   it('should return null for non-existent plugin', async () => {
@@ -109,6 +109,6 @@ describe('MarketplaceClient', () => {
 
     const result = await client.search({ query: 'official' })
 
-    expect(result.plugins[0]!.official).toBe(true)
+    expect(result.plugins[0]?.official).toBe(true)
   })
 })

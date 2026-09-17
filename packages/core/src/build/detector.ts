@@ -25,17 +25,52 @@ export class BuildDetector {
 
     // Check for various build tools
     const checks = [
-      { name: 'vite', command: 'vite', args: ['build'], configFiles: ['vite.config.ts', 'vite.config.js', 'vite.config.mjs'] },
-      { name: 'next', command: 'next', args: ['build'], configFiles: ['next.config.js', 'next.config.mjs', 'next.config.ts'] },
-      { name: 'nuxt', command: 'nuxt', args: ['build'], configFiles: ['nuxt.config.ts', 'nuxt.config.js'] },
-      { name: 'webpack', command: 'webpack', args: ['--mode', 'production'], configFiles: ['webpack.config.js', 'webpack.config.ts'] },
-      { name: 'rollup', command: 'rollup', args: ['-c'], configFiles: ['rollup.config.js', 'rollup.config.ts'] },
+      {
+        name: 'vite',
+        command: 'vite',
+        args: ['build'],
+        configFiles: ['vite.config.ts', 'vite.config.js', 'vite.config.mjs'],
+      },
+      {
+        name: 'next',
+        command: 'next',
+        args: ['build'],
+        configFiles: ['next.config.js', 'next.config.mjs', 'next.config.ts'],
+      },
+      {
+        name: 'nuxt',
+        command: 'nuxt',
+        args: ['build'],
+        configFiles: ['nuxt.config.ts', 'nuxt.config.js'],
+      },
+      {
+        name: 'webpack',
+        command: 'webpack',
+        args: ['--mode', 'production'],
+        configFiles: ['webpack.config.js', 'webpack.config.ts'],
+      },
+      {
+        name: 'rollup',
+        command: 'rollup',
+        args: ['-c'],
+        configFiles: ['rollup.config.js', 'rollup.config.ts'],
+      },
       { name: 'esbuild', command: 'esbuild', args: [], configFiles: ['esbuild.config.js'] },
-      { name: 'tsup', command: 'tsup', args: [], configFiles: ['tsup.config.ts', 'tsup.config.js'] },
+      {
+        name: 'tsup',
+        command: 'tsup',
+        args: [],
+        configFiles: ['tsup.config.ts', 'tsup.config.js'],
+      },
       { name: 'tsc', command: 'tsc', args: [], configFiles: ['tsconfig.json'] },
       { name: 'turbo', command: 'turbo', args: ['run', 'build'], configFiles: ['turbo.json'] },
       { name: 'nx', command: 'nx', args: ['build'], configFiles: ['nx.json'] },
-      { name: 'vite', command: 'vite', args: ['build'], configFiles: ['astro.config.mjs', 'astro.config.ts'] },
+      {
+        name: 'vite',
+        command: 'vite',
+        args: ['build'],
+        configFiles: ['astro.config.mjs', 'astro.config.ts'],
+      },
     ]
 
     // Also check package.json scripts
@@ -60,7 +95,18 @@ export class BuildDetector {
   async detectPrimary(): Promise<BuildTool | null> {
     const tools = await this.detect()
     // Priority order
-    const priority = ['turbo', 'nx', 'vite', 'next', 'nuxt', 'tsup', 'tsc', 'webpack', 'rollup', 'esbuild']
+    const priority = [
+      'turbo',
+      'nx',
+      'vite',
+      'next',
+      'nuxt',
+      'tsup',
+      'tsc',
+      'webpack',
+      'rollup',
+      'esbuild',
+    ]
 
     for (const name of priority) {
       const tool = tools.find((t) => t.name === name)

@@ -1,6 +1,6 @@
 import { execSync } from 'node:child_process'
-import type { Logger } from '../logging/logger.js'
 import type { EventBus } from '../events/event-bus.js'
+import type { Logger } from '../logging/logger.js'
 import type { BuildTool } from './detector.js'
 
 export interface BuildOptions {

@@ -1,9 +1,4 @@
-import {
-  definePlugin,
-  defineCommand,
-  defineHook,
-  createPluginLogger,
-} from '@forge/plugin-sdk'
+import { createPluginLogger, defineCommand, defineHook, definePlugin } from '@forge/plugin-sdk'
 
 const logger = createPluginLogger('hello')
 
@@ -29,9 +24,9 @@ const helloCommand = defineCommand({
     },
   ],
   execute: (ctx) => {
-    const name = (ctx.args.name as string) ?? 'World'
-    const loud = ctx.flags.loud as boolean
-    const greeting = loud ? `HELLO, ${name.toUpperCase()}!` : `Hello, ${name}!`
+    const name = ctx.args.name ?? 'World'
+    const loud = ctx.flags.loud === true
+    const greeting = loud ? `HELLO, ${String(name).toUpperCase()}!` : `Hello, ${name}!`
     logger.info(greeting)
     return { success: true, message: greeting }
   },
@@ -41,7 +36,7 @@ const logHook = defineHook({
   event: 'command:prerun',
   priority: 10,
   handler: (data) => {
-    const { commandId } = data as { commandId: string }
+    const commandId = data?.commandId ?? 'unknown'
     logger.debug(`About to run command: ${commandId}`)
   },
 })

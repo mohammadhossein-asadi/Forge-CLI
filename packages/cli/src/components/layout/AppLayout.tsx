@@ -1,7 +1,6 @@
-import React from 'react'
 import { Box } from '../ui/Box.js'
-import { Header } from './Header.js'
 import { Footer } from './Footer.js'
+import { Header } from './Header.js'
 
 export interface AppLayoutProps {
   children?: React.ReactNode

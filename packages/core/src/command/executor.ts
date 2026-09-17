@@ -1,10 +1,10 @@
 import type { ResolvedConfig } from '@forge/shared'
 import { ErrorCode } from '@forge/shared'
-import { ForgeError } from '../error/forge-error.js'
-import type { Logger } from '../logging/logger.js'
-import type { EventBus } from '../events/event-bus.js'
 import type { Container } from '../container/container.js'
+import { ForgeError } from '../error/forge-error.js'
+import type { EventBus } from '../events/event-bus.js'
 import type { HookRunner } from '../hooks/hook-runner.js'
+import type { Logger } from '../logging/logger.js'
 import type { CommandRegistry } from './registry.js'
 import type { CommandContext, CommandResult } from './types.js'
 

@@ -1,6 +1,6 @@
-import { Kernel } from '@forge/core'
 import fs from 'node:fs/promises'
 import path from 'node:path'
+import type { Kernel } from '@forge/core'
 
 export async function runConfigGet(kernel: Kernel, key: string): Promise<void> {
   const config = kernel.getConfig()
@@ -40,9 +40,10 @@ export async function runConfigSet(_kernel: Kernel, key: string, value: string):
 
   // Set nested key
   const parts = key.split('.')
+  const lastPart = parts.pop()
+  if (!lastPart) return
   let current = config
-  for (let i = 0; i < parts.length - 1; i++) {
-    const part = parts[i]!
+  for (const part of parts) {
     if (!(part in current) || typeof current[part] !== 'object') {
       current[part] = {}
     }
@@ -51,12 +52,12 @@ export async function runConfigSet(_kernel: Kernel, key: string, value: string):
 
   // Try to parse as JSON, fallback to string
   try {
-    current[parts[parts.length - 1]!] = JSON.parse(value)
+    current[lastPart] = JSON.parse(value)
   } catch {
-    current[parts[parts.length - 1]!] = value
+    current[lastPart] = value
   }
 
-  await fs.writeFile(configFile, JSON.stringify(config, null, 2) + '\n')
+  await fs.writeFile(configFile, `${JSON.stringify(config, null, 2)}\n`)
   console.log(`Set ${key} = ${value}`)
 }
 

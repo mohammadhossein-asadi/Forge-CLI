@@ -30,7 +30,11 @@ export class ConfigMigration {
     return path
   }
 
-  async migrate(config: Record<string, unknown>, fromVersion: string, toVersion: string): Promise<Record<string, unknown>> {
+  async migrate(
+    config: Record<string, unknown>,
+    fromVersion: string,
+    toVersion: string,
+  ): Promise<Record<string, unknown>> {
     const migrationPath = this.getMigrationPath(fromVersion, toVersion)
 
     let migrated = { ...config }

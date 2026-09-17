@@ -17,9 +17,9 @@ export class FlagsLayer implements ConfigLayer {
     const config: Record<string, unknown> = {}
 
     if (this.flags.theme) config.cli = { theme: this.flags.theme }
-    if (this.flags.verbose) config.cli = { ...config.cli as object, verbosity: 'verbose' }
-    if (this.flags.quiet) config.cli = { ...config.cli as object, verbosity: 'silent' }
-    if (this.flags.json) config.cli = { ...config.cli as object, outputFormat: 'json' }
+    if (this.flags.verbose) config.cli = { ...(config.cli as object), verbosity: 'verbose' }
+    if (this.flags.quiet) config.cli = { ...(config.cli as object), verbosity: 'silent' }
+    if (this.flags.json) config.cli = { ...(config.cli as object), outputFormat: 'json' }
 
     return Object.keys(config).length > 0 ? (config as Partial<ForgeConfig>) : null
   }

@@ -1,6 +1,6 @@
 import type { Logger } from '../logging/logger.js'
-import type { PluginEntry } from './types.js'
 import { PluginInstaller } from './installer.js'
+import type { PluginEntry } from './types.js'
 
 export interface PluginUpdate {
   name: string
@@ -77,7 +77,7 @@ export class PluginUpdater {
         }
       }
 
-      const data = await response.json() as { version?: string }
+      const data = (await response.json()) as { version?: string }
       const latestVersion = data.version ?? entry.version
       const updateAvailable = this.isUpdateAvailable(entry.version, latestVersion)
 

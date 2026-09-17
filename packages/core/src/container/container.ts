@@ -14,7 +14,11 @@ export class Container {
     this.parent = parent
   }
 
-  register<T>(token: string, factory: Factory<T>, options?: { scope?: 'transient' | 'singleton' }): void {
+  register<T>(
+    token: string,
+    factory: Factory<T>,
+    options?: { scope?: 'transient' | 'singleton' },
+  ): void {
     this.registrations.set(token, {
       factory: factory as Factory<unknown>,
       scope: options?.scope ?? 'transient',

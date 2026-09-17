@@ -4,11 +4,8 @@ function isObject(value: unknown): value is DeepMergeTarget {
   return typeof value === 'object' && value !== null && !Array.isArray(value)
 }
 
-export function deepMerge<T extends DeepMergeTarget>(
-  target: T,
-  ...sources: Array<Partial<T>>
-): T {
-  let result = { ...target }
+export function deepMerge<T extends DeepMergeTarget>(target: T, ...sources: Array<Partial<T>>): T {
+  const result = { ...target }
 
   for (const source of sources) {
     if (!isObject(source)) continue

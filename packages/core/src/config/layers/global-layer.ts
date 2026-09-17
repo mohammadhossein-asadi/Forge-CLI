@@ -1,5 +1,5 @@
-import path from 'node:path'
 import os from 'node:os'
+import path from 'node:path'
 import type { ForgeConfig } from '@forge/shared'
 import type { ConfigLayer } from '../types.js'
 
@@ -38,18 +38,18 @@ export class GlobalConfigLayer implements ConfigLayer {
         }
         // TOML and YAML parsing would be added here
         return JSON.parse(content) as Partial<ForgeConfig>
-      } catch {
-        continue
-      }
+      } catch {}
     }
     return null
   }
 
   isPresent(): boolean {
     const { existsSync } = require('node:fs') as typeof import('node:fs')
-    return existsSync(path.join(this.configDir, 'config.toml')) ||
+    return (
+      existsSync(path.join(this.configDir, 'config.toml')) ||
       existsSync(path.join(this.configDir, 'config.json')) ||
       existsSync(path.join(this.configDir, 'config.yaml'))
+    )
   }
 
   getSource(): string {

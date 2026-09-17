@@ -22,8 +22,9 @@ export class UpdateManager {
 
     try {
       const response = await fetch(config.registryUrl)
-      const data = await response.json() as { 'dist-tags'?: Record<string, string> }
-      const latestVersion = data['dist-tags']?.[this.channel] ?? data['dist-tags']?.latest ?? CLI_VERSION
+      const data = (await response.json()) as { 'dist-tags'?: Record<string, string> }
+      const latestVersion =
+        data['dist-tags']?.[this.channel] ?? data['dist-tags']?.latest ?? CLI_VERSION
 
       this.lastCheck = new Date()
 

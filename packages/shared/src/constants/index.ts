@@ -50,8 +50,4 @@ export const HOOK_EVENTS = {
   PROJECT_CONFIGURED: 'project:configured',
 } as const
 
-export const DEFAULT_PERMISSIONS = [
-  'filesystem.read',
-  'filesystem.write',
-  'network.read',
-] as const
+export const DEFAULT_PERMISSIONS = ['filesystem.read', 'filesystem.write', 'network.read'] as const

@@ -30,9 +30,7 @@ export class ProjectConfigLayer implements ConfigLayer {
           return JSON.parse(content) as Partial<ForgeConfig>
         }
         return JSON.parse(content) as Partial<ForgeConfig>
-      } catch {
-        continue
-      }
+      } catch {}
     }
 
     return null

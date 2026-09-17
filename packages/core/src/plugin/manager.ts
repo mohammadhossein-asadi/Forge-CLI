@@ -1,10 +1,10 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
-import type { ForgePlugin, PluginCommand, PluginHook, PluginGenerator } from '@forge/shared'
-import type { Logger } from '../logging/logger.js'
-import type { PluginLoadResult, PluginEntry, PluginDependencyGraph, PluginStatus } from './types.js'
-import { PluginRuntime } from './runtime.js'
+import type { ForgePlugin, PluginCommand, PluginGenerator, PluginHook } from '@forge/shared'
 import { Container } from '../container/container.js'
+import type { Logger } from '../logging/logger.js'
+import { PluginRuntime } from './runtime.js'
+import type { PluginDependencyGraph, PluginEntry, PluginLoadResult, PluginStatus } from './types.js'
 
 export interface PluginManagerOptions {
   logger: Logger
@@ -124,13 +124,16 @@ export class PluginManager {
       }
     }
 
-    this.logger.debug(`Loaded ${results.length} plugins, ${this.allCommands.length} commands, ${this.allHooks.length} hooks, ${this.allGenerators.length} generators`)
+    this.logger.debug(
+      `Loaded ${results.length} plugins, ${this.allCommands.length} commands, ${this.allHooks.length} hooks, ${this.allGenerators.length} generators`,
+    )
     return results
   }
 
   async loadByName(name: string): Promise<ForgePlugin | null> {
-    if (this.loadedPlugins.has(name)) {
-      return this.loadedPlugins.get(name)!.plugin
+    const existing = this.loadedPlugins.get(name)
+    if (existing) {
+      return existing.plugin
     }
 
     try {
@@ -233,9 +236,18 @@ export class PluginManager {
       }
 
       // Remove commands, hooks, generators
-      this.allCommands = this.allCommands.filter((cmd) => !result.plugin.commands?.some((pc) => pc.id === cmd.id))
-      this.allHooks = this.allHooks.filter((hook) => !result.plugin.hooks?.some((ph) => ph.event === hook.event && ph.handler === hook.handler))
-      this.allGenerators = this.allGenerators.filter((gen) => !result.plugin.generators?.some((pg) => pg.id === gen.id))
+      this.allCommands = this.allCommands.filter(
+        (cmd) => !result.plugin.commands?.some((pc) => pc.id === cmd.id),
+      )
+      this.allHooks = this.allHooks.filter(
+        (hook) =>
+          !result.plugin.hooks?.some(
+            (ph) => ph.event === hook.event && ph.handler === hook.handler,
+          ),
+      )
+      this.allGenerators = this.allGenerators.filter(
+        (gen) => !result.plugin.generators?.some((pg) => pg.id === gen.id),
+      )
 
       this.loadedPlugins.delete(name)
       this.pluginEntries.delete(name)
@@ -335,7 +347,8 @@ export class PluginManager {
         if (!entry.isDirectory()) continue
         if (entry.name.startsWith('.')) continue
 
-        if (!entry.name.startsWith('@forge/plugin-') && !entry.name.startsWith('forge-plugin-')) continue
+        if (!entry.name.startsWith('@forge/plugin-') && !entry.name.startsWith('forge-plugin-'))
+          continue
 
         const pluginPath = path.join(nodeModulesDir, entry.name)
         try {

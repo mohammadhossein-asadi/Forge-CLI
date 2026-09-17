@@ -1,13 +1,13 @@
-import { describe, it, expect } from 'vitest'
+import { ErrorCode } from '@forge/shared'
+import { describe, expect, it } from 'vitest'
 import {
   PluginError,
-  createPluginNotFoundError,
-  createPluginLoadError,
-  createPluginIncompatibleError,
-  createPluginPermissionError,
   createPluginDependencyError,
+  createPluginIncompatibleError,
+  createPluginLoadError,
+  createPluginNotFoundError,
+  createPluginPermissionError,
 } from './errors.js'
-import { ErrorCode } from '@forge/shared'
 
 describe('Plugin Errors', () => {
   it('should create plugin not found error', () => {

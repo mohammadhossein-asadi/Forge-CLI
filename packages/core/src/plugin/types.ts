@@ -1,4 +1,4 @@
-import type { ForgePlugin, PluginCommand, PluginHook, PluginGenerator } from '@forge/shared'
+import type { ForgePlugin, PluginCommand, PluginGenerator, PluginHook } from '@forge/shared'
 
 export type { ForgePlugin }
 

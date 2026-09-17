@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { CommandRegistry } from './registry.js'
 import type { CommandRegistration } from './registry.js'
 
