@@ -17,7 +17,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "test": "vitest run",
+    "test": "vitest run --passWithNoTests",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist *.tsbuildinfo"
   },
@@ -33,13 +33,6 @@
     "vitest": "^2.1.0"
   },
   "files": ["dist"],
-  "keywords": [
-    "cli",
-    "developer-tools",
-    "scaffolding",
-    "code-generation",
-    "forge",
-    "ai-native"
-  ],
+  "keywords": ["cli", "developer-tools", "scaffolding", "code-generation", "forge"],
   "license": "MIT"
 }

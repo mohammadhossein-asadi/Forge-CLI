@@ -95,8 +95,9 @@ export class WorkspaceDetector {
     if (tool === 'pnpm') {
       const pkg = await this.readPackageJson(root)
       if (!pkg) return projects
-      const workspaces = Array.isArray(pkg.pnpm?.packages)
-        ? pkg.pnpm!.packages!
+      const pnpmPackages = pkg.pnpm?.packages
+      const workspaces = Array.isArray(pnpmPackages)
+        ? pnpmPackages
         : Array.isArray(pkg.workspaces)
           ? pkg.workspaces
           : []
@@ -133,17 +134,17 @@ export class WorkspaceDetector {
     if (!pkg) return undefined
     const deps = { ...pkg.dependencies, ...pkg.devDependencies }
 
-    if (deps['next']) return 'next.js'
-    if (deps['nuxt']) return 'nuxt'
+    if (deps.next) return 'next.js'
+    if (deps.nuxt) return 'nuxt'
     if (deps['@angular/core']) return 'angular'
-    if (deps['svelte']) return 'svelte'
+    if (deps.svelte) return 'svelte'
     if (deps['@sveltejs/kit']) return 'sveltekit'
     if (deps['solid-js']) return 'solid'
     if (deps['@qwik-city/build']) return 'qwik'
-    if (deps['astro']) return 'astro'
-    if (deps['remix'] || deps['@remix-run/node']) return 'remix'
-    if (deps['react']) return 'react'
-    if (deps['vue']) return 'vue'
+    if (deps.astro) return 'astro'
+    if (deps.remix || deps['@remix-run/node']) return 'remix'
+    if (deps.react) return 'react'
+    if (deps.vue) return 'vue'
     return undefined
   }
 
@@ -152,7 +153,11 @@ export class WorkspaceDetector {
     if (await this.fileExists(path.join(root, 'jsconfig.json'))) return 'javascript'
     if (await this.fileExists(path.join(root, 'Cargo.toml'))) return 'rust'
     if (await this.fileExists(path.join(root, 'go.mod'))) return 'go'
-    if (await this.fileExists(path.join(root, 'pyproject.toml')) || await this.fileExists(path.join(root, 'setup.py'))) return 'python'
+    if (
+      (await this.fileExists(path.join(root, 'pyproject.toml'))) ||
+      (await this.fileExists(path.join(root, 'setup.py')))
+    )
+      return 'python'
     return undefined
   }
 

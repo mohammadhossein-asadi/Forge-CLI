@@ -1,5 +1,7 @@
-import { Kernel, ProjectCreator, searchTemplates } from '@forge/core'
+import { ProjectCreator } from '@forge/core'
+import type { Kernel } from '@forge/core'
 import { CLI_NAME } from '@forge/shared'
+import { runCreateWizard } from '../../prompts/steps/index.js'
 
 export interface CreateCommandOptions {
   template?: string
@@ -10,7 +12,11 @@ export interface CreateCommandOptions {
   install?: boolean
 }
 
-export async function runCreate(kernel: Kernel, projectName: string | undefined, options: CreateCommandOptions = {}): Promise<void> {
+export async function runCreate(
+  kernel: Kernel,
+  projectName: string | undefined,
+  options: CreateCommandOptions = {},
+): Promise<void> {
   const logger = kernel.getLogger()
   const workspace = kernel.getWorkspace()
 
@@ -44,10 +50,24 @@ export async function runCreate(kernel: Kernel, projectName: string | undefined,
     return
   }
 
+  let template = options.template
+  let packageManager = options.packageManager
+
+  // Interactive wizard fills in anything the user did not pass as a flag
+  if (!template || !packageManager) {
+    const answers = await runCreateWizard({
+      defaultName: projectName,
+      defaultFramework: options.framework,
+      defaultPackageManager: options.packageManager,
+    })
+    template = template ?? mapFrameworkToTemplate(answers.framework)
+    packageManager = packageManager ?? answers.packageManager
+  }
+
   console.log('')
   console.log(`  Creating project: ${projectName}`)
-  if (options.template) {
-    console.log(`  Template: ${options.template}`)
+  if (template) {
+    console.log(`  Template: ${template}`)
   }
   if (options.framework) {
     console.log(`  Framework: ${options.framework}`)
@@ -57,10 +77,10 @@ export async function runCreate(kernel: Kernel, projectName: string | undefined,
   // Create the project
   const result = await creator.create({
     name: projectName,
-    template: options.template,
+    template,
     framework: options.framework,
     language: options.language,
-    packageManager: options.packageManager,
+    packageManager,
     outputDir: workspace.root,
     git: options.git ?? true,
     install: options.install ?? false,
@@ -82,8 +102,7 @@ export async function runCreate(kernel: Kernel, projectName: string | undefined,
     console.log('')
     console.log('  Next steps:')
     console.log(`    cd ${projectName}`)
-    console.log(`    ${options.packageManager ?? 'npm'} install`)
-    console.log(`    ${options.packageManager ?? 'npm'} run dev`)
+    console.log(`    ${packageManager ?? 'npm'} install`)
     console.log('')
   } else {
     console.log('')
@@ -92,5 +111,22 @@ export async function runCreate(kernel: Kernel, projectName: string | undefined,
       console.log(`    ${result.error}`)
     }
     console.log('')
+  }
+}
+
+function mapFrameworkToTemplate(framework: string): string {
+  switch (framework) {
+    case 'nextjs':
+      return 'nextjs'
+    case 'vue':
+      return 'vue'
+    case 'node':
+      return 'node'
+    case 'library':
+      return 'library'
+    case 'empty':
+      return 'empty'
+    default:
+      return 'react'
   }
 }

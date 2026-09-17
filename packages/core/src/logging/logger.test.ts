@@ -1,9 +1,9 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { type MockInstance, afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { Logger } from './logger.js'
 
 describe('Logger', () => {
-  let stdoutSpy: ReturnType<typeof vi.spyOn>
-  let stderrSpy: ReturnType<typeof vi.spyOn>
+  let stdoutSpy: MockInstance<typeof process.stdout.write>
+  let stderrSpy: MockInstance<typeof process.stderr.write>
 
   beforeEach(() => {
     stdoutSpy = vi.spyOn(process.stdout, 'write').mockImplementation(() => true)

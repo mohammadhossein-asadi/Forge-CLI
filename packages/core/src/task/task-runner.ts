@@ -1,7 +1,7 @@
-import type { Logger } from '../logging/logger.js'
-import type { EventBus } from '../events/event-bus.js'
 import type { ResolvedConfig } from '@forge/shared'
-import type { TaskDefinition, TaskContext, TaskState, TaskReport, TaskResult } from './types.js'
+import type { EventBus } from '../events/event-bus.js'
+import type { Logger } from '../logging/logger.js'
+import type { TaskContext, TaskDefinition, TaskReport, TaskResult, TaskState } from './types.js'
 
 export interface TaskRunnerOptions {
   logger: Logger
@@ -57,21 +57,21 @@ export class TaskRunner {
     while (true) {
       // Mark tasks with failed dependencies as skipped
       for (const def of definitions) {
-        const state = states.get(def.id)!
-        if (state.status !== 'pending') continue
+        const state = states.get(def.id)
+        if (!state || state.status !== 'pending') continue
         const deps = def.dependencies ?? []
         if (deps.some((dep) => failed.has(dep))) {
           state.status = 'skipped'
           state.endTime = performance.now()
-          state.duration = state.endTime - state.startTime!
+          state.duration = state.endTime - (state.startTime ?? state.endTime)
           completed.add(def.id)
         }
       }
 
       // Find tasks whose dependencies are all completed
       const ready = definitions.filter((def) => {
-        const state = states.get(def.id)!
-        if (state.status !== 'pending') return false
+        const state = states.get(def.id)
+        if (!state || state.status !== 'pending') return false
         return (def.dependencies ?? []).every((dep) => completed.has(dep))
       })
 
@@ -86,10 +86,13 @@ export class TaskRunner {
       }
 
       // Run ready tasks (respect concurrency limit)
-      const toRun = ready.filter((def) => states.get(def.id)!.status === 'pending').slice(0, this.maxConcurrent)
+      const toRun = ready
+        .filter((def) => states.get(def.id)?.status === 'pending')
+        .slice(0, this.maxConcurrent)
 
       const promises = toRun.map(async (def) => {
-        const state = states.get(def.id)!
+        const state = states.get(def.id)
+        if (!state) return
         state.status = 'running'
         state.startTime = performance.now()
         state.attempts++
@@ -110,7 +113,7 @@ export class TaskRunner {
           this.logger.error(`Failed: ${def.name}: ${state.error.message}`)
         } finally {
           state.endTime = performance.now()
-          state.duration = state.endTime - state.startTime!
+          state.duration = state.endTime - (state.startTime ?? state.endTime)
         }
       })
 
@@ -141,7 +144,10 @@ export class TaskRunner {
           return await Promise.race([
             def.execute(context),
             new Promise<TaskResult>((_, reject) =>
-              setTimeout(() => reject(new Error(`Task "${def.id}" timed out after ${def.timeout}ms`)), def.timeout),
+              setTimeout(
+                () => reject(new Error(`Task "${def.id}" timed out after ${def.timeout}ms`)),
+                def.timeout,
+              ),
             ),
           ])
         }

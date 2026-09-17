@@ -25,15 +25,69 @@ export class DevDetector {
     const tools: DevTool[] = []
 
     const checks = [
-      { name: 'vite', command: 'vite', args: [], configFiles: ['vite.config.ts', 'vite.config.js', 'vite.config.mjs'], port: 5173 },
-      { name: 'next', command: 'next', args: ['dev'], configFiles: ['next.config.js', 'next.config.mjs', 'next.config.ts'], port: 3000 },
-      { name: 'nuxt', command: 'nuxt', args: ['dev'], configFiles: ['nuxt.config.ts', 'nuxt.config.js'], port: 3000 },
-      { name: 'webpack', command: 'webpack', args: ['serve', '--mode', 'development'], configFiles: ['webpack.config.js', 'webpack.config.ts'], port: 8080 },
-      { name: 'astro', command: 'astro', args: ['dev'], configFiles: ['astro.config.mjs', 'astro.config.ts'], port: 4321 },
-      { name: 'remix', command: 'remix', args: ['dev'], configFiles: ['remix.config.js'], port: 3000 },
-      { name: 'sveltekit', command: 'vite', args: ['dev'], configFiles: ['svelte.config.js'], port: 5173 },
-      { name: 'storybook', command: 'storybook', args: ['dev', '-p', '6006'], configFiles: ['.storybook/main.js', '.storybook/main.ts'], port: 6006 },
-      { name: 'turbo', command: 'turbo', args: ['run', 'dev'], configFiles: ['turbo.json'], port: undefined },
+      {
+        name: 'vite',
+        command: 'vite',
+        args: [],
+        configFiles: ['vite.config.ts', 'vite.config.js', 'vite.config.mjs'],
+        port: 5173,
+      },
+      {
+        name: 'next',
+        command: 'next',
+        args: ['dev'],
+        configFiles: ['next.config.js', 'next.config.mjs', 'next.config.ts'],
+        port: 3000,
+      },
+      {
+        name: 'nuxt',
+        command: 'nuxt',
+        args: ['dev'],
+        configFiles: ['nuxt.config.ts', 'nuxt.config.js'],
+        port: 3000,
+      },
+      {
+        name: 'webpack',
+        command: 'webpack',
+        args: ['serve', '--mode', 'development'],
+        configFiles: ['webpack.config.js', 'webpack.config.ts'],
+        port: 8080,
+      },
+      {
+        name: 'astro',
+        command: 'astro',
+        args: ['dev'],
+        configFiles: ['astro.config.mjs', 'astro.config.ts'],
+        port: 4321,
+      },
+      {
+        name: 'remix',
+        command: 'remix',
+        args: ['dev'],
+        configFiles: ['remix.config.js'],
+        port: 3000,
+      },
+      {
+        name: 'sveltekit',
+        command: 'vite',
+        args: ['dev'],
+        configFiles: ['svelte.config.js'],
+        port: 5173,
+      },
+      {
+        name: 'storybook',
+        command: 'storybook',
+        args: ['dev', '-p', '6006'],
+        configFiles: ['.storybook/main.js', '.storybook/main.ts'],
+        port: 6006,
+      },
+      {
+        name: 'turbo',
+        command: 'turbo',
+        args: ['run', 'dev'],
+        configFiles: ['turbo.json'],
+        port: undefined,
+      },
       { name: 'nx', command: 'nx', args: ['serve'], configFiles: ['nx.json'], port: undefined },
     ]
 
@@ -41,7 +95,7 @@ export class DevDetector {
 
     for (const check of checks) {
       const hasConfig = await this.hasFile(check.configFiles)
-      const hasScript = pkgScripts[check.name] !== undefined || pkgScripts['dev'] !== undefined
+      const hasScript = pkgScripts[check.name] !== undefined || pkgScripts.dev !== undefined
 
       tools.push({
         name: check.name,
@@ -58,7 +112,18 @@ export class DevDetector {
 
   async detectPrimary(): Promise<DevTool | null> {
     const tools = await this.detect()
-    const priority = ['turbo', 'nx', 'vite', 'next', 'nuxt', 'astro', 'remix', 'sveltekit', 'webpack', 'storybook']
+    const priority = [
+      'turbo',
+      'nx',
+      'vite',
+      'next',
+      'nuxt',
+      'astro',
+      'remix',
+      'sveltekit',
+      'webpack',
+      'storybook',
+    ]
 
     for (const name of priority) {
       const tool = tools.find((t) => t.name === name)

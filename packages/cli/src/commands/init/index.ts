@@ -1,9 +1,8 @@
-import { Kernel } from '@forge/core'
 import fs from 'node:fs/promises'
 import path from 'node:path'
+import type { Kernel } from '@forge/core'
 
-export async function runInit(kernel: Kernel): Promise<void> {
-  const logger = kernel.getLogger()
+export async function runInit(_kernel: Kernel): Promise<void> {
   const cwd = process.cwd()
 
   console.log('')
@@ -35,7 +34,7 @@ export async function runInit(kernel: Kernel): Promise<void> {
         language: 'typescript',
       },
     }
-    await fs.writeFile(configPath, JSON.stringify(config, null, 2) + '\n')
+    await fs.writeFile(configPath, `${JSON.stringify(config, null, 2)}\n`)
     console.log('  Created forge.config.json')
   }
 

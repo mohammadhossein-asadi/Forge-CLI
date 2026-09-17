@@ -1,8 +1,8 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import type { Logger } from '../logging/logger.js'
-import type { CreateOptions, CreateResult, ProjectTemplate } from './types.js'
 import { TEMPLATES, getTemplate } from './templates.js'
+import type { CreateOptions, CreateResult, ProjectTemplate } from './types.js'
 
 export interface CreatorOptions {
   logger: Logger
@@ -49,7 +49,9 @@ export class ProjectCreator {
       } catch {}
 
       // 3. Get template
-      const template = templateId ? getTemplate(templateId) : TEMPLATES.find((t) => t.id === 'empty')
+      const template = templateId
+        ? getTemplate(templateId)
+        : TEMPLATES.find((t) => t.id === 'empty')
       if (!template) {
         return {
           success: false,
@@ -69,7 +71,7 @@ export class ProjectCreator {
 
       // package.json
       const packageJson = this.generatePackageJson(name, options, template)
-      await this.writeFile(projectPath, 'package.json', JSON.stringify(packageJson, null, 2) + '\n')
+      await this.writeFile(projectPath, 'package.json', `${JSON.stringify(packageJson, null, 2)}\n`)
       files.push('package.json')
 
       // .gitignore
@@ -84,7 +86,11 @@ export class ProjectCreator {
 
       // forge.config.json
       const forgeConfig = this.generateForgeConfig(name, options, template)
-      await this.writeFile(projectPath, 'forge.config.json', JSON.stringify(forgeConfig, null, 2) + '\n')
+      await this.writeFile(
+        projectPath,
+        'forge.config.json',
+        `${JSON.stringify(forgeConfig, null, 2)}\n`,
+      )
       files.push('forge.config.json')
 
       // README.md
@@ -97,7 +103,13 @@ export class ProjectCreator {
         if (file.condition && !file.condition(options)) continue
 
         const content = typeof file.content === 'function' ? file.content() : file.content
-        const vars = { name, template: options.template, framework: options.framework, language: options.language, packageManager: options.packageManager }
+        const vars = {
+          name,
+          template: options.template,
+          framework: options.framework,
+          language: options.language,
+          packageManager: options.packageManager,
+        }
         const processed = this.processTemplate(content, vars)
         await this.writeFile(projectPath, file.path, processed)
         files.push(file.path)
@@ -129,7 +141,13 @@ export class ProjectCreator {
     }
   }
 
-  getAvailableTemplates(): Array<{ id: string; name: string; description: string; category: string; tags: string[] }> {
+  getAvailableTemplates(): Array<{
+    id: string
+    name: string
+    description: string
+    category: string
+    tags: string[]
+  }> {
     return TEMPLATES.map((t) => ({
       id: t.id,
       name: t.name,
@@ -139,7 +157,11 @@ export class ProjectCreator {
     }))
   }
 
-  private generatePackageJson(name: string, _options: CreateOptions, template: ProjectTemplate): Record<string, unknown> {
+  private generatePackageJson(
+    name: string,
+    _options: CreateOptions,
+    template: ProjectTemplate,
+  ): Record<string, unknown> {
     return {
       name,
       version: '0.1.0',
@@ -214,7 +236,11 @@ indent_style = tab
 `
   }
 
-  private generateForgeConfig(name: string, options: CreateOptions, template: ProjectTemplate): Record<string, unknown> {
+  private generateForgeConfig(
+    name: string,
+    options: CreateOptions,
+    template: ProjectTemplate,
+  ): Record<string, unknown> {
     return {
       version: '1.0.0',
       project: {
@@ -233,31 +259,31 @@ indent_style = tab
 
     let readme = `# ${name}\n\n`
     readme += `> ${template.description}\n\n`
-    readme += `> Created with [Forge CLI](https://github.com/forge-cli/forge)\n\n`
+    readme += '> Created with [Forge CLI](https://github.com/forge-cli/forge)\n\n'
 
     if (Object.keys(scripts).length > 0) {
-      readme += `## Getting Started\n\n`
-      readme += `\`\`\`bash\n`
-      readme += `# Install dependencies\n`
+      readme += '## Getting Started\n\n'
+      readme += '```bash\n'
+      readme += '# Install dependencies\n'
       readme += `${pm} install\n\n`
 
       if (scripts.dev) {
-        readme += `# Start development\n`
+        readme += '# Start development\n'
         readme += `${pm} run dev\n`
       }
 
-      readme += `\`\`\`\n\n`
+      readme += '```\n\n'
     }
 
-    readme += `## Available Commands\n\n`
+    readme += '## Available Commands\n\n'
     for (const [cmd, desc] of Object.entries(scripts)) {
       if (desc && !desc.startsWith('echo')) {
         readme += `- \`${cmd}\` — ${desc}\n`
       }
     }
 
-    readme += `\n## Learn More\n\n`
-    readme += `- [Forge CLI Documentation](https://github.com/forge-cli/forge)\n`
+    readme += '\n## Learn More\n\n'
+    readme += '- [Forge CLI Documentation](https://github.com/forge-cli/forge)\n'
 
     return readme
   }

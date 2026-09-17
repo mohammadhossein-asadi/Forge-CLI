@@ -9,9 +9,7 @@ export type {
   ConfigGetOptions,
   ConfigSetOptions,
 } from './service.js'
-export type {
-  MigrationRule,
-} from './migration.js'
+export type { MigrationRule } from './migration.js'
 export type {
   ConfigWatcherOptions,
   ConfigChange,

@@ -85,9 +85,9 @@ export class Logger {
       : this.formatPretty(level, message, data)
 
     if (level === 'error') {
-      process.stderr.write(output + '\n')
+      process.stderr.write(`${output}\n`)
     } else {
-      process.stdout.write(output + '\n')
+      process.stdout.write(`${output}\n`)
     }
   }
 

@@ -1,5 +1,5 @@
-import path from 'node:path'
 import os from 'node:os'
+import path from 'node:path'
 import type { ForgeConfig } from '@forge/shared'
 import type { ConfigLayer } from '../types.js'
 
@@ -28,9 +28,7 @@ export class UserConfigLayer implements ConfigLayer {
           return JSON.parse(content) as Partial<ForgeConfig>
         }
         return JSON.parse(content) as Partial<ForgeConfig>
-      } catch {
-        continue
-      }
+      } catch {}
     }
 
     // Check for .forge directory in current working directory

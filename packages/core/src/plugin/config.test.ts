@@ -1,9 +1,9 @@
-import { describe, it, expect, beforeEach, afterEach } from 'vitest'
-import { PluginConfigManager } from './config.js'
-import { Logger } from '../logging/logger.js'
 import fs from 'node:fs/promises'
-import path from 'node:path'
 import os from 'node:os'
+import path from 'node:path'
+import { afterEach, beforeEach, describe, expect, it } from 'vitest'
+import { Logger } from '../logging/logger.js'
+import { PluginConfigManager } from './config.js'
 
 describe('PluginConfigManager', () => {
   let tmpDir: string

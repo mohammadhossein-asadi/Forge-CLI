@@ -1,4 +1,4 @@
-import { ErrorCode, type ErrorSeverity } from '@forge/shared'
+import type { ErrorCode, ErrorSeverity } from '@forge/shared'
 
 export class ForgeError extends Error {
   readonly code: ErrorCode

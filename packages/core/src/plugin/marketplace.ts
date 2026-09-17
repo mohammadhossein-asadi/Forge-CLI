@@ -34,7 +34,7 @@ export class MarketplaceClient {
   private registryUrl: string
 
   constructor(options?: { logger?: Logger; registryUrl?: string }) {
-    this.logger = options?.logger ?? console as unknown as Logger
+    this.logger = options?.logger ?? (console as unknown as Logger)
     this.registryUrl = options?.registryUrl ?? 'https://registry.npmjs.org'
   }
 
@@ -43,14 +43,14 @@ export class MarketplaceClient {
 
     try {
       // Search npm for forge plugins
-      const searchUrl = `${this.registryUrl}/-/v1/search?text=${encodeURIComponent(query + ' forge-plugin')}&size=${limit}&from=${offset}`
+      const searchUrl = `${this.registryUrl}/-/v1/search?text=${encodeURIComponent(`${query} forge-plugin`)}&size=${limit}&from=${offset}`
       const response = await fetch(searchUrl)
 
       if (!response.ok) {
         return { plugins: [], total: 0, page: 0, pageSize: limit }
       }
 
-      const data = await response.json() as {
+      const data = (await response.json()) as {
         objects: Array<{
           package: {
             name: string
@@ -96,7 +96,7 @@ export class MarketplaceClient {
       const response = await fetch(`${this.registryUrl}/${encodeURIComponent(name)}/latest`)
       if (!response.ok) return null
 
-      const data = await response.json() as {
+      const data = (await response.json()) as {
         name: string
         version: string
         description?: string
@@ -129,7 +129,7 @@ export class MarketplaceClient {
       const response = await fetch(`${this.registryUrl}/${encodeURIComponent(name)}`)
       if (!response.ok) return []
 
-      const data = await response.json() as { versions?: Record<string, unknown> }
+      const data = (await response.json()) as { versions?: Record<string, unknown> }
       return Object.keys(data.versions ?? {})
     } catch {
       return []
@@ -141,7 +141,7 @@ export class MarketplaceClient {
       const response = await fetch(`${this.registryUrl}/${encodeURIComponent(name)}/latest`)
       if (!response.ok) return null
 
-      const data = await response.json() as { version?: string }
+      const data = (await response.json()) as { version?: string }
       return data.version ?? null
     } catch {
       return null

@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { HealthChecker } from './checker.js'
 
 describe('HealthChecker', () => {
@@ -13,7 +13,7 @@ describe('HealthChecker', () => {
     const report = await checker.run()
     expect(report.status).toBe('healthy')
     expect(report.checks).toHaveLength(1)
-    expect(report.checks[0]!.status).toBe('ok')
+    expect(report.checks[0]?.status).toBe('ok')
   })
 
   it('should detect warnings', async () => {
@@ -48,7 +48,7 @@ describe('HealthChecker', () => {
 
     const report = await checker.run()
     expect(report.status).toBe('unhealthy')
-    expect(report.checks[0]!.status).toBe('error')
+    expect(report.checks[0]?.status).toBe('error')
   })
 
   it('should include duration', async () => {

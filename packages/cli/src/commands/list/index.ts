@@ -1,6 +1,6 @@
-import { Kernel, Lister } from '@forge/core'
+import { Lister } from '@forge/core'
+import type { Kernel } from '@forge/core'
 import { CLI_NAME } from '@forge/shared'
-import type { ListItem, ListResult } from '@forge/core'
 
 export interface ListCommandOptions {
   filter?: string
@@ -9,7 +9,11 @@ export interface ListCommandOptions {
   json?: boolean
 }
 
-export async function runList(kernel: Kernel, type: string, options: ListCommandOptions = {}): Promise<void> {
+export async function runList(
+  kernel: Kernel,
+  type: string,
+  options: ListCommandOptions = {},
+): Promise<void> {
   const logger = kernel.getLogger()
   const workspace = kernel.getWorkspace()
 
@@ -53,7 +57,7 @@ export async function runList(kernel: Kernel, type: string, options: ListCommand
   console.log('')
 }
 
-export async function runListAvailable(kernel: Kernel): Promise<void> {
+export async function runListAvailable(): Promise<void> {
   console.log('')
   console.log('  Available list types:')
   console.log('')

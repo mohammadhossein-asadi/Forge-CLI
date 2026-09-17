@@ -1,4 +1,5 @@
-import { Kernel, DevDetector, DevRunner } from '@forge/core'
+import { DevDetector, DevRunner } from '@forge/core'
+import type { Kernel } from '@forge/core'
 import { CLI_NAME } from '@forge/shared'
 
 export interface DevCommandOptions {
@@ -32,10 +33,8 @@ export async function runDev(kernel: Kernel, options: DevCommandOptions = {}): P
   }
 
   // 2. Select tool
-  let tool = tools.find((t) => t.name === options.tool)
-  if (!tool) {
-    tool = await detector.detectPrimary()
-  }
+  const tool =
+    tools.find((t) => t.name === options.tool) ?? (await detector.detectPrimary()) ?? undefined
 
   if (!tool) {
     console.log('  Multiple dev tools detected:')
@@ -85,7 +84,7 @@ export async function runDev(kernel: Kernel, options: DevCommandOptions = {}): P
     console.log('')
   } else {
     console.log('')
-    console.log(`  Failed to start dev server`)
+    console.log('  Failed to start dev server')
     if (result.error) {
       console.log(`    ${result.error}`)
     }

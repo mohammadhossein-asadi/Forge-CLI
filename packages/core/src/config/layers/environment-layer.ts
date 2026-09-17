@@ -16,18 +16,17 @@ export class EnvironmentLayer implements ConfigLayer {
       const parts = configKey.split('_')
 
       let current: Record<string, unknown> = config
-      for (let i = 0; i < parts.length - 1; i++) {
-        const part = parts[i]!
+      const lastPart = parts.pop()
+      if (!lastPart) continue
+      for (const part of parts) {
         if (!(part in current)) {
           current[part] = {}
         }
         current = current[part] as Record<string, unknown>
       }
-
-      const lastPart = parts[parts.length - 1]!
       // Try to parse as JSON, fallback to string
       try {
-        current[lastPart] = JSON.parse(value!)
+        current[lastPart] = JSON.parse(value ?? '')
       } catch {
         current[lastPart] = value
       }

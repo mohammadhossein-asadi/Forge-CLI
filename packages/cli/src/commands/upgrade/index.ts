@@ -1,8 +1,7 @@
-import { Kernel, UpdateManager } from '@forge/core'
-import type { ReleaseChannel } from '@forge/core'
+import { UpdateManager } from '@forge/core'
+import type { Kernel, ReleaseChannel } from '@forge/core'
 
-export async function runUpgrade(kernel: Kernel, options: { channel?: string }): Promise<void> {
-  const logger = kernel.getLogger()
+export async function runUpgrade(_kernel: Kernel, options: { channel?: string }): Promise<void> {
   const channel = (options.channel ?? 'stable') as ReleaseChannel
 
   console.log('')
