@@ -69,6 +69,18 @@ Forge-CLI/
 
 ---
 
+## Screenshots
+
+All captured from the documented workspace output (regenerate with `scripts/make-cli-screenshots.py` in the portfolio repo):
+
+| `pnpm install` | `pnpm build` (Turborepo) |
+|:---:|:---:|
+| ![Workspace install](docs/screenshot-1.png) | ![Turborepo build](docs/screenshot-2.png) |
+| **`pnpm lint` / typecheck** | **`pnpm dev`** |
+| ![Lint and typecheck](docs/screenshot-3.png) | ![Dev mode](docs/screenshot-4.png) |
+
+---
+
 ## Quick Start
 
 ### Prerequisites
